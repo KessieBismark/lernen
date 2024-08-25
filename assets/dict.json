@@ -1,0 +1,6481 @@
+
+{
+  "be": {
+    "translation": "sein",
+    "sentences": [
+      {
+        "sentence_de": "Er wird pünktlich sein.",
+        "sentence_en": "He will be on time."
+      },
+      {
+        "sentence_de": "Ich bin müde.",
+        "sentence_en": "I am tired."
+      }
+    ]
+  },
+  "have": {
+    "translation": "haben",
+    "sentences": [
+      {
+        "sentence_de": "Sie haben eine Frage.",
+        "sentence_en": "You have a question."
+      },
+      {
+        "sentence_de": "Wir haben viel Spaß.",
+        "sentence_en": "We have a lot of fun."
+      }
+    ]
+  },
+  "do": {
+    "translation": "tun",
+    "sentences": [
+      {
+        "sentence_de": "Ich tue mein Bestes.",
+        "sentence_en": "I do my best."
+      },
+      {
+        "sentence_de": "Du tust das richtig.",
+        "sentence_en": "You do it right."
+      }
+    ]
+  },
+  "say": {
+    "translation": "sagen",
+    "sentences": [
+      {
+        "sentence_de": "Sie sagt mir Bescheid.",
+        "sentence_en": "She tells me."
+      },
+      {
+        "sentence_de": "Ich sage dir die Wahrheit.",
+        "sentence_en": "I tell you the truth."
+      }
+    ]
+  },
+  "go": {
+    "translation": "gehen",
+    "sentences": [
+      {
+        "sentence_de": "Wir gehen nach Hause.",
+        "sentence_en": "We are going home."
+      },
+      {
+        "sentence_de": "Ich gehe heute ins Kino.",
+        "sentence_en": "I am going to the cinema today."
+      }
+    ]
+  },
+  "can": {
+    "translation": "können",
+    "sentences": [
+      {
+        "sentence_de": "Du kannst das tun.",
+        "sentence_en": "You can do that."
+      },
+      {
+        "sentence_de": "Wir können das gemeinsam machen.",
+        "sentence_en": "We can do that together."
+      }
+    ]
+  },
+  "get": {
+    "translation": "bekommen",
+    "sentences": [
+      {
+        "sentence_de": "Du bekommst eine E-Mail.",
+        "sentence_en": "You receive an email."
+      },
+      {
+        "sentence_de": "Er bekommt ein Geschenk.",
+        "sentence_en": "He gets a gift."
+      }
+    ]
+  },
+  "would": {
+    "translation": "würde",
+    "sentences": [
+      {
+        "sentence_de": "Ich würde es mögen.",
+        "sentence_en": "I would like it."
+      },
+      {
+        "sentence_de": "Er würde das versuchen.",
+        "sentence_en": "He would try that."
+      }
+    ]
+  },
+  "make": {
+    "translation": "machen",
+    "sentences": [
+      {
+        "sentence_de": "Wir machen einen Ausflug.",
+        "sentence_en": "We are making a trip."
+      },
+      {
+        "sentence_de": "Du machst einen guten Job.",
+        "sentence_en": "You are doing a good job."
+      }
+    ]
+  },
+  "know": {
+    "translation": "wissen",
+    "sentences": [
+      {
+        "sentence_de": "Ich weiß, wie es geht.",
+        "sentence_en": "I know how it works."
+      },
+      {
+        "sentence_de": "Sie wissen die Antwort.",
+        "sentence_en": "They know the answer."
+      }
+    ]
+  },
+  "will": {
+    "translation": "werden",
+    "sentences": [
+      {
+        "sentence_de": "Er wird pünktlich sein.",
+        "sentence_en": "He will be on time."
+      },
+      {
+        "sentence_de": "Wir werden es morgen sehen.",
+        "sentence_en": "We will see it tomorrow."
+      }
+    ]
+  },
+  "think": {
+    "translation": "denken",
+    "sentences": [
+      {
+        "sentence_de": "Ich denke, dass es richtig ist.",
+        "sentence_en": "I think it is correct."
+      },
+      {
+        "sentence_de": "Sie denkt an ihre Familie.",
+        "sentence_en": "She thinks about her family."
+      }
+    ]
+  },
+  "take": {
+    "translation": "nehmen",
+    "sentences": [
+      {
+        "sentence_de": "Wir nehmen den Bus.",
+        "sentence_en": "We take the bus."
+      },
+      {
+        "sentence_de": "Ich nehme einen Kaffee.",
+        "sentence_en": "I take a coffee."
+      }
+    ]
+  },
+  "see": {
+    "translation": "sehen",
+    "sentences": [
+      {
+        "sentence_de": "Ich sehe den Film.",
+        "sentence_en": "I see the movie."
+      },
+      {
+        "sentence_de": "Wir sehen uns morgen.",
+        "sentence_en": "We will see each other tomorrow."
+      }
+    ]
+  },
+  "come": {
+    "translation": "kommen",
+    "sentences": [
+      {
+        "sentence_de": "Sie kommen zur Party.",
+        "sentence_en": "They are coming to the party."
+      },
+      {
+        "sentence_de": "Ich komme später vorbei.",
+        "sentence_en": "I will come by later."
+      }
+    ]
+  },
+  "could": {
+    "translation": "könnte",
+    "sentences": [
+      {
+        "sentence_de": "Das könnte interessant sein.",
+        "sentence_en": "That could be interesting."
+      },
+      {
+        "sentence_de": "Wir könnten es probieren.",
+        "sentence_en": "We could try it."
+      }
+    ]
+  },
+  "want": {
+    "translation": "wollen",
+    "sentences": [
+      {
+        "sentence_de": "Ich will eine Tasse Kaffee.",
+        "sentence_en": "I want a cup of coffee."
+      },
+      {
+        "sentence_de": "Du willst das nicht.",
+        "sentence_en": "You don't want that."
+      }
+    ]
+  },
+  "look": {
+    "translation": "sehen",
+    "sentences": [
+      {
+        "sentence_de": "Ich sehe den neuen Film.",
+        "sentence_en": "I watch the new movie."
+      },
+      {
+        "sentence_de": "Er sieht müde aus.",
+        "sentence_en": "He looks tired."
+      }
+    ]
+  },
+  "use": {
+    "translation": "benutzen",
+    "sentences": [
+      {
+        "sentence_de": "Wir benutzen das Werkzeug.",
+        "sentence_en": "We use the tool."
+      },
+      {
+        "sentence_de": "Ich benutze mein Handy.",
+        "sentence_en": "I use my phone."
+      }
+    ]
+  },
+  "find": {
+    "translation": "finden",
+    "sentences": [
+      {
+        "sentence_de": "Ich finde das Buch.",
+        "sentence_en": "I find the book."
+      },
+      {
+        "sentence_de": "Wir finden eine Lösung.",
+        "sentence_en": "We find a solution."
+      }
+    ]
+  },
+  "give": {
+    "translation": "geben",
+    "sentences": [
+      {
+        "sentence_de": "Er gibt mir einen Rat.",
+        "sentence_en": "He gives me advice."
+      },
+      {
+        "sentence_de": "Wir geben dir das Geschenk.",
+        "sentence_en": "We give you the gift."
+      }
+    ]
+  },
+  "tell": {
+    "translation": "erzählen",
+    "sentences": [
+      {
+        "sentence_de": "Ich erzähle dir eine Geschichte.",
+        "sentence_en": "I tell you a story."
+      },
+      {
+        "sentence_de": "Sie erzählt uns von ihrem Urlaub.",
+        "sentence_en": "She tells us about her vacation."
+      }
+    ]
+  },
+  "work": {
+    "translation": "arbeiten",
+    "sentences": [
+      {
+        "sentence_de": "Wir arbeiten hart.",
+        "sentence_en": "We work hard."
+      },
+      {
+        "sentence_de": "Ich arbeite von zu Hause.",
+        "sentence_en": "I work from home."
+      }
+    ]
+  },
+  "may": {
+    "translation": "dürfen",
+    "sentences": [
+      {
+        "sentence_de": "Du darfst das nicht tun.",
+        "sentence_en": "You may not do that."
+      },
+      {
+        "sentence_de": "Wir dürfen gehen.",
+        "sentence_en": "We may leave."
+      }
+    ]
+  },
+  "should": {
+    "translation": "sollen",
+    "sentences": [
+      {
+        "sentence_de": "Du sollst mehr lernen.",
+        "sentence_en": "You should study more."
+      },
+      {
+        "sentence_de": "Wir sollen uns an die Regeln halten.",
+        "sentence_en": "We should follow the rules."
+      }
+    ]
+  },
+  "call": {
+    "translation": "rufen",
+    "sentences": [
+      {
+        "sentence_de": "Ich rufe dich später an.",
+        "sentence_en": "I will call you later."
+      },
+      {
+        "sentence_de": "Sie ruft den Arzt.",
+        "sentence_en": "She calls the doctor."
+      }
+    ]
+  },
+  "try": {
+
+
+    "translation": "versuchen",
+    "sentences": [
+      {
+        "sentence_de": "Wir versuchen es noch einmal.",
+        "sentence_en": "We try it again."
+      },
+      {
+        "sentence_de": "Ich versuche, pünktlich zu sein.",
+        "sentence_en": "I try to be on time."
+      }
+    ]
+  },
+  "ask": {
+    "translation": "fragen",
+    "sentences": [
+      {
+        "sentence_de": "Du kannst mich etwas fragen.",
+        "sentence_en": "You can ask me something."
+      },
+      {
+        "sentence_de": "Wir fragen den Lehrer.",
+        "sentence_en": "We ask the teacher."
+      }
+    ]
+  },
+  "need": {
+    "translation": "brauchen",
+    "sentences": [
+      {
+        "sentence_de": "Ich brauche Hilfe.",
+        "sentence_en": "I need help."
+      },
+      {
+        "sentence_de": "Sie brauchen einen Plan.",
+        "sentence_en": "They need a plan."
+      }
+    ]
+  },
+  "feel": {
+    "translation": "fühlen",
+    "sentences": [
+      {
+        "sentence_de": "Ich fühle mich gut.",
+        "sentence_en": "I feel good."
+      },
+      {
+        "sentence_de": "Er fühlt sich krank.",
+        "sentence_en": "He feels sick."
+      }
+    ]
+  },
+  "become": {
+    "translation": "werden",
+    "sentences": [
+      {
+        "sentence_de": "Sie wird Ärztin.",
+        "sentence_en": "She becomes a doctor."
+      },
+      {
+        "sentence_de": "Ich werde müde.",
+        "sentence_en": "I am becoming tired."
+      }
+    ]
+  },
+  "leave": {
+    "translation": "verlassen",
+    "sentences": [
+      {
+        "sentence_de": "Wir verlassen das Gebäude.",
+        "sentence_en": "We leave the building."
+      },
+      {
+        "sentence_de": "Er verlässt die Party.",
+        "sentence_en": "He leaves the party."
+      }
+    ]
+  },
+  "put": {
+    "translation": "legen",
+    "sentences": [
+      {
+        "sentence_de": "Ich lege das Buch auf den Tisch.",
+        "sentence_en": "I put the book on the table."
+      },
+      {
+        "sentence_de": "Du legst die Schlüssel dort hin.",
+        "sentence_en": "You put the keys there."
+      }
+    ]
+  },
+  "mean": {
+    "translation": "meinen",
+    "sentences": [
+      {
+        "sentence_de": "Ich meine, dass es funktioniert.",
+        "sentence_en": "I mean that it works."
+      },
+      {
+        "sentence_de": "Was meinst du damit?",
+        "sentence_en": "What do you mean by that?"
+      }
+    ]
+  },
+  "keep": {
+    "translation": "behalten",
+    "sentences": [
+      {
+        "sentence_de": "Du sollst das Geschenk behalten.",
+        "sentence_en": "You should keep the gift."
+      },
+      {
+        "sentence_de": "Wir behalten diese Informationen.",
+        "sentence_en": "We keep this information."
+      }
+    ]
+  },
+  "let": {
+    "translation": "lassen",
+    "sentences": [
+      {
+        "sentence_de": "Lass uns gehen.",
+        "sentence_en": "Let us go."
+      },
+      {
+        "sentence_de": "Ich lasse das Auto draußen.",
+        "sentence_en": "I leave the car outside."
+      }
+    ]
+  },
+  "begin": {
+    "translation": "beginnen",
+    "sentences": [
+      {
+        "sentence_de": "Wir beginnen um acht Uhr.",
+        "sentence_en": "We start at eight o'clock."
+      },
+      {
+        "sentence_de": "Das Spiel beginnt jetzt.",
+        "sentence_en": "The game begins now."
+      }
+    ]
+  },
+  "seem": {
+    "translation": "scheinen",
+    "sentences": [
+      {
+        "sentence_de": "Es scheint, als ob es regnen wird.",
+        "sentence_en": "It seems like it will rain."
+      },
+      {
+        "sentence_de": "Du scheinst glücklich zu sein.",
+        "sentence_en": "You seem to be happy."
+      }
+    ]
+  },
+  "help": {
+    "translation": "helfen",
+    "sentences": [
+      {
+        "sentence_de": "Ich helfe dir bei den Aufgaben.",
+        "sentence_en": "I help you with the tasks."
+      },
+      {
+        "sentence_de": "Wir helfen der Gemeinde.",
+        "sentence_en": "We help the community."
+      }
+    ]
+  },
+  "talk": {
+    "translation": "reden",
+    "sentences": [
+      {
+        "sentence_de": "Wir reden über das Projekt.",
+        "sentence_en": "We talk about the project."
+      },
+      {
+        "sentence_de": "Ich rede mit meiner Freundin.",
+        "sentence_en": "I talk to my friend."
+      }
+    ]
+  },
+  "turn": {
+    "translation": "drehen",
+    "sentences": [
+      {
+        "sentence_de": "Dreh den Schlüssel im Schloss.",
+        "sentence_en": "Turn the key in the lock."
+      },
+      {
+        "sentence_de": "Ich drehe mich um.",
+        "sentence_en": "I turn around."
+      }
+    ]
+  },
+  "start": {
+    "translation": "starten",
+    "sentences": [
+      {
+        "sentence_de": "Wir starten das Projekt nächste Woche.",
+        "sentence_en": "We start the project next week."
+      },
+      {
+        "sentence_de": "Das Auto startet nicht.",
+        "sentence_en": "The car doesn’t start."
+      }
+    ]
+  },
+  "might": {
+    "translation": "könnte",
+    "sentences": [
+      {
+        "sentence_de": "Es könnte bald regnen.",
+        "sentence_en": "It might rain soon."
+      },
+      {
+        "sentence_de": "Du könntest das gewinnen.",
+        "sentence_en": "You might win that."
+      }
+    ]
+  },
+  "show": {
+    "translation": "zeigen",
+    "sentences": [
+      {
+        "sentence_de": "Er zeigt uns seine Fotos.",
+        "sentence_en": "He shows us his photos."
+      },
+      {
+        "sentence_de": "Ich zeige dir, wie das funktioniert.",
+        "sentence_en": "I will show you how it works."
+      }
+    ]
+  },
+  "hear": {
+    "translation": "hören",
+    "sentences": [
+      {
+        "sentence_de": "Ich höre die Musik.",
+        "sentence_en": "I hear the music."
+      },
+      {
+        "sentence_de": "Wir hören gute Nachrichten.",
+        "sentence_en": "We hear good news."
+      }
+    ]
+  },
+  "play": {
+    "translation": "spielen",
+    "sentences": [
+      {
+        "sentence_de": "Die Kinder spielen im Park.",
+        "sentence_en": "The children play in the park."
+      },
+      {
+        "sentence_de": "Ich spiele Gitarre.",
+        "sentence_en": "I play the guitar."
+      }
+    ]
+  },
+  "run": {
+    "translation": "laufen",
+    "sentences": [
+      {
+        "sentence_de": "Wir laufen jeden Morgen.",
+        "sentence_en": "We run every morning."
+      },
+      {
+        "sentence_de": "Das Wasser läuft schnell.",
+        "sentence_en": "The water runs quickly."
+      }
+    ]
+  },
+  "move": {
+    "translation": "bewegen",
+    "sentences": [
+      {
+        "sentence_de": "Wir bewegen die Möbel.",
+        "sentence_en": "We move the furniture."
+      },
+      {
+        "sentence_de": "Ich bewege mich nicht.",
+        "sentence_en": "I do not move."
+      }
+    ]
+  },
+  "like": {
+    "translation": "mögen",
+    "sentences": [
+      {
+        "sentence_de": "Ich mag diesen Film.",
+        "sentence_en": "I like this movie."
+      },
+      {
+        "sentence_de": "Sie mögen Pizza.",
+        "sentence_en": "They like pizza."
+      }
+    ]
+  },
+  "live": {
+    "translation": "leben",
+    "sentences": [
+      {
+        "sentence_de": "Wir leben in Berlin.",
+        "sentence_en": "We live in Berlin."
+      },
+      {
+        "sentence_de": "Er lebt gesund.",
+        "sentence_en": "He lives healthily."
+      }
+    ]
+  },
+  "believe": {
+    "translation": "glauben",
+    "sentences": [
+      {
+        "sentence_de": "Ich glaube dir.",
+        "sentence_en": "I believe you."
+      },
+      {
+        "sentence_de": "Sie glaubt an Wunder.",
+        "sentence_en": "She believes in miracles."
+      }
+    ]
+  },
+  "hold": {
+    "translation": "halten",
+    "sentences": [
+      {
+        "sentence_de": "Er hält das Glas fest.",
+        "sentence_en": "He holds the glass tightly."
+      },
+      {
+        "sentence_de": "Wir halten das Versprechen.",
+        "sentence_en": "We keep the promise."
+      }
+    ]
+  },
+  "bring": {
+    "translation": "bringen",
+    "sentences": [
+      {
+        "sentence_de": "Ich bringe das Essen mit.",
+
+
+        "sentence_en": "I bring the food."
+      },
+      {
+        "sentence_de": "Wir bringen den Hund zum Tierarzt.",
+        "sentence_en": "We bring the dog to the vet."
+      }
+    ]
+  },
+  "happen": {
+    "translation": "passieren",
+    "sentences": [
+      {
+        "sentence_de": "Was ist passiert?",
+        "sentence_en": "What happened?"
+      },
+      {
+        "sentence_de": "Das passiert selten.",
+        "sentence_en": "That happens rarely."
+      }
+    ]
+  },
+  "must": {
+    "translation": "müssen",
+    "sentences": [
+      {
+        "sentence_de": "Ich muss arbeiten.",
+        "sentence_en": "I must work."
+      },
+      {
+        "sentence_de": "Wir müssen pünktlich sein.",
+        "sentence_en": "We must be on time."
+      }
+    ]
+  },
+  "write": {
+    "translation": "schreiben",
+    "sentences": [
+      {
+        "sentence_de": "Ich schreibe einen Brief.",
+        "sentence_en": "I write a letter."
+      },
+      {
+        "sentence_de": "Sie schreibt eine E-Mail.",
+        "sentence_en": "She writes an email."
+      }
+    ]
+  },
+  "provide": {
+    "translation": "bereitstellen",
+    "sentences": [
+      {
+        "sentence_de": "Wir stellen die Informationen bereit.",
+        "sentence_en": "We provide the information."
+      },
+      {
+        "sentence_de": "Das Unternehmen stellt Ressourcen bereit.",
+        "sentence_en": "The company provides resources."
+      }
+    ]
+  },
+  "sit": {
+    "translation": "sitzen",
+    "sentences": [
+      {
+        "sentence_de": "Ich sitze am Tisch.",
+        "sentence_en": "I sit at the table."
+      },
+      {
+        "sentence_de": "Wir sitzen im Park.",
+        "sentence_en": "We sit in the park."
+      }
+    ]
+  },
+  "stand": {
+    "translation": "stehen",
+    "sentences": [
+      {
+        "sentence_de": "Ich stehe an der Bushaltestelle.",
+        "sentence_en": "I stand at the bus stop."
+      },
+      {
+        "sentence_de": "Sie stehen in der Schlange.",
+        "sentence_en": "They stand in line."
+      }
+    ]
+  },
+  "lose": {
+    "translation": "verlieren",
+    "sentences": [
+      {
+        "sentence_de": "Ich verliere immer meine Schlüssel.",
+        "sentence_en": "I always lose my keys."
+      },
+      {
+        "sentence_de": "Wir haben das Spiel verloren.",
+        "sentence_en": "We lost the game."
+      }
+    ]
+  },
+  "pay": {
+    "translation": "bezahlen",
+    "sentences": [
+      {
+        "sentence_de": "Ich bezahle die Rechnung.",
+        "sentence_en": "I pay the bill."
+      },
+      {
+        "sentence_de": "Wir bezahlen an der Kasse.",
+        "sentence_en": "We pay at the checkout."
+      }
+    ]
+  },
+  "meet": {
+    "translation": "treffen",
+    "sentences": [
+      {
+        "sentence_de": "Wir treffen uns um acht Uhr.",
+        "sentence_en": "We meet at eight o'clock."
+      },
+      {
+        "sentence_de": "Ich treffe meinen Freund.",
+        "sentence_en": "I meet my friend."
+      }
+    ]
+  },
+  "include": {
+    "translation": "einschließen",
+    "sentences": [
+      {
+        "sentence_de": "Das Angebot schließt Versandkosten ein.",
+        "sentence_en": "The offer includes shipping costs."
+      },
+      {
+        "sentence_de": "Wir schließen alle Optionen ein.",
+        "sentence_en": "We include all options."
+      }
+    ]
+  },
+  "continue": {
+    "translation": "fortsetzen",
+    "sentences": [
+      {
+        "sentence_de": "Wir setzen das Gespräch fort.",
+        "sentence_en": "We continue the conversation."
+      },
+      {
+        "sentence_de": "Er setzt seine Arbeit fort.",
+        "sentence_en": "He continues his work."
+      }
+    ]
+  },
+  "set": {
+    "translation": "setzen",
+    "sentences": [
+      {
+        "sentence_de": "Ich setze mich auf den Stuhl.",
+        "sentence_en": "I sit down on the chair."
+      },
+      {
+        "sentence_de": "Wir setzen das Meeting auf nächste Woche.",
+        "sentence_en": "We set the meeting for next week."
+      }
+    ]
+  },
+  "learn": {
+    "translation": "lernen",
+    "sentences": [
+      {
+        "sentence_de": "Ich lerne Deutsch.",
+        "sentence_en": "I am learning German."
+      },
+      {
+        "sentence_de": "Wir lernen für die Prüfung.",
+        "sentence_en": "We study for the exam."
+      }
+    ]
+  },
+  "change": {
+    "translation": "ändern",
+    "sentences": [
+      {
+        "sentence_de": "Ich ändere meine Meinung.",
+        "sentence_en": "I change my mind."
+      },
+      {
+        "sentence_de": "Wir ändern den Plan.",
+        "sentence_en": "We change the plan."
+      }
+    ]
+  },
+  "lead": {
+    "translation": "führen",
+    "sentences": [
+      {
+        "sentence_de": "Er führt das Team.",
+        "sentence_en": "He leads the team."
+      },
+      {
+        "sentence_de": "Wir führen ein Projekt.",
+        "sentence_en": "We lead a project."
+      }
+    ]
+  },
+  "understand": {
+    "translation": "verstehen",
+    "sentences": [
+      {
+        "sentence_de": "Ich verstehe die Frage.",
+        "sentence_en": "I understand the question."
+      },
+      {
+        "sentence_de": "Wir verstehen die Situation.",
+        "sentence_en": "We understand the situation."
+      }
+    ]
+  },
+  "watch": {
+    "translation": "sehen",
+    "sentences": [
+      {
+        "sentence_de": "Ich sehe einen Film.",
+        "sentence_en": "I watch a movie."
+      },
+      {
+        "sentence_de": "Wir sehen die Nachricht.",
+        "sentence_en": "We watch the news."
+      }
+    ]
+  },
+  "follow": {
+    "translation": "folgen",
+    "sentences": [
+      {
+        "sentence_de": "Wir folgen den Anweisungen.",
+        "sentence_en": "We follow the instructions."
+      },
+      {
+        "sentence_de": "Er folgt dem Weg.",
+        "sentence_en": "He follows the path."
+      }
+    ]
+  },
+  "stop": {
+    "translation": "stoppen",
+    "sentences": [
+      {
+        "sentence_de": "Bitte stoppen Sie hier.",
+        "sentence_en": "Please stop here."
+      },
+      {
+        "sentence_de": "Wir stoppen die Arbeit für heute.",
+        "sentence_en": "We stop working for today."
+      }
+    ]
+  },
+  "create": {
+    "translation": "erschaffen",
+    "sentences": [
+      {
+        "sentence_de": "Wir erschaffen neue Ideen.",
+        "sentence_en": "We create new ideas."
+      },
+      {
+        "sentence_de": "Er erschafft ein Kunstwerk.",
+        "sentence_en": "He creates a work of art."
+      }
+    ]
+  },
+  "speak": {
+    "translation": "sprechen",
+    "sentences": [
+      {
+        "sentence_de": "Ich spreche Deutsch.",
+        "sentence_en": "I speak German."
+      },
+      {
+        "sentence_de": "Wir sprechen über das Problem.",
+        "sentence_en": "We talk about the problem."
+      }
+    ]
+  },
+  "read": {
+    "translation": "lesen",
+    "sentences": [
+      {
+        "sentence_de": "Ich lese ein Buch.",
+        "sentence_en": "I read a book."
+      },
+      {
+        "sentence_de": "Wir lesen die Anweisungen.",
+        "sentence_en": "We read the instructions."
+      }
+    ]
+  },
+  "allow": {
+    "translation": "erlauben",
+    "sentences": [
+      {
+        "sentence_de": "Wir erlauben den Zugang.",
+        "sentence_en": "We allow access."
+      },
+      {
+        "sentence_de": "Du darfst gehen, wenn du willst.",
+        "sentence_en": "You are allowed to leave if you want."
+      }
+    ]
+  },
+  "add": {
+    "translation": "hinzufügen",
+    "sentences": [
+      {
+        "sentence_de": "Ich füge Zucker hinzu.",
+        "sentence_en": "I add sugar."
+      },
+      {
+        "sentence_de": "Wir fügen eine neue Funktion hinzu.",
+        "sentence_en": "We add a new feature."
+      }
+    ]
+  },
+  "spend": {
+    "translation": "ausgeben",
+    "sentences": [
+      {
+        "sentence_de": "Ich gebe viel Geld aus.",
+        "sentence_en": "I spend a lot of money."
+      },
+      {
+        "sentence_de": "Wir geben Zeit für das Projekt aus.",
+        "sentence_en": "We spend time on the project."
+      }
+    ]
+  },
+  "grow": {
+    "translation": "wachsen",
+    "sentences": [
+      {
+        "sentence_de": "Die Pflanzen wachsen schnell.",
+        "sentence_en": "The plants grow quickly."
+
+
+      },
+      {
+        "sentence_de": "Er wächst schnell heran.",
+        "sentence_en": "He grows up quickly."
+      }
+    ]
+  },
+  "open": {
+    "translation": "öffnen",
+    "sentences": [
+      {
+        "sentence_de": "Ich öffne das Fenster.",
+        "sentence_en": "I open the window."
+      },
+      {
+        "sentence_de": "Wir öffnen die Tür.",
+        "sentence_en": "We open the door."
+      }
+    ]
+  },
+  "walk": {
+    "translation": "gehen",
+    "sentences": [
+      {
+        "sentence_de": "Ich gehe jeden Morgen spazieren.",
+        "sentence_en": "I walk every morning."
+      },
+      {
+        "sentence_de": "Wir gehen zum Park.",
+        "sentence_en": "We walk to the park."
+      }
+    ]
+  },
+  "win": {
+    "translation": "gewinnen",
+    "sentences": [
+      {
+        "sentence_de": "Ich gewinne das Spiel.",
+        "sentence_en": "I win the game."
+      },
+      {
+        "sentence_de": "Wir gewinnen den Wettbewerb.",
+        "sentence_en": "We win the competition."
+      }
+    ]
+  },
+  "offer": {
+    "translation": "anbieten",
+    "sentences": [
+      {
+        "sentence_de": "Ich biete dir meine Hilfe an.",
+        "sentence_en": "I offer you my help."
+      },
+      {
+        "sentence_de": "Wir bieten verschiedene Dienstleistungen an.",
+        "sentence_en": "We offer various services."
+      }
+    ]
+  },
+  "remember": {
+    "translation": "erinnern",
+    "sentences": [
+      {
+        "sentence_de": "Ich erinnere mich an den Termin.",
+        "sentence_en": "I remember the appointment."
+      },
+      {
+        "sentence_de": "Wir erinnern uns an die Regeln.",
+        "sentence_en": "We remember the rules."
+      }
+    ]
+  },
+  "love": {
+    "translation": "lieben",
+    "sentences": [
+      {
+        "sentence_de": "Ich liebe diesen Film.",
+        "sentence_en": "I love this movie."
+      },
+      {
+        "sentence_de": "Sie liebt ihren Hund.",
+        "sentence_en": "She loves her dog."
+      }
+    ]
+  },
+  "consider": {
+    "translation": "berücksichtigen",
+    "sentences": [
+      {
+        "sentence_de": "Ich berücksichtige deine Meinung.",
+        "sentence_en": "I consider your opinion."
+      },
+      {
+        "sentence_de": "Wir berücksichtigen alle Optionen.",
+        "sentence_en": "We consider all options."
+      }
+    ]
+  },
+  "appear": {
+    "translation": "erscheinen",
+    "sentences": [
+      {
+        "sentence_de": "Er erscheint pünktlich.",
+        "sentence_en": "He appears on time."
+      },
+      {
+        "sentence_de": "Das Problem erscheint kompliziert.",
+        "sentence_en": "The problem appears complicated."
+      }
+    ]
+  },
+  "buy": {
+    "translation": "kaufen",
+    "sentences": [
+      {
+        "sentence_de": "Ich kaufe ein neues Auto.",
+        "sentence_en": "I buy a new car."
+      },
+      {
+        "sentence_de": "Wir kaufen Lebensmittel.",
+        "sentence_en": "We buy groceries."
+      }
+    ]
+  },
+  "wait": {
+    "translation": "warten",
+    "sentences": [
+      {
+        "sentence_de": "Ich warte auf den Bus.",
+        "sentence_en": "I wait for the bus."
+      },
+      {
+        "sentence_de": "Wir warten auf deine Antwort.",
+        "sentence_en": "We wait for your reply."
+      }
+    ]
+  },
+  "serve": {
+    "translation": "bedienen",
+    "sentences": [
+      {
+        "sentence_de": "Ich bediene die Kunden.",
+        "sentence_en": "I serve the customers."
+      },
+      {
+        "sentence_de": "Wir bedienen das Mittagessen.",
+        "sentence_en": "We serve lunch."
+      }
+    ]
+  },
+  "die": {
+    "translation": "sterben",
+    "sentences": [
+      {
+        "sentence_de": "Der Patient stirbt leider.",
+        "sentence_en": "The patient unfortunately dies."
+      },
+      {
+        "sentence_de": "Wir sterben nicht an den Folgen.",
+        "sentence_en": "We do not die from the consequences."
+      }
+    ]
+  },
+  "send": {
+    "translation": "senden",
+    "sentences": [
+      {
+        "sentence_de": "Ich sende die E-Mail.",
+        "sentence_en": "I send the email."
+      },
+      {
+        "sentence_de": "Wir senden das Paket.",
+        "sentence_en": "We send the package."
+      }
+    ]
+  },
+  "expect": {
+    "translation": "erwarten",
+    "sentences": [
+      {
+        "sentence_de": "Ich erwarte deine Antwort.",
+        "sentence_en": "I expect your reply."
+      },
+      {
+        "sentence_de": "Wir erwarten eine Lieferung.",
+        "sentence_en": "We expect a delivery."
+      }
+    ]
+  },
+  "build": {
+    "translation": "bauen",
+    "sentences": [
+      {
+        "sentence_de": "Wir bauen ein neues Haus.",
+        "sentence_en": "We build a new house."
+      },
+      {
+        "sentence_de": "Ich baue ein Modell.",
+        "sentence_en": "I build a model."
+      }
+    ]
+  },
+  "stay": {
+    "translation": "bleiben",
+    "sentences": [
+      {
+        "sentence_de": "Ich bleibe zu Hause.",
+        "sentence_en": "I stay at home."
+      },
+      {
+        "sentence_de": "Wir bleiben bis zum Abend.",
+        "sentence_en": "We stay until the evening."
+      }
+    ]
+  },
+  "fall": {
+    "translation": "fallen",
+    "sentences": [
+      {
+        "sentence_de": "Die Blätter fallen vom Baum.",
+        "sentence_en": "The leaves fall from the tree."
+      },
+      {
+        "sentence_de": "Er fällt auf den Boden.",
+        "sentence_en": "He falls to the ground."
+      }
+    ]
+  },
+  "cut": {
+    "translation": "schneiden",
+    "sentences": [
+      {
+        "sentence_de": "Ich schneide das Papier.",
+        "sentence_en": "I cut the paper."
+      },
+      {
+        "sentence_de": "Wir schneiden die Blumen.",
+        "sentence_en": "We cut the flowers."
+      }
+    ]
+  },
+  "reach": {
+    "translation": "erreichen",
+    "sentences": [
+      {
+        "sentence_de": "Ich erreiche den Zielort.",
+        "sentence_en": "I reach the destination."
+      },
+      {
+        "sentence_de": "Wir erreichen unser Ziel.",
+        "sentence_en": "We reach our goal."
+      }
+    ]
+  },
+  "kill": {
+    "translation": "töten",
+    "sentences": [
+      {
+        "sentence_de": "Er tötet den Virus.",
+        "sentence_en": "He kills the virus."
+      },
+      {
+        "sentence_de": "Wir töten keine Tiere.",
+        "sentence_en": "We do not kill animals."
+      }
+    ]
+  },
+  "remain": {
+    "translation": "bleiben",
+    "sentences": [
+      {
+        "sentence_de": "Ich bleibe ruhig.",
+        "sentence_en": "I remain calm."
+      },
+      {
+        "sentence_de": "Wir bleiben hier bis morgen.",
+        "sentence_en": "We remain here until tomorrow."
+      }
+    ]
+  },
+  "other": {
+    "translation": "andere",
+    "sentences": [
+      {
+        "sentence_de": "Ich habe andere Pläne.",
+        "sentence_en": "I have other plans."
+      },
+      {
+        "sentence_de": "Wir suchen nach anderen Möglichkeiten.",
+        "sentence_en": "We are looking for other options."
+      }
+    ]
+  },
+  "new": {
+    "translation": "neu",
+    "sentences": [
+      {
+        "sentence_de": "Ich habe ein neues Auto.",
+        "sentence_en": "I have a new car."
+      },
+      {
+        "sentence_de": "Wir beginnen ein neues Projekt.",
+        "sentence_en": "We start a new project."
+      }
+    ]
+  },
+  "good": {
+    "translation": "gut",
+    "sentences": [
+      {
+        "sentence_de": "Das Wetter ist gut.",
+        "sentence_en": "The weather is good."
+      },
+      {
+        "sentence_de": "Wir machen gute Fortschritte.",
+        "sentence_en": "We are making good progress."
+      }
+    ]
+  },
+  "high": {
+    "translation": "hoch",
+    "sentences": [
+      {
+        "sentence_de": "Der Berg ist hoch.",
+        "sentence_en": "The mountain is high."
+      },
+      {
+        "sentence_de": "Wir haben hohe Erwartungen.",
+        "sentence_en": "We have high expectations."
+      }
+    ]
+  },
+  "old": {
+    "translation": "alt",
+    "sentences": [
+      {
+        "sentence_de": "Das Haus ist alt.",
+        "sentence_en": "The house is old."
+      },
+      {
+        "sentence_de": "Wir haben alte Freunde getroffen.",
+        "sentence_en": "We met old friends."
+      }
+    ]
+  },
+  "great": {
+    "translation": "großartig",
+    "sentences": [
+      {
+        "sentence_de": "Das Konzert war großartig.",
+        "sentence_en": "The concert was great."
+      },
+      {
+        "sentence_de": "Wir haben eine großartige Zeit.",
+        "sentence_en": "We are having a great time."
+      }
+    ]
+  },
+  "big": {
+    "translation": "groß",
+    "sentences": [
+      {
+        "sentence_de": "Der Hund ist groß.",
+        "sentence_en": "The dog is big."
+      },
+      {
+        "sentence_de": "Wir haben ein großes Haus.",
+        "sentence_en": "We have a big house."
+      }
+    ]
+  },
+  "American": {
+    "translation": "amerikanisch",
+    "sentences": [
+      {
+        "sentence_de": "Das ist ein amerikanisches Restaurant.",
+        "sentence_en": "This is an American restaurant."
+      },
+      {
+        "sentence_de": "Wir sehen einen amerikanischen Film.",
+        "sentence_en": "We are watching an American movie."
+      }
+    ]
+  },
+  "small": {
+    "translation": "klein",
+    "sentences": [
+      {
+        "sentence_de": "Das Zimmer ist klein.",
+        "sentence_en": "The room is small."
+      },
+      {
+        "sentence_de": "Wir haben einen kleinen Hund.",
+        "sentence_en": "We have a small dog."
+      }
+    ]
+  },
+  "large": {
+    "translation": "groß",
+    "sentences": [
+      {
+        "sentence_de": "Der Fernseher ist groß.",
+        "sentence_en": "The TV is large."
+      },
+      {
+        "sentence_de": "Wir haben ein großes Grundstück.",
+        "sentence_en": "We have a large property."
+      }
+    ]
+  },
+  "national": {
+    "translation": "national",
+    "sentences": [
+      {
+        "sentence_de": "Das ist eine nationale Feiertag.",
+        "sentence_en": "It's a national holiday."
+      },
+      {
+        "sentence_de": "Wir unterstützen nationale Interessen.",
+        "sentence_en": "We support national interests."
+      }
+    ]
+  },
+  "young": {
+    "translation": "jung",
+    "sentences": [
+      {
+        "sentence_de": "Er ist noch jung.",
+        "sentence_en": "He is still young."
+      },
+      {
+        "sentence_de": "Wir sind jung und dynamisch.",
+        "sentence_en": "We are young and dynamic."
+      }
+    ]
+  },
+  "different": {
+    "translation": "anders",
+    "sentences": [
+      {
+        "sentence_de": "Wir haben andere Meinungen.",
+        "sentence_en": "We have different opinions."
+      },
+      {
+        "sentence_de": "Das ist eine andere Idee.",
+        "sentence_en": "That is a different idea."
+      }
+    ]
+  },
+  "black": {
+    "translation": "schwarz",
+    "sentences": [
+      {
+        "sentence_de": "Das Auto ist schwarz.",
+        "sentence_en": "The car is black."
+      },
+      {
+        "sentence_de": "Wir tragen schwarze Kleidung.",
+        "sentence_en": "We wear black clothes."
+      }
+    ]
+  },
+  "long": {
+    "translation": "lang",
+    "sentences": [
+      {
+        "sentence_de": "Der Weg ist lang.",
+        "sentence_en": "The road is long."
+      },
+      {
+        "sentence_de": "Wir haben lange gewartet.",
+        "sentence_en": "We waited a long time."
+      }
+    ]
+  },
+  "little": {
+    "translation": "klein",
+    "sentences": [
+      {
+        "sentence_de": "Ich habe einen kleinen Hund.",
+        "sentence_en": "I have a little dog."
+      },
+      {
+        "sentence_de": "Wir brauchen ein wenig Zeit.",
+        "sentence_en": "We need a little time."
+      }
+    ]
+  },
+  "important": {
+    "translation": "wichtig",
+    "sentences": [
+      {
+        "sentence_de": "Das ist ein wichtiger Termin.",
+        "sentence_en": "That is an important appointment."
+      },
+      {
+        "sentence_de": "Wir haben wichtige Informationen.",
+        "sentence_en": "We have important information."
+      }
+    ]
+  },
+  "political": {
+    "translation": "politisch",
+    "sentences": [
+      {
+        "sentence_de": "Das ist eine politische Frage.",
+        "sentence_en": "That is a political question."
+      },
+      {
+        "sentence_de": "Wir diskutieren politische Themen.",
+        "sentence_en": "We discuss political issues."
+      }
+    ]
+  },
+  "bad": {
+    "translation": "schlecht",
+    "sentences": [
+      {
+        "sentence_de": "Das Wetter ist schlecht.",
+        "sentence_en": "The weather is bad."
+      },
+      {
+        "sentence_de": "Wir haben eine schlechte Nachricht.",
+        "sentence_en": "We have bad news."
+      }
+    ]
+  },
+  "white": {
+    "translation": "weiß",
+    "sentences": [
+      {
+        "sentence_de": "Das Papier ist weiß.",
+        "sentence_en": "The paper is white."
+      },
+      {
+        "sentence_de": "Wir tragen weiße Kleidung.",
+        "sentence_en": "We wear white clothes."
+      }
+    ]
+  },
+  "real": {
+    "translation": "echt",
+    "sentences": [
+      {
+        "sentence_de": "Das ist ein echtes Problem.",
+        "sentence_en": "That is a real problem."
+      },
+      {
+        "sentence_de": "Wir sehen echte Fortschritte.",
+        "sentence_en": "We see real progress."
+      }
+    ]
+  },
+  "best": {
+    "translation": "beste",
+    "sentences": [
+      {
+        "sentence_de": "Das ist die beste Wahl.",
+        "sentence_en": "That is the best choice."
+      },
+      {
+        "sentence_de": "Wir haben die beste Lösung gefunden.",
+        "sentence_en": "We have found the best solution."
+      }
+    ]
+  },
+  "right": {
+    "translation": "richtig",
+    "sentences": [
+      {
+        "sentence_de": "Das ist die richtige Antwort.",
+        "sentence_en": "That is the right answer."
+      },
+      {
+        "sentence_de": "Wir müssen den richtigen Weg finden.",
+        "sentence_en": "We need to find the right way."
+      }
+    ]
+  },
+  "social": {
+    "translation": "sozial",
+    "sentences": [
+      {
+        "sentence_de": "Das ist eine soziale Angelegenheit.",
+        "sentence_en": "That is a social issue."
+      },
+      {
+        "sentence_de": "Wir engagieren uns in sozialen Projekten.",
+        "sentence_en": "We engage in social projects."
+      }
+    ]
+  },
+  "only": {
+    "translation": "einzig",
+    "sentences": [
+      {
+        "sentence_de": "Das ist die einzige Option.",
+        "sentence_en": "That is the only option."
+      },
+      {
+        "sentence_de": "Wir haben nur eine Chance.",
+        "sentence_en": "We have only one chance."
+      }
+    ]
+  },
+  "public": {
+    "translation": "öffentlich",
+    "sentences": [
+      {
+        "sentence_de": "Das ist eine öffentliche Veranstaltung.",
+        "sentence_en": "That is a public event."
+      },
+      {
+        "sentence_de": "Wir gehen in den öffentlichen Park.",
+        "sentence_en": "We go to the public park."
+      }
+    ]
+  },
+  "sure": {
+    "translation": "sicher",
+    "sentences": [
+      {
+        "sentence_de": "Ich bin mir sicher.",
+        "sentence_en": "I am sure."
+      },
+      {
+        "sentence_de": "Wir sind sicher, dass wir gewinnen.",
+        "sentence_en": "We are sure that we will win."
+      }
+    ]
+  },
+  "low": {
+    "translation": "niedrig",
+    "sentences": [
+      {
+        "sentence_de": "Die Temperatur ist niedrig.",
+        "sentence_en": "The temperature is low."
+      },
+      {
+        "sentence_de": "Wir haben niedrige Kosten.",
+        "sentence_en": "We have low costs."
+      }
+    ]
+  },
+  "early": {
+    "translation": "früh",
+    "sentences": [
+      {
+        "sentence_de": "Ich bin früh aufgestanden.",
+        "sentence_en": "I got up early."
+      },
+      {
+        "sentence_de": "Wir kommen früh an.",
+        "sentence_en": "We arrive early."
+      }
+    ]
+  },
+  "able": {
+    "translation": "fähig",
+    "sentences": [
+      {
+        "sentence_de": "Ich bin fähig, das zu tun.",
+        "sentence_en": "I am able to do that."
+      },
+      {
+        "sentence_de": "Wir sind fähig, das Projekt abzuschließen.",
+        "sentence_en": "We are able to complete the project."
+      }
+    ]
+  },
+  "human": {
+    "translation": "menschlich",
+    "sentences": [
+      {
+        "sentence_de": "Das ist eine menschliche Reaktion.",
+        "sentence_en": "That is a human reaction."
+      },
+      {
+        "sentence_de": "Wir haben menschliche Werte.",
+        "sentence_en": "We have human values."
+      }
+    ]
+  },
+  "local": {
+    "translation": "lokal",
+    "sentences": [
+      {
+        "sentence_de": "Wir kaufen lokal ein.",
+        "sentence_en": "We shop locally."
+      },
+      {
+        "sentence_de": "Das ist ein lokales Problem.",
+        "sentence_en": "That is a local issue."
+      }
+    ]
+  },
+  "late": {
+    "translation": "spät",
+    "sentences": [
+      {
+        "sentence_de": "Ich komme spät nach Hause.",
+        "sentence_en": "I come home late."
+      },
+      {
+        "sentence_de": "Wir sind spät dran.",
+        "sentence_en": "We are running late."
+      }
+    ]
+  },
+  "hard": {
+    "translation": "schwierig",
+    "sentences": [
+      {
+        "sentence_de": "Die Aufgabe ist schwierig.",
+        "sentence_en": "The task is hard."
+      },
+      {
+        "sentence_de": "Wir arbeiten hart an dem Projekt.",
+        "sentence_en": "We work hard on the project."
+      }
+    ]
+  },
+  "major": {
+    "translation": "wichtig",
+    "sentences": [
+      {
+        "sentence_de": "Das ist ein wichtiges Ereignis.",
+        "sentence_en": "That is a major event."
+      },
+      {
+        "sentence_de": "Wir haben wichtige Veränderungen vorgenommen.",
+        "sentence_en": "We have made major changes."
+      }
+    ]
+  },
+  "better": {
+    "translation": "besser",
+    "sentences": [
+      {
+        "sentence_de": "Das ist eine bessere Lösung.",
+        "sentence_en": "That is a better solution."
+      },
+      {
+        "sentence_de": "Wir haben bessere Ergebnisse erzielt.",
+        "sentence_en": "We have achieved better results."
+      }
+    ]
+  },
+  "economic": {
+    "translation": "wirtschaftlich",
+    "sentences": [
+      {
+        "sentence_de": "Das hat wirtschaftliche Auswirkungen.",
+        "sentence_en": "That has economic implications."
+      },
+      {
+        "sentence_de": "Wir analysieren wirtschaftliche Trends.",
+        "sentence_en": "We analyze economic trends."
+      }
+    ]
+  },
+  "strong": {
+    "translation": "stark",
+    "sentences": [
+      {
+        "sentence_de": "Das Gebäude ist stark.",
+        "sentence_en": "The building is strong."
+      },
+      {
+        "sentence_de": "Wir haben starke Argumente.",
+        "sentence_en": "We have strong arguments."
+      }
+    ]
+  },
+  "possible": {
+    "translation": "möglich",
+    "sentences": [
+      {
+        "sentence_de": "Es ist möglich, dass es regnet.",
+        "sentence_en": "It is possible that it will rain."
+      },
+      {
+        "sentence_de": "Wir werden sehen, was möglich ist.",
+        "sentence_en": "We will see what is possible."
+      }
+    ]
+  },
+  "whole": {
+    "translation": "ganz",
+    "sentences": [
+      {
+        "sentence_de": "Das ist ein ganzes Buch.",
+        "sentence_en": "That is a whole book."
+      },
+      {
+        "sentence_de": "Wir haben den ganzen Tag gearbeitet.",
+        "sentence_en": "We worked the whole day."
+      }
+    ]
+  },
+  "free": {
+    "translation": "frei",
+    "sentences": [
+      {
+        "sentence_de": "Wir haben freien Eintritt.",
+        "sentence_en": "We have free admission."
+      },
+      {
+        "sentence_de": "Ich fühle mich frei.",
+        "sentence_en": "I feel free."
+      }
+    ]
+  },
+  "military": {
+    "translation": "militärisch",
+    "sentences": [
+      {
+        "sentence_de": "Das ist eine militärische Übung.",
+        "sentence_en": "That is a military exercise."
+      },
+      {
+        "sentence_de": "Wir diskutieren militärische Fragen.",
+        "sentence_en": "We discuss military issues."
+      }
+    ]
+  },
+  "true": {
+    "translation": "wahr",
+    "sentences": [
+      {
+        "sentence_de": "Das ist eine wahre Geschichte.",
+        "sentence_en": "That is a true story."
+      },
+      {
+        "sentence_de": "Wir wissen, dass es wahr ist.",
+        "sentence_en": "We know that it is true."
+      }
+    ]
+  },
+  "federal": {
+    "translation": "föderal",
+    "sentences": [
+      {
+        "sentence_de": "Das ist eine föderale Regierung.",
+        "sentence_en": "That is a federal government."
+      },
+      {
+        "sentence_de": "Wir arbeiten mit föderalen Behörden.",
+        "sentence_en": "We work with federal authorities."
+      }
+    ]
+  },
+  "international": {
+    "translation": "international",
+    "sentences": [
+      {
+        "sentence_de": "Wir haben internationale Beziehungen.",
+        "sentence_en": "We have international relations."
+      },
+      {
+        "sentence_de": "Das ist eine internationale Konferenz.",
+        "sentence_en": "That is an international conference."
+      }
+    ]
+  },
+  "full": {
+    "translation": "voll",
+    "sentences": [
+      {
+        "sentence_de": "Das Glas ist voll.",
+        "sentence_en": "The glass is full."
+      },
+      {
+        "sentence_de": "Wir haben einen vollen Zeitplan.",
+        "sentence_en": "We have a full schedule."
+      }
+    ]
+  },
+  "special": {
+    "translation": "besonders",
+    "sentences": [
+      {
+        "sentence_de": "Das ist ein besonderes Geschenk.",
+        "sentence_en": "That is a special gift."
+      },
+      {
+        "sentence_de": "Wir haben ein besonderes Angebot.",
+        "sentence_en": "We have a special offer."
+      }
+    ]
+  },
+  "easy": {
+    "translation": "einfach",
+    "sentences": [
+      {
+        "sentence_de": "Die Aufgabe ist einfach.",
+        "sentence_en": "The task is easy."
+      },
+      {
+        "sentence_de": "Wir finden es einfach, das Problem zu lösen.",
+        "sentence_en": "We find it easy to solve the problem."
+      }
+    ]
+  },
+  "clear": {
+    "translation": "klar",
+    "sentences": [
+      {
+        "sentence_de": "Der Himmel ist klar.",
+        "sentence_en": "The sky is clear."
+      },
+      {
+        "sentence_de": "Wir haben eine klare Vorstellung.",
+        "sentence_en": "We have a clear idea."
+      }
+    ]
+  },
+  "recent": {
+    "translation": "aktuell",
+    "sentences": [
+      {
+        "sentence_de": "Das ist eine aktuelle Nachricht.",
+        "sentence_en": "That is a recent news."
+      },
+      {
+        "sentence_de": "Wir haben aktuelle Informationen.",
+        "sentence_en": "We have recent information."
+      }
+    ]
+  },
+  "certain": {
+    "translation": "gewiss",
+    "sentences": [
+      {
+        "sentence_de": "Wir sind uns dessen gewiss.",
+        "sentence_en": "We are certain of that."
+      },
+      {
+        "sentence_de": "Es ist gewiss, dass er kommt.",
+        "sentence_en": "It is certain that he will come."
+      }
+    ]
+  },
+  "personal": {
+    "translation": "persönlich",
+    "sentences": [
+      {
+        "sentence_de": "Das ist eine persönliche Angelegenheit.",
+        "sentence_en": "That is a personal matter."
+      },
+      {
+        "sentence_de": "Wir haben persönliche Gespräche geführt.",
+        "sentence_en": "We had personal conversations."
+      }
+    ]
+  },
+  "red": {
+    "translation": "rot",
+    "sentences": [
+      {
+        "sentence_de": "Das Auto ist rot.",
+        "sentence_en": "The car is red."
+      },
+      {
+        "sentence_de": "Wir tragen rote Kleider.",
+        "sentence_en": "We wear red dresses."
+      }
+    ]
+  },
+  "difficult": {
+    "translation": "schwierig",
+    "sentences": [
+      {
+        "sentence_de": "Die Prüfung ist schwierig.",
+        "sentence_en": "The exam is difficult."
+      },
+      {
+        "sentence_de": "Wir haben eine schwierige Aufgabe.",
+        "sentence_en": "We have a difficult task."
+      }
+    ]
+  },
+  "available": {
+    "translation": "verfügbar",
+    "sentences": [
+      {
+        "sentence_de": "Das Zimmer ist verfügbar.",
+        "sentence_en": "The room is available."
+      },
+      {
+        "sentence_de": "Wir sind jederzeit verfügbar.",
+        "sentence_en": "We are available at any time."
+      }
+    ]
+  },
+  "likely": {
+    "translation": "wahrscheinlich",
+    "sentences": [
+      {
+        "sentence_de": "Es ist wahrscheinlich, dass es regnet.",
+        "sentence_en": "It is likely to rain."
+      },
+      {
+        "sentence_de": "Wir werden wahrscheinlich gewinnen.",
+        "sentence_en": "We are likely to win."
+      }
+    ]
+  },
+  "short": {
+    "translation": "kurz",
+    "sentences": [
+      {
+        "sentence_de": "Der Film ist kurz.",
+        "sentence_en": "The movie is short."
+      },
+      {
+        "sentence_de": "Wir haben eine kurze Pause.",
+        "sentence_en": "We have a short break."
+      }
+    ]
+  },
+  "medical": {
+    "translation": "medizinisch",
+    "sentences": [
+      {
+        "sentence_de": "Das ist eine medizinische Untersuchung.",
+        "sentence_en": "That is a medical examination."
+      },
+      {
+        "sentence_de": "Wir haben medizinische Ausrüstung.",
+        "sentence_en": "We have medical equipment."
+      }
+    ]
+  },
+  "current": {
+    "translation": "aktuell",
+    "sentences": [
+      {
+        "sentence_de": "Das sind aktuelle Informationen.",
+        "sentence_en": "These are current information."
+      },
+      {
+        "sentence_de": "Wir verfolgen die aktuellen Ereignisse.",
+        "sentence_en": "We are following the current events."
+      }
+    ]
+  },
+  "wrong": {
+    "translation": "falsch",
+    "sentences": [
+      {
+        "sentence_de": "Das ist die falsche Antwort.",
+        "sentence_en": "That is the wrong answer."
+      },
+      {
+        "sentence_de": "Wir haben einen falschen Weg gewählt.",
+        "sentence_en": "We chose the wrong path."
+      }
+    ]
+  },
+  "private": {
+    "translation": "privat",
+    "sentences": [
+      {
+        "sentence_de": "Das ist eine private Angelegenheit.",
+        "sentence_en": "That is a private matter."
+      },
+      {
+        "sentence_de": "Wir haben ein privates Gespräch geführt.",
+        "sentence_en": "We had a private conversation."
+      }
+    ]
+  },
+  "past": {
+    "translation": "vergangen",
+    "sentences": [
+      {
+        "sentence_de": "Das ist vergangene Geschichte.",
+        "sentence_en": "That is past history."
+      },
+      {
+        "sentence_de": "Wir haben über vergangene Ereignisse gesprochen.",
+        "sentence_en": "We talked about past events."
+      }
+    ]
+  },
+  "foreign": {
+    "translation": "fremd",
+    "sentences": [
+      {
+        "sentence_de": "Das ist eine fremde Sprache.",
+        "sentence_en": "That is a foreign language."
+      },
+      {
+        "sentence_de": "Wir haben mit einem fremden Land verhandelt.",
+        "sentence_en": "We negotiated with a foreign country."
+      }
+    ]
+  },
+  "fine": {
+    "translation": "gut",
+    "sentences": [
+      {
+        "sentence_de": "Das ist eine gute Idee.",
+        "sentence_en": "That is a fine idea."
+      },
+      {
+        "sentence_de": "Wir haben eine gute Lösung gefunden.",
+        "sentence_en": "We found a fine solution."
+      }
+    ]
+  },
+  "common": {
+    "translation": "häufig",
+    "sentences": [
+      {
+        "sentence_de": "Das ist ein häufiges Problem.",
+        "sentence_en": "That is a common problem."
+      },
+      {
+        "sentence_de": "Wir haben häufige Besprechungen.",
+        "sentence_en": "We have common meetings."
+      }
+    ]
+  },
+  "poor": {
+    "translation": "arm",
+    "sentences": [
+      {
+        "sentence_de": "Das ist eine arme Familie.",
+        "sentence_en": "That is a poor family."
+      },
+      {
+        "sentence_de": "Wir leben in einem armen Viertel.",
+        "sentence_en": "We live in a poor neighborhood."
+      }
+    ]
+  },
+  "natural": {
+    "translation": "natürlich",
+    "sentences": [
+      {
+        "sentence_de": "Das ist eine natürliche Ressource.",
+        "sentence_en": "That is a natural resource."
+      },
+      {
+        "sentence_de": "Wir genießen die natürliche Schönheit.",
+        "sentence_en": "We enjoy the natural beauty."
+      }
+    ]
+  },
+  "significant": {
+    "translation": "bedeutend",
+    "sentences": [
+      {
+        "sentence_de": "Das ist eine bedeutende Entdeckung.",
+        "sentence_en": "That is a significant discovery."
+      },
+      {
+        "sentence_de": "Wir haben bedeutende Fortschritte gemacht.",
+        "sentence_en": "We have made significant progress."
+      }
+    ]
+  },
+  "similar": {
+    "translation": "ähnlich",
+    "sentences": [
+      {
+        "sentence_de": "Das ist ein ähnliches Problem.",
+        "sentence_en": "That is a similar problem."
+      },
+      {
+        "sentence_de": "Wir haben ähnliche Erfahrungen gemacht.",
+        "sentence_en": "We had similar experiences."
+      }
+    ]
+  },
+  "hot": {
+    "translation": "heiß",
+    "sentences": [
+      {
+        "sentence_de": "Das Wetter ist heiß.",
+        "sentence_en": "The weather is hot."
+      },
+      {
+        "sentence_de": "Wir essen scharfes, heißes Essen.",
+        "sentence_en": "We eat spicy, hot food."
+      }
+    ]
+  },
+  "dead": {
+    "translation": "tot",
+    "sentences": [
+      {
+        "sentence_de": "Der Baum ist tot.",
+        "sentence_en": "The tree is dead."
+      },
+      {
+        "sentence_de": "Wir haben den Moment der Stille genossen.",
+        "sentence_en": "We enjoyed the moment of silence."
+      }
+    ]
+  },
+  "central": {
+    "translation": "zentral",
+    "sentences": [
+      {
+        "sentence_de": "Das ist ein zentraler Punkt.",
+        "sentence_en": "That is a central point."
+      },
+      {
+        "sentence_de": "Wir haben uns im zentralen Bereich getroffen.",
+        "sentence_en": "We met in the central area."
+      }
+    ]
+  },
+  "happy": {
+    "translation": "glücklich",
+    "sentences": [
+      {
+        "sentence_de": "Ich bin sehr glücklich.",
+        "sentence_en": "I am very happy."
+      },
+      {
+        "sentence_de": "Wir haben eine glückliche Zeit zusammen.",
+        "sentence_en": "We have a happy time together."
+      }
+    ]
+  },
+  "serious": {
+    "translation": "ernst",
+    "sentences": [
+      {
+        "sentence_de": "Das ist ein ernstes Problem.",
+        "sentence_en": "That is a serious problem."
+      },
+      {
+        "sentence_de": "Wir haben eine ernste Diskussion geführt.",
+        "sentence_en": "We had a serious discussion."
+      }
+    ]
+  },
+  "ready": {
+    "translation": "bereit",
+    "sentences": [
+      {
+        "sentence_de": "Ich bin bereit zu gehen.",
+        "sentence_en": "I am ready to go."
+      },
+      {
+        "sentence_de": "Wir sind bereit für die Herausforderung.",
+        "sentence_en": "We are ready for the challenge."
+      }
+    ]
+  },
+  "simple": {
+    "translation": "einfach",
+    "sentences": [
+      {
+        "sentence_de": "Das ist eine einfache Aufgabe.",
+        "sentence_en": "That is a simple task."
+      },
+      {
+        "sentence_de": "Wir haben eine einfache Lösung gefunden.",
+        "sentence_en": "We found a simple solution."
+      }
+    ]
+  },
+  "left": {
+    "translation": "links",
+    "sentences": [
+      {
+        "sentence_de": "Der Weg ist nach links.",
+        "sentence_en": "The way is to the left."
+      },
+      {
+        "sentence_de": "Wir sind nach links abgebogen.",
+        "sentence_en": "We turned left."
+      }
+    ]
+  },
+  "physical": {
+    "translation": "körperlich",
+    "sentences": [
+      {
+        "sentence_de": "Das ist eine körperliche Herausforderung.",
+        "sentence_en": "That is a physical challenge."
+      },
+      {
+        "sentence_de": "Wir haben körperliche Fitness geübt.",
+        "sentence_en": "We practiced physical fitness."
+      }
+    ]
+  },
+  "general": {
+    "translation": "allgemein",
+    "sentences": [
+      {
+        "sentence_de": "Das ist eine allgemeine Regel.",
+        "sentence_en": "That is a general rule."
+      },
+      {
+        "sentence_de": "Wir haben allgemeine Informationen bereitgestellt.",
+        "sentence_en": "We provided general information."
+      }
+    ]
+  },
+  "environmental": {
+    "translation": "umweltfreundlich",
+    "sentences": [
+      {
+        "sentence_de": "Das ist eine umweltfreundliche Maßnahme.",
+        "sentence_en": "That is an environmental measure."
+      },
+      {
+        "sentence_de": "Wir arbeiten an umweltfreundlichen Projekten.",
+        "sentence_en": "We work on environmental projects."
+      }
+    ]
+  },
+  "financial": {
+    "translation": "finanziell",
+    "sentences": [
+      {
+        "sentence_de": "Das hat finanzielle Auswirkungen.",
+        "sentence_en": "That has financial implications."
+      },
+      {
+        "sentence_de": "Wir haben finanzielle Unterstützung erhalten.",
+        "sentence_en": "We received financial support."
+      }
+    ]
+  },
+  "blue": {
+    "translation": "blau",
+    "sentences": [
+      {
+        "sentence_de": "Der Himmel ist blau.",
+        "sentence_en": "The sky is blue."
+      },
+      {
+        "sentence_de": "Wir haben blaue Wände.",
+        "sentence_en": "We have blue walls."
+      }
+    ]
+  },
+  "democratic": {
+    "translation": "demokratisch",
+    "sentences": [
+      {
+        "sentence_de": "Das ist eine demokratische Entscheidung.",
+        "sentence_en": "That is a democratic decision."
+      },
+      {
+        "sentence_de": "Wir leben in einer demokratischen Gesellschaft.",
+        "sentence_en": "We live in a democratic society."
+      }
+    ]
+  },
+  "dark": {
+    "translation": "dunkel",
+    "sentences": [
+      {
+        "sentence_de": "Es ist dunkel draußen.",
+        "sentence_en": "It is dark outside."
+      },
+      {
+        "sentence_de": "Wir haben dunkle Farben gewählt.",
+        "sentence_en": "We chose dark colors."
+      }
+    ]
+  },
+  "various": {
+    "translation": "verschieden",
+    "sentences": [
+      {
+        "sentence_de": "Es gibt verschiedene Möglichkeiten.",
+        "sentence_en": "There are various options."
+      },
+      {
+        "sentence_de": "Wir haben verschiedene Lösungen diskutiert.",
+        "sentence_en": "We discussed various solutions."
+      }
+    ]
+  },
+  "entire": {
+    "translation": "ganz",
+    "sentences": [
+      {
+        "sentence_de": "Das ist das ganze Buch.",
+        "sentence_en": "That is the entire book."
+      },
+      {
+        "sentence_de": "Wir haben den ganzen Tag gearbeitet.",
+        "sentence_en": "We worked the entire day."
+      }
+    ]
+  },
+  "close": {
+    "translation": "nah",
+    "sentences": [
+      {
+        "sentence_de": "Wir wohnen ganz nah.",
+        "sentence_en": "We live very close."
+      },
+      {
+        "sentence_de": "Das Thema ist sehr nah.",
+        "sentence_en": "The topic is very close."
+      }
+    ]
+  },
+  "legal": {
+    "translation": "rechtlich",
+    "sentences": [
+      {
+        "sentence_de": "Das ist eine rechtliche Frage.",
+        "sentence_en": "That is a legal question."
+      },
+      {
+        "sentence_de": "Wir haben rechtliche Unterstützung erhalten.",
+        "sentence_en": "We received legal support."
+      }
+    ]
+  },
+  "religious": {
+    "translation": "religiös",
+    "sentences": [
+      {
+        "sentence_de": "Das ist eine religiöse Feier.",
+        "sentence_en": "That is a religious celebration."
+      },
+      {
+        "sentence_de": "Wir haben religiöse Studien gemacht.",
+        "sentence_en": "We did religious studies."
+      }
+    ]
+  },
+  "cold": {
+    "translation": "kalt",
+    "sentences": [
+      {
+        "sentence_de": "Es ist kalt draußen.",
+        "sentence_en": "It is cold outside."
+      },
+      {
+        "sentence_de": "Wir haben kaltes Wetter erwartet.",
+        "sentence_en": "We expected cold weather."
+      }
+    ]
+  },
+  "final": {
+    "translation": "endgültig",
+    "sentences": [
+      {
+        "sentence_de": "Das ist die endgültige Entscheidung.",
+        "sentence_en": "That is the final decision."
+      },
+      {
+        "sentence_de": "Wir haben die endgültigen Ergebnisse erhalten.",
+        "sentence_en": "We received the final results."
+      }
+    ]
+  },
+  "main": {
+    "translation": "haupt",
+    "sentences": [
+      {
+        "sentence_de": "Das ist das Hauptproblem.",
+        "sentence_en": "That is the main issue."
+      },
+      {
+        "sentence_de": "Wir haben die Hauptziele erreicht.",
+        "sentence_en": "We achieved the main goals."
+      }
+    ]
+  },
+  "green": {
+    "translation": "grün",
+    "sentences": [
+      {
+        "sentence_de": "Das Gras ist grün.",
+        "sentence_en": "The grass is green."
+      },
+      {
+        "sentence_de": "Wir haben grüne Wände.",
+        "sentence_en": "We have green walls."
+      }
+    ]
+  },
+  "nice": {
+    "translation": "nett",
+    "sentences": [
+      {
+        "sentence_de": "Das ist eine nette Geste.",
+        "sentence_en": "That is a nice gesture."
+      },
+      {
+        "sentence_de": "Wir haben einen netten Abend verbracht.",
+        "sentence_en": "We had a nice evening."
+      }
+    ]
+  },
+  "huge": {
+    "translation": "riesig",
+    "sentences": [
+      {
+        "sentence_de": "Das Gebäude ist riesig.",
+        "sentence_en": "The building is huge."
+      },
+      {
+        "sentence_de": "Wir haben einen riesigen Fortschritt gemacht.",
+        "sentence_en": "We made a huge progress."
+      }
+    ]
+  },
+  "popular": {
+    "translation": "beliebt",
+    "sentences": [
+      {
+        "sentence_de": "Das ist ein beliebtes Reiseziel.",
+        "sentence_en": "That is a popular destination."
+      },
+      {
+        "sentence_de": "Wir haben eine beliebte Veranstaltung geplant.",
+        "sentence_en": "We planned a popular event."
+      }
+    ]
+  },
+  "traditional": {
+    "translation": "traditionell",
+    "sentences": [
+      {
+        "sentence_de": "Das ist ein traditionelles Fest.",
+        "sentence_en": "That is a traditional festival."
+      },
+      {
+        "sentence_de": "Wir feiern traditionelle Feiertage.",
+        "sentence_en": "We celebrate traditional holidays."
+      }
+    ]
+  },
+  "cultural": {
+    "translation": "kulturell",
+    "sentences": [
+      {
+        "sentence_de": "Das ist ein kulturelles Ereignis.",
+        "sentence_en": "That is a cultural event."
+      },
+      {
+        "sentence_de": "Wir haben kulturelle Unterschiede erforscht.",
+        "sentence_en": "We explored cultural differences."
+      }
+    ]
+  },
+  "time": {
+    "translation": "Zeit",
+    "sentences": [
+      {
+        "sentence_de": "Wir haben keine Zeit.",
+        "sentence_en": "We have no time."
+      },
+      {
+        "sentence_de": "Die Zeit vergeht schnell.",
+        "sentence_en": "Time flies."
+      }
+    ]
+  },
+  "year": {
+    "translation": "Jahr",
+    "sentences": [
+      {
+        "sentence_de": "Das Jahr hat 365 Tage.",
+        "sentence_en": "The year has 365 days."
+      },
+      {
+        "sentence_de": "Wir haben das Jahr 2024 begonnen.",
+        "sentence_en": "We started the year 2024."
+      }
+    ]
+  },
+  "people": {
+    "translation": "Menschen",
+    "sentences": [
+      {
+        "sentence_de": "Die Menschen sind freundlich.",
+        "sentence_en": "The people are friendly."
+      },
+      {
+        "sentence_de": "Wir haben viele Menschen getroffen.",
+        "sentence_en": "We met many people."
+      }
+    ]
+  },
+  "way": {
+    "translation": "Weg",
+    "sentences": [
+      {
+        "sentence_de": "Der Weg ist lang.",
+        "sentence_en": "The way is long."
+      },
+      {
+        "sentence_de": "Wir haben den richtigen Weg gefunden.",
+        "sentence_en": "We found the right way."
+      }
+    ]
+  },
+  "day": {
+    "translation": "Tag",
+    "sentences": [
+      {
+        "sentence_de": "Der Tag ist schön.",
+        "sentence_en": "The day is beautiful."
+      },
+      {
+        "sentence_de": "Wir haben den ganzen Tag gearbeitet.",
+        "sentence_en": "We worked all day."
+      }
+    ]
+  },
+  "man": {
+    "translation": "Mann",
+    "sentences": [
+      {
+        "sentence_de": "Der Mann ist freundlich.",
+        "sentence_en": "The man is friendly."
+      },
+      {
+        "sentence_de": "Wir haben den Mann getroffen.",
+        "sentence_en": "We met the man."
+      }
+    ]
+  },
+  "thing": {
+    "translation": "Ding",
+    "sentences": [
+      {
+        "sentence_de": "Das ist ein wichtiges Ding.",
+        "sentence_en": "That is an important thing."
+      },
+      {
+        "sentence_de": "Wir haben das Ding gefunden.",
+        "sentence_en": "We found the thing."
+      }
+    ]
+  },
+  "woman": {
+    "translation": "Frau",
+    "sentences": [
+      {
+        "sentence_de": "Die Frau ist nett.",
+        "sentence_en": "The woman is nice."
+      },
+      {
+        "sentence_de": "Wir haben die Frau getroffen.",
+        "sentence_en": "We met the woman."
+      }
+    ]
+  },
+  "life": {
+    "translation": "Leben",
+    "sentences": [
+      {
+        "sentence_de": "Das Leben ist schön.",
+        "sentence_en": "Life is beautiful."
+      },
+      {
+        "sentence_de": "Wir genießen unser Leben.",
+        "sentence_en": "We enjoy our life."
+      }
+    ]
+  },
+  "child": {
+    "translation": "Kind",
+    "sentences": [
+      {
+        "sentence_de": "Das Kind spielt im Garten.",
+        "sentence_en": "The child plays in the garden."
+      },
+      {
+        "sentence_de": "Wir haben ein Kind gesehen.",
+        "sentence_en": "We saw a child."
+      }
+    ]
+  },
+  "world": {
+    "translation": "Welt",
+    "sentences": [
+      {
+        "sentence_de": "Die Welt ist groß.",
+        "sentence_en": "The world is big."
+      },
+      {
+        "sentence_de": "Wir reisen um die Welt.",
+        "sentence_en": "We travel around the world."
+      }
+    ]
+  },
+  "school": {
+    "translation": "Schule",
+    "sentences": [
+      {
+        "sentence_de": "Die Schule beginnt um 8 Uhr.",
+        "sentence_en": "The school starts at 8 o'clock."
+      },
+      {
+        "sentence_de": "Wir haben viel gelernt in der Schule.",
+        "sentence_en": "We learned a lot at school."
+      }
+    ]
+  },
+  "state": {
+    "translation": "Staat",
+    "sentences": [
+      {
+        "sentence_de": "Der Staat hat neue Gesetze eingeführt.",
+        "sentence_en": "The state introduced new laws."
+      },
+      {
+        "sentence_de": "Wir leben in einem demokratischen Staat.",
+        "sentence_en": "We live in a democratic state."
+      }
+    ]
+  },
+  "family": {
+    "translation": "Familie",
+    "sentences": [
+      {
+        "sentence_de": "Die Familie ist wichtig.",
+        "sentence_en": "Family is important."
+      },
+      {
+        "sentence_de": "Wir verbringen Zeit mit der Familie.",
+        "sentence_en": "We spend time with the family."
+      }
+    ]
+  },
+  "student": {
+    "translation": "Student",
+    "sentences": [
+      {
+        "sentence_de": "Der Student lernt fleißig.",
+        "sentence_en": "The student studies hard."
+      },
+      {
+        "sentence_de": "Wir sind alle Studenten hier.",
+        "sentence_en": "We are all students here."
+      }
+    ]
+  },
+  "group": {
+    "translation": "Gruppe",
+    "sentences": [
+      {
+        "sentence_de": "Die Gruppe ist groß.",
+        "sentence_en": "The group is large."
+      },
+      {
+        "sentence_de": "Wir arbeiten in Gruppen.",
+        "sentence_en": "We work in groups."
+      }
+    ]
+  },
+  "country": {
+    "translation": "Land",
+    "sentences": [
+      {
+        "sentence_de": "Das Land ist wunderschön.",
+        "sentence_en": "The country is beautiful."
+      },
+      {
+        "sentence_de": "Wir reisen durch das Land.",
+        "sentence_en": "We travel through the country."
+      }
+    ]
+  },
+  "problem": {
+    "translation": "Problem",
+    "sentences": [
+      {
+        "sentence_de": "Das ist ein großes Problem.",
+        "sentence_en": "That is a big problem."
+      },
+      {
+        "sentence_de": "Wir haben das Problem gelöst.",
+        "sentence_en": "We solved the problem."
+      }
+    ]
+  },
+  "hand": {
+    "translation": "Hand",
+    "sentences": [
+      {
+        "sentence_de": "Die Hand ist verletzt.",
+        "sentence_en": "The hand is injured."
+      },
+      {
+        "sentence_de": "Wir geben uns die Hand.",
+        "sentence_en": "We shake hands."
+      }
+    ]
+  },
+  "part": {
+    "translation": "Teil",
+    "sentences": [
+      {
+        "sentence_de": "Das ist ein wichtiger Teil.",
+        "sentence_en": "That is an important part."
+      },
+      {
+        "sentence_de": "Wir haben einen Teil des Projekts abgeschlossen.",
+        "sentence_en": "We completed a part of the project."
+      }
+    ]
+  },
+  "place": {
+    "translation": "Ort",
+    "sentences": [
+      {
+        "sentence_de": "Der Ort ist schön.",
+        "sentence_en": "The place is beautiful."
+      },
+      {
+        "sentence_de": "Wir haben den Ort gefunden.",
+        "sentence_en": "We found the place."
+      }
+    ]
+  },
+  "case": {
+    "translation": "Fall",
+    "sentences": [
+      {
+        "sentence_de": "Das ist ein besonderer Fall.",
+        "sentence_en": "That is a special case."
+      },
+      {
+        "sentence_de": "Wir untersuchen den Fall.",
+        "sentence_en": "We are investigating the case."
+      }
+    ]
+  },
+  "week": {
+    "translation": "Woche",
+    "sentences": [
+      {
+        "sentence_de": "Die Woche hat sieben Tage.",
+        "sentence_en": "The week has seven days."
+      },
+      {
+        "sentence_de": "Wir haben eine Woche Urlaub.",
+        "sentence_en": "We have a week of vacation."
+      }
+    ]
+  },
+  "company": {
+    "translation": "Firma",
+    "sentences": [
+      {
+        "sentence_de": "Die Firma ist erfolgreich.",
+        "sentence_en": "The company is successful."
+      },
+      {
+        "sentence_de": "Wir arbeiten für die Firma.",
+        "sentence_en": "We work for the company."
+      }
+    ]
+  },
+  "system": {
+    "translation": "System",
+    "sentences": [
+      {
+        "sentence_de": "Das System ist kompliziert.",
+        "sentence_en": "The system is complicated."
+      },
+      {
+        "sentence_de": "Wir haben das System getestet.",
+        "sentence_en": "We tested the system."
+      }
+    ]
+  },
+  "program": {
+    "translation": "Programm",
+    "sentences": [
+      {
+        "sentence_de": "Das Programm ist interessant.",
+        "sentence_en": "The program is interesting."
+      },
+      {
+        "sentence_de": "Wir haben ein neues Programm gestartet.",
+        "sentence_en": "We started a new program."
+      }
+    ]
+  },
+  "question": {
+    "translation": "Frage",
+    "sentences": [
+      {
+        "sentence_de": "Das ist eine gute Frage.",
+        "sentence_en": "That is a good question."
+      },
+      {
+        "sentence_de": "Wir haben die Frage beantwortet.",
+        "sentence_en": "We answered the question."
+      }
+    ]
+  },
+
+  "government": {
+    "translation": "Regierung",
+    "sentences": [
+      {
+        "sentence_de": "Die Regierung hat neue Gesetze erlassen.",
+        "sentence_en": "The government issued new laws."
+      },
+      {
+        "sentence_de": "Wir diskutieren mit der Regierung.",
+        "sentence_en": "We are discussing with the government."
+      }
+    ]
+  },
+  "number": {
+    "translation": "Zahl",
+    "sentences": [
+      {
+        "sentence_de": "Die Zahl ist hoch.",
+        "sentence_en": "The number is high."
+      },
+      {
+        "sentence_de": "Wir haben die Zahl überprüft.",
+        "sentence_en": "We checked the number."
+      }
+    ]
+  },
+  "night": {
+    "translation": "Nacht",
+    "sentences": [
+      {
+        "sentence_de": "Die Nacht war ruhig.",
+        "sentence_en": "The night was quiet."
+      },
+      {
+        "sentence_de": "Wir haben die Nacht durchgearbeitet.",
+        "sentence_en": "We worked through the night."
+      }
+    ]
+  },
+  "point": {
+    "translation": "Punkt",
+    "sentences": [
+      {
+        "sentence_de": "Der Punkt ist klar.",
+        "sentence_en": "The point is clear."
+      },
+      {
+        "sentence_de": "Wir haben den Punkt erreicht.",
+        "sentence_en": "We reached the point."
+      }
+    ]
+  },
+  "home": {
+    "translation": "Zuhause",
+    "sentences": [
+      {
+        "sentence_de": "Wir sind zu Hause.",
+        "sentence_en": "We are at home."
+      },
+      {
+        "sentence_de": "Ich gehe nach Hause.",
+        "sentence_en": "I am going home."
+      }
+    ]
+  },
+  "water": {
+    "translation": "Wasser",
+    "sentences": [
+      {
+        "sentence_de": "Das Wasser ist klar.",
+        "sentence_en": "The water is clear."
+      },
+      {
+        "sentence_de": "Wir trinken Wasser.",
+        "sentence_en": "We drink water."
+      }
+    ]
+  },
+  "room": {
+    "translation": "Raum",
+    "sentences": [
+      {
+        "sentence_de": "Der Raum ist groß.",
+        "sentence_en": "The room is large."
+      },
+      {
+        "sentence_de": "Wir haben den Raum vorbereitet.",
+        "sentence_en": "We prepared the room."
+      }
+    ]
+  },
+  "mother": {
+    "translation": "Mutter",
+    "sentences": [
+      {
+        "sentence_de": "Die Mutter ist liebevoll.",
+        "sentence_en": "The mother is loving."
+      },
+      {
+        "sentence_de": "Wir haben die Mutter besucht.",
+        "sentence_en": "We visited the mother."
+      }
+    ]
+  },
+ "area": {
+    "translation": "Bereich",
+    "sentences": [
+      {
+        "sentence_de": "Der Bereich ist sehr groß.",
+        "sentence_en": "The area is very large."
+      },
+      {
+        "sentence_de": "Wir haben den Bereich vermessen.",
+        "sentence_en": "We measured the area."
+      }
+    ]
+  },
+  "money": {
+    "translation": "Geld",
+    "sentences": [
+      {
+        "sentence_de": "Wir haben nicht genug Geld.",
+        "sentence_en": "We don't have enough money."
+      },
+      {
+        "sentence_de": "Das Geld ist auf dem Tisch.",
+        "sentence_en": "The money is on the table."
+      }
+    ]
+  },
+  "story": {
+    "translation": "Geschichte",
+    "sentences": [
+      {
+        "sentence_de": "Das ist eine interessante Geschichte.",
+        "sentence_en": "That is an interesting story."
+      },
+      {
+        "sentence_de": "Wir haben viele Geschichten gehört.",
+        "sentence_en": "We heard many stories."
+      }
+    ]
+  },
+  "fact": {
+    "translation": "Fakt",
+    "sentences": [
+      {
+        "sentence_de": "Das ist ein bewiesener Fakt.",
+        "sentence_en": "That is a proven fact."
+      },
+      {
+        "sentence_de": "Wir haben die Fakten überprüft.",
+        "sentence_en": "We checked the facts."
+      }
+    ]
+  },
+  "month": {
+    "translation": "Monat",
+    "sentences": [
+      {
+        "sentence_de": "Der Monat hat 30 Tage.",
+        "sentence_en": "The month has 30 days."
+      },
+      {
+        "sentence_de": "Wir haben den Monat August begonnen.",
+        "sentence_en": "We started the month of August."
+      }
+    ]
+  },
+  "lot": {
+    "translation": "Viel",
+    "sentences": [
+      {
+        "sentence_de": "Es gibt viel zu tun.",
+        "sentence_en": "There is a lot to do."
+      },
+      {
+        "sentence_de": "Wir haben eine Menge Arbeit.",
+        "sentence_en": "We have a lot of work."
+      }
+    ]
+  },
+
+  "study": {
+    "translation": "Studium",
+    "sentences": [
+      {
+        "sentence_de": "Das Studium erfordert viel Zeit.",
+        "sentence_en": "The study requires a lot of time."
+      },
+      {
+        "sentence_de": "Wir haben für das Studium gelernt.",
+        "sentence_en": "We studied for the exam."
+      }
+    ]
+  },
+  "book": {
+    "translation": "Buch",
+    "sentences": [
+      {
+        "sentence_de": "Das Buch ist spannend.",
+        "sentence_en": "The book is exciting."
+      },
+      {
+        "sentence_de": "Wir haben das Buch gelesen.",
+        "sentence_en": "We read the book."
+      }
+    ]
+  },
+  "eye": {
+    "translation": "Auge",
+    "sentences": [
+      {
+        "sentence_de": "Das Auge ist gesund.",
+        "sentence_en": "The eye is healthy."
+      },
+      {
+        "sentence_de": "Wir haben die Augen untersucht.",
+        "sentence_en": "We examined the eyes."
+      }
+    ]
+  },
+  "job": {
+    "translation": "Job",
+    "sentences": [
+      {
+        "sentence_de": "Der Job ist anspruchsvoll.",
+        "sentence_en": "The job is demanding."
+      },
+      {
+        "sentence_de": "Wir haben den Job gewechselt.",
+        "sentence_en": "We changed the job."
+      }
+    ]
+  },
+  "word": {
+    "translation": "Wort",
+    "sentences": [
+      {
+        "sentence_de": "Das Wort ist schwer zu verstehen.",
+        "sentence_en": "The word is hard to understand."
+      },
+      {
+        "sentence_de": "Wir haben das Wort gelernt.",
+        "sentence_en": "We learned the word."
+      }
+    ]
+  },
+  "business": {
+    "translation": "Geschäft",
+    "sentences": [
+      {
+        "sentence_de": "Das Geschäft läuft gut.",
+        "sentence_en": "The business is doing well."
+      },
+      {
+        "sentence_de": "Wir haben das Geschäft geöffnet.",
+        "sentence_en": "We opened the business."
+      }
+    ]
+  },
+  "issue": {
+    "translation": "Problem",
+    "sentences": [
+      {
+        "sentence_de": "Das ist ein ernstes Problem.",
+        "sentence_en": "That is a serious issue."
+      },
+      {
+        "sentence_de": "Wir haben das Problem diskutiert.",
+        "sentence_en": "We discussed the issue."
+      }
+    ]
+  },
+  "side": {
+    "translation": "Seite",
+    "sentences": [
+      {
+        "sentence_de": "Die Seite ist leer.",
+        "sentence_en": "The side is empty."
+      },
+      {
+        "sentence_de": "Wir haben beide Seiten betrachtet.",
+        "sentence_en": "We looked at both sides."
+      }
+    ]
+  },
+  "head": {
+    "translation": "Kopf",
+    "sentences": [
+      {
+        "sentence_de": "Der Kopf tut weh.",
+        "sentence_en": "The head hurts."
+      },
+      {
+        "sentence_de": "Wir haben den Kopf zusammen gesteckt.",
+        "sentence_en": "We put our heads together."
+      }
+    ]
+  },
+  "house": {
+    "translation": "Haus",
+    "sentences": [
+      {
+        "sentence_de": "Das Haus ist groß.",
+        "sentence_en": "The house is big."
+      },
+      {
+        "sentence_de": "Wir haben das Haus renoviert.",
+        "sentence_en": "We renovated the house."
+      }
+    ]
+  },
+  "service": {
+    "translation": "Dienst",
+    "sentences": [
+      {
+        "sentence_de": "Der Dienst ist ausgezeichnet.",
+        "sentence_en": "The service is excellent."
+      },
+      {
+        "sentence_de": "Wir haben den Dienst bestellt.",
+        "sentence_en": "We ordered the service."
+      }
+    ]
+  },
+  "friend": {
+    "translation": "Freund",
+    "sentences": [
+      {
+        "sentence_de": "Der Freund ist zuverlässig.",
+        "sentence_en": "The friend is reliable."
+      },
+      {
+        "sentence_de": "Wir haben einen Freund besucht.",
+        "sentence_en": "We visited a friend."
+      }
+    ]
+  },
+  "father": {
+    "translation": "Vater",
+    "sentences": [
+      {
+        "sentence_de": "Der Vater ist stolz.",
+        "sentence_en": "The father is proud."
+      },
+      {
+        "sentence_de": "Wir haben den Vater getroffen.",
+        "sentence_en": "We met the father."
+      }
+    ]
+  },
+  "power": {
+    "translation": "Macht",
+    "sentences": [
+      {
+        "sentence_de": "Die Macht liegt bei der Regierung.",
+        "sentence_en": "The power lies with the government."
+      },
+      {
+        "sentence_de": "Wir haben die Macht gewechselt.",
+        "sentence_en": "We changed the power."
+      }
+    ]
+  },
+  "hour": {
+    "translation": "Stunde",
+    "sentences": [
+      {
+        "sentence_de": "Die Stunde ist um.",
+        "sentence_en": "The hour is up."
+      },
+      {
+        "sentence_de": "Wir haben eine Stunde gewartet.",
+        "sentence_en": "We waited for an hour."
+      }
+    ]
+  },
+  "game": {
+    "translation": "Spiel",
+    "sentences": [
+      {
+        "sentence_de": "Das Spiel macht Spaß.",
+        "sentence_en": "The game is fun."
+      },
+      {
+        "sentence_de": "Wir haben das Spiel gewonnen.",
+        "sentence_en": "We won the game."
+      }
+    ]
+  },
+  "line": {
+    "translation": "Linie",
+    "sentences": [
+      {
+        "sentence_de": "Die Linie ist gerade.",
+        "sentence_en": "The line is straight."
+      },
+      {
+        "sentence_de": "Wir haben die Linie gezogen.",
+        "sentence_en": "We drew the line."
+      }
+    ]
+  },
+  "end": {
+    "translation": "Ende",
+    "sentences": [
+      {
+        "sentence_de": "Das Ende ist nah.",
+        "sentence_en": "The end is near."
+      },
+      {
+        "sentence_de": "Wir haben das Ende erreicht.",
+        "sentence_en": "We reached the end."
+      }
+    ]
+  },
+  "member": {
+    "translation": "Mitglied",
+    "sentences": [
+      {
+        "sentence_de": "Das Mitglied ist neu.",
+        "sentence_en": "The member is new."
+      },
+      {
+        "sentence_de": "Wir haben ein neues Mitglied aufgenommen.",
+        "sentence_en": "We welcomed a new member."
+      }
+    ]
+  },
+  "law": {
+    "translation": "Gesetz",
+    "sentences": [
+      {
+        "sentence_de": "Das Gesetz ist streng.",
+        "sentence_en": "The law is strict."
+      },
+      {
+        "sentence_de": "Wir haben das Gesetz geändert.",
+        "sentence_en": "We changed the law."
+      }
+    ]
+  },
+  "car": {
+    "translation": "Auto",
+    "sentences": [
+      {
+        "sentence_de": "Das Auto ist schnell.",
+        "sentence_en": "The car is fast."
+      },
+      {
+        "sentence_de": "Wir haben das Auto repariert.",
+        "sentence_en": "We repaired the car."
+      }
+    ]
+  },
+  "city": {
+    "translation": "Stadt",
+    "sentences": [
+      {
+        "sentence_de": "Die Stadt ist lebendig.",
+        "sentence_en": "The city is lively."
+      },
+      {
+        "sentence_de": "Wir haben die Stadt erkundet.",
+        "sentence_en": "We explored the city."
+      }
+    ]
+  },
+  "community": {
+    "translation": "Gemeinschaft",
+    "sentences": [
+      {
+        "sentence_de": "Die Gemeinschaft ist freundlich.",
+        "sentence_en": "The community is friendly."
+      },
+      {
+        "sentence_de": "Wir haben die Gemeinschaft unterstützt.",
+        "sentence_en": "We supported the community."
+      }
+    ]
+  },
+  "name": {
+    "translation": "Name",
+    "sentences": [
+      {
+        "sentence_de": "Der Name ist bekannt.",
+        "sentence_en": "The name is well-known."
+      },
+      {
+        "sentence_de": "Wir haben den Namen geändert.",
+        "sentence_en": "We changed the name."
+      }
+    ]
+  },
+  "president": {
+    "translation": "Präsident",
+    "sentences": [
+      {
+        "sentence_de": "Der Präsident ist wichtig.",
+        "sentence_en": "The president is important."
+      },
+      {
+        "sentence_de": "Wir haben den Präsidenten getroffen.",
+        "sentence_en": "We met the president."
+      }
+    ]
+  },
+  "team": {
+    "translation": "Team",
+    "sentences": [
+      {
+        "sentence_de": "Das Team arbeitet zusammen.",
+        "sentence_en": "The team works together."
+      },
+      {
+        "sentence_de": "Wir haben ein neues Team gegründet.",
+        "sentence_en": "We formed a new team."
+      }
+    ]
+  },
+  "minute": {
+    "translation": "Minute",
+    "sentences": [
+      {
+        "sentence_de": "Die Minute dauert 60 Sekunden.",
+        "sentence_en": "The minute lasts 60 seconds."
+      },
+      {
+        "sentence_de": "Wir haben nur noch eine Minute.",
+        "sentence_en": "We have only one minute left."
+      }
+    ]
+  },
+  "idea": {
+    "translation": "Idee",
+    "sentences": [
+      {
+        "sentence_de": "Die Idee ist brillant.",
+        "sentence_en": "The idea is brilliant."
+      },
+      {
+        "sentence_de": "Wir haben eine neue Idee entwickelt.",
+        "sentence_en": "We developed a new idea."
+      }
+    ]
+  },
+  "kid": {
+    "translation": "Kind",
+    "sentences": [
+      {
+        "sentence_de": "Das Kind spielt im Park.",
+        "sentence_en": "The kid is playing in the park."
+      },
+      {
+        "sentence_de": "Wir haben das Kind gesehen.",
+        "sentence_en": "We saw the kid."
+      }
+    ]
+  },
+  "body": {
+    "translation": "Körper",
+    "sentences": [
+      {
+        "sentence_de": "Der Körper ist gesund.",
+        "sentence_en": "The body is healthy."
+      },
+      {
+        "sentence_de": "Wir haben den Körper untersucht.",
+        "sentence_en": "We examined the body."
+      }
+    ]
+  },
+  "information": {
+    "translation": "Information",
+    "sentences": [
+      {
+        "sentence_de": "Die Information ist wichtig.",
+        "sentence_en": "The information is important."
+      },
+      {
+        "sentence_de": "Wir haben die Information erhalten.",
+        "sentence_en": "We received the information."
+      }
+    ]
+  },
+  "back": {
+    "translation": "Rücken",
+    "sentences": [
+      {
+        "sentence_de": "Der Rücken schmerzt.",
+        "sentence_en": "The back hurts."
+      },
+      {
+        "sentence_de": "Wir haben den Rücken gestärkt.",
+        "sentence_en": "We strengthened the back."
+      }
+    ]
+  },
+  "parent": {
+    "translation": "Elternteil",
+    "sentences": [
+      {
+        "sentence_de": "Der Elternteil ist engagiert.",
+        "sentence_en": "The parent is involved."
+      },
+      {
+        "sentence_de": "Wir haben die Elternteile informiert.",
+        "sentence_en": "We informed the parents."
+      }
+    ]
+  },
+  "face": {
+    "translation": "Gesicht",
+    "sentences": [
+      {
+        "sentence_de": "Das Gesicht ist müde.",
+        "sentence_en": "The face is tired."
+      },
+      {
+        "sentence_de": "Wir haben das Gesicht gewaschen.",
+        "sentence_en": "We washed the face."
+      }
+    ]
+  },
+  "others": {
+    "translation": "Andere",
+    "sentences": [
+      {
+        "sentence_de": "Die anderen sind schon angekommen.",
+        "sentence_en": "The others have already arrived."
+      },
+      {
+        "sentence_de": "Wir müssen uns um die anderen kümmern.",
+        "sentence_en": "We need to take care of the others."
+      }
+    ]
+  },
+  "level": {
+    "translation": "Stufe",
+    "sentences": [
+      {
+        "sentence_de": "Die Stufe ist schwierig.",
+        "sentence_en": "The level is difficult."
+      },
+      {
+        "sentence_de": "Wir haben die Stufe erreicht.",
+        "sentence_en": "We reached the level."
+      }
+    ]
+  },
+  "office": {
+    "translation": "Büro",
+    "sentences": [
+      {
+        "sentence_de": "Das Büro ist modern.",
+        "sentence_en": "The office is modern."
+      },
+      {
+        "sentence_de": "Wir arbeiten im Büro.",
+        "sentence_en": "We work in the office."
+      }
+    ]
+  },
+  "door": {
+    "translation": "Tür",
+    "sentences": [
+      {
+        "sentence_de": "Die Tür ist geschlossen.",
+        "sentence_en": "The door is closed."
+      },
+      {
+        "sentence_de": "Wir haben die Tür geöffnet.",
+        "sentence_en": "We opened the door."
+      }
+    ]
+  },
+  "health": {
+    "translation": "Gesundheit",
+    "sentences": [
+      {
+        "sentence_de": "Die Gesundheit ist wichtig.",
+        "sentence_en": "Health is important."
+      },
+      {
+        "sentence_de": "Wir haben unsere Gesundheit überprüft.",
+        "sentence_en": "We checked our health."
+      }
+    ]
+  },
+  "person": {
+    "translation": "Person",
+    "sentences": [
+      {
+        "sentence_de": "Die Person ist freundlich.",
+        "sentence_en": "The person is friendly."
+      },
+      {
+        "sentence_de": "Wir haben die Person kennengelernt.",
+        "sentence_en": "We met the person."
+      }
+    ]
+  },
+  "art": {
+    "translation": "Kunst",
+    "sentences": [
+      {
+        "sentence_de": "Die Kunst ist faszinierend.",
+        "sentence_en": "The art is fascinating."
+      },
+      {
+        "sentence_de": "Wir haben die Kunstwerke bewundert.",
+        "sentence_en": "We admired the artworks."
+      }
+    ]
+  },
+  "war": {
+    "translation": "Krieg",
+    "sentences": [
+      {
+        "sentence_de": "Der Krieg ist tragisch.",
+        "sentence_en": "The war is tragic."
+      },
+      {
+        "sentence_de": "Wir haben über den Krieg gelesen.",
+        "sentence_en": "We read about the war."
+      }
+    ]
+  },
+  "history": {
+    "translation": "Geschichte",
+    "sentences": [
+      {
+        "sentence_de": "Die Geschichte ist spannend.",
+        "sentence_en": "The history is exciting."
+      },
+      {
+        "sentence_de": "Wir haben die Geschichte studiert.",
+        "sentence_en": "We studied the history."
+      }
+    ]
+  },
+  "party": {
+    "translation": "Party",
+    "sentences": [
+      {
+        "sentence_de": "Die Party war fantastisch.",
+        "sentence_en": "The party was fantastic."
+      },
+      {
+        "sentence_de": "Wir haben die Party organisiert.",
+        "sentence_en": "We organized the party."
+      }
+    ]
+  },
+  "result": {
+    "translation": "Ergebnis",
+    "sentences": [
+      {
+        "sentence_de": "Das Ergebnis ist positiv.",
+        "sentence_en": "The result is positive."
+      },
+      {
+        "sentence_de": "Wir haben das Ergebnis erhalten.",
+        "sentence_en": "We received the result."
+      }
+    ]
+  },
+ 
+  "morning": {
+    "translation": "Morgen",
+    "sentences": [
+      {
+        "sentence_de": "Der Morgen ist frisch.",
+        "sentence_en": "The morning is fresh."
+      },
+      {
+        "sentence_de": "Wir haben den Morgen genossen.",
+        "sentence_en": "We enjoyed the morning."
+      }
+    ]
+  },
+  "reason": {
+    "translation": "Grund",
+    "sentences": [
+      {
+        "sentence_de": "Der Grund ist klar.",
+        "sentence_en": "The reason is clear."
+      },
+      {
+        "sentence_de": "Wir haben den Grund herausgefunden.",
+        "sentence_en": "We found out the reason."
+      }
+    ]
+  },
+  "research": {
+    "translation": "Forschung",
+    "sentences": [
+      {
+        "sentence_de": "Die Forschung ist umfassend.",
+        "sentence_en": "The research is comprehensive."
+      },
+      {
+        "sentence_de": "Wir haben die Forschung abgeschlossen.",
+        "sentence_en": "We completed the research."
+      }
+    ]
+  },
+  "girl": {
+    "translation": "Mädchen",
+    "sentences": [
+      {
+        "sentence_de": "Das Mädchen ist nett.",
+        "sentence_en": "The girl is nice."
+      },
+      {
+        "sentence_de": "Wir haben das Mädchen gesehen.",
+        "sentence_en": "We saw the girl."
+      }
+    ]
+  },
+  "guy": {
+    "translation": "Typ",
+    "sentences": [
+      {
+        "sentence_de": "Der Typ ist freundlich.",
+        "sentence_en": "The guy is friendly."
+      },
+      {
+        "sentence_de": "Wir haben den Typ getroffen.",
+        "sentence_en": "We met the guy."
+      }
+    ]
+  },
+  "moment": {
+    "translation": "Moment",
+    "sentences": [
+      {
+        "sentence_de": "Der Moment war einzigartig.",
+        "sentence_en": "The moment was unique."
+      },
+      {
+        "sentence_de": "Wir haben den Moment festgehalten.",
+        "sentence_en": "We captured the moment."
+      }
+    ]
+  },
+  "air": {
+    "translation": "Luft",
+    "sentences": [
+      {
+        "sentence_de": "Die Luft ist frisch.",
+        "sentence_en": "The air is fresh."
+      },
+      {
+        "sentence_de": "Wir haben die Luft geprüft.",
+        "sentence_en": "We checked the air."
+      }
+    ]
+  },
+  "teacher": {
+    "translation": "Lehrer",
+    "sentences": [
+      {
+        "sentence_de": "Der Lehrer ist kompetent.",
+        "sentence_en": "The teacher is competent."
+      },
+      {
+        "sentence_de": "Wir haben den Lehrer gefragt.",
+        "sentence_en": "We asked the teacher."
+      }
+    ]
+  },
+  "force": {
+    "translation": "Kraft",
+    "sentences": [
+      {
+        "sentence_de": "Die Kraft ist enorm.",
+        "sentence_en": "The force is enormous."
+      },
+      {
+        "sentence_de": "Wir haben die Kraft gemessen.",
+        "sentence_en": "We measured the force."
+      }
+    ]
+  },
+  "education": {
+    "translation": "Bildung",
+    "sentences": [
+      {
+        "sentence_de": "Die Bildung ist wichtig.",
+        "sentence_en": "Education is important."
+      },
+      {
+        "sentence_de": "Wir haben in Bildung investiert.",
+        "sentence_en": "We invested in education."
+      }
+    ]
+  },  "up": {
+    "translation": "oben",
+    "sentences": [
+      {
+        "sentence_de": "Die Sonne geht auf.",
+        "sentence_en": "The sun is going up."
+      },
+      {
+        "sentence_de": "Wir sind nach oben gegangen.",
+        "sentence_en": "We went up."
+      }
+    ]
+  },
+  "so": {
+    "translation": "so",
+    "sentences": [
+      {
+        "sentence_de": "Es ist so schön hier.",
+        "sentence_en": "It is so nice here."
+      },
+      {
+        "sentence_de": "Er hat so viel Arbeit.",
+        "sentence_en": "He has so much work."
+      }
+    ]
+  },
+  "out": {
+    "translation": "hinaus",
+    "sentences": [
+      {
+        "sentence_de": "Der Hund ist draußen.",
+        "sentence_en": "The dog is out."
+      },
+      {
+        "sentence_de": "Wir sind nach draußen gegangen.",
+        "sentence_en": "We went out."
+      }
+    ]
+  },
+  "just": {
+    "translation": "gerade",
+    "sentences": [
+      {
+        "sentence_de": "Ich habe es gerade gemacht.",
+        "sentence_en": "I just did it."
+      },
+      {
+        "sentence_de": "Es ist gerade sehr ruhig.",
+        "sentence_en": "It is just very quiet."
+      }
+    ]
+  },
+  "now": {
+    "translation": "jetzt",
+    "sentences": [
+      {
+        "sentence_de": "Wir müssen jetzt gehen.",
+        "sentence_en": "We need to go now."
+      },
+      {
+        "sentence_de": "Es ist jetzt Zeit für das Abendessen.",
+        "sentence_en": "It is time for dinner now."
+      }
+    ]
+  },
+  "how": {
+    "translation": "wie",
+    "sentences": [
+      {
+        "sentence_de": "Wie geht es dir?",
+        "sentence_en": "How are you?"
+      },
+      {
+        "sentence_de": "Ich weiß nicht, wie das funktioniert.",
+        "sentence_en": "I don't know how it works."
+      }
+    ]
+  },
+  "then": {
+    "translation": "dann",
+    "sentences": [
+      {
+        "sentence_de": "Dann gehen wir ins Kino.",
+        "sentence_en": "Then we go to the cinema."
+      },
+      {
+        "sentence_de": "Wir haben das Essen bestellt und dann gewartet.",
+        "sentence_en": "We ordered the food and then waited."
+      }
+    ]
+  },
+  "more": {
+    "translation": "mehr",
+    "sentences": [
+      {
+        "sentence_de": "Ich möchte mehr Kaffee.",
+        "sentence_en": "I would like more coffee."
+      },
+      {
+        "sentence_de": "Wir brauchen mehr Zeit.",
+        "sentence_en": "We need more time."
+      }
+    ]
+  },
+  "also": {
+    "translation": "auch",
+    "sentences": [
+      {
+        "sentence_de": "Ich werde auch kommen.",
+        "sentence_en": "I will also come."
+      },
+      {
+        "sentence_de": "Sie mag auch Schokolade.",
+        "sentence_en": "She also likes chocolate."
+      }
+    ]
+  },
+  "here": {
+    "translation": "hier",
+    "sentences": [
+      {
+        "sentence_de": "Kommen Sie hierher.",
+        "sentence_en": "Come here."
+      },
+      {
+        "sentence_de": "Wir sind hier.",
+        "sentence_en": "We are here."
+      }
+    ]
+  },
+  "well": {
+    "translation": "gut",
+    "sentences": [
+      {
+        "sentence_de": "Das Essen schmeckt gut.",
+        "sentence_en": "The food tastes well."
+      },
+      {
+        "sentence_de": "Sie hat sich gut erholt.",
+        "sentence_en": "She has recovered well."
+      }
+    ]
+  },
+
+  "very": {
+    "translation": "sehr",
+    "sentences": [
+      {
+        "sentence_de": "Es ist sehr kalt heute.",
+        "sentence_en": "It is very cold today."
+      },
+      {
+        "sentence_de": "Ich bin sehr müde.",
+        "sentence_en": "I am very tired."
+      }
+    ]
+  },
+  "even": {
+    "translation": "sogar",
+    "sentences": [
+      {
+        "sentence_de": "Sogar die Kinder waren müde.",
+        "sentence_en": "Even the children were tired."
+      },
+      {
+        "sentence_de": "Das ist sogar besser.",
+        "sentence_en": "That is even better."
+      }
+    ]
+  },
+
+  "there": {
+    "translation": "dort",
+    "sentences": [
+      {
+        "sentence_de": "Das ist dort drüben.",
+        "sentence_en": "That is over there."
+      },
+      {
+        "sentence_de": "Wir gehen dorthin.",
+        "sentence_en": "We are going there."
+      }
+    ]
+  },
+  "down": {
+    "translation": "nach unten",
+    "sentences": [
+      {
+        "sentence_de": "Der Ball rollt nach unten.",
+        "sentence_en": "The ball is rolling down."
+      },
+      {
+        "sentence_de": "Wir sind nach unten gegangen.",
+        "sentence_en": "We went down."
+      }
+    ]
+  },
+  "still": {
+    "translation": "noch",
+    "sentences": [
+      {
+        "sentence_de": "Es ist noch früh.",
+        "sentence_en": "It is still early."
+      },
+      {
+        "sentence_de": "Wir warten noch.",
+        "sentence_en": "We are still waiting."
+      }
+    ]
+  },
+  "in": {
+    "translation": "in",
+    "sentences": [
+      {
+        "sentence_de": "Ich bin in der Schule.",
+        "sentence_en": "I am in the school."
+      },
+      {
+        "sentence_de": "Wir gehen ins Haus.",
+        "sentence_en": "We are going in the house."
+      }
+    ]
+  },
+  "as": {
+    "translation": "als",
+    "sentences": [
+      {
+        "sentence_de": "Er ist als Lehrer bekannt.",
+        "sentence_en": "He is known as a teacher."
+      },
+      {
+        "sentence_de": "Sie arbeitet als Ärztin.",
+        "sentence_en": "She works as a doctor."
+      }
+    ]
+  },
+  "to": {
+    "translation": "zu",
+    "sentences": [
+      {
+        "sentence_de": "Wir gehen zum Markt.",
+        "sentence_en": "We are going to the market."
+      },
+      {
+        "sentence_de": "Das gehört zu mir.",
+        "sentence_en": "That belongs to me."
+      }
+    ]
+  },
+  "when": {
+    "translation": "wann",
+    "sentences": [
+      {
+        "sentence_de": "Wann kommst du?",
+        "sentence_en": "When are you coming?"
+      },
+      {
+        "sentence_de": "Wir wissen nicht, wann es anfängt.",
+        "sentence_en": "We don't know when it starts."
+      }
+    ]
+  },
+  "never": {
+    "translation": "nie",
+    "sentences": [
+      {
+        "sentence_de": "Ich werde es nie vergessen.",
+        "sentence_en": "I will never forget it."
+      },
+      {
+        "sentence_de": "Er hat das noch nie gemacht.",
+        "sentence_en": "He has never done that."
+      }
+    ]
+  },
+  "really": {
+    "translation": "wirklich",
+    "sentences": [
+      {
+        "sentence_de": "Das ist wirklich interessant.",
+        "sentence_en": "That is really interesting."
+      },
+      {
+        "sentence_de": "Ich bin wirklich müde.",
+        "sentence_en": "I am really tired."
+      }
+    ]
+  },
+  "most": {
+    "translation": "meist",
+    "sentences": [
+      {
+        "sentence_de": "Das ist am meisten gefragt.",
+        "sentence_en": "That is the most requested."
+      },
+      {
+        "sentence_de": "Wir haben die meiste Zeit gearbeitet.",
+        "sentence_en": "We worked the most time."
+      }
+    ]
+  },
+  "on": {
+    "translation": "auf",
+    "sentences": [
+      {
+        "sentence_de": "Das Buch liegt auf dem Tisch.",
+        "sentence_en": "The book is on the table."
+      },
+      {
+        "sentence_de": "Wir haben es aufgeschrieben.",
+        "sentence_en": "We wrote it down."
+      }
+    ]
+  },
+  "why": {
+    "translation": "warum",
+    "sentences": [
+      {
+        "sentence_de": "Warum bist du spät?",
+        "sentence_en": "Why are you late?"
+      },
+      {
+        "sentence_de": "Ich verstehe nicht, warum das passiert.",
+        "sentence_en": "I don't understand why that happened."
+      }
+    ]
+  },
+  "about": {
+    "translation": "über",
+    "sentences": [
+      {
+        "sentence_de": "Wir reden über das Thema.",
+        "sentence_en": "We talk about the topic."
+      },
+      {
+        "sentence_de": "Das Buch handelt über Geschichte.",
+        "sentence_en": "The book is about history."
+      }
+    ]
+  },
+  "over": {
+    "translation": "über",
+    "sentences": [
+      {
+        "sentence_de": "Der Vogel fliegt über uns.",
+        "sentence_en": "The bird is flying over us."
+      },
+      {
+        "sentence_de": "Das Problem ist überstanden.",
+        "sentence_en": "The problem is over."
+      }
+    ]
+  },
+  "again": {
+    "translation": "wieder",
+    "sentences": [
+      {
+        "sentence_de": "Ich werde es wieder versuchen.",
+        "sentence_en": "I will try again."
+      },
+      {
+        "sentence_de": "Wir haben es wieder gemacht.",
+        "sentence_en": "We did it again."
+      }
+    ]
+  },
+  "where": {
+    "translation": "wo",
+    "sentences": [
+      {
+        "sentence_de": "Wo ist das Problem?",
+        "sentence_en": "Where is the problem?"
+      },
+      {
+        "sentence_de": "Ich weiß nicht, wo es ist.",
+        "sentence_en": "I don't know where it is."
+      }
+    ]
+  },
+
+  "off": {
+    "translation": "aus",
+    "sentences": [
+      {
+        "sentence_de": "Das Licht ist aus.",
+        "sentence_en": "The light is off."
+      },
+      {
+        "sentence_de": "Wir sind vom Weg abgekommen.",
+        "sentence_en": "We went off the path."
+      }
+    ]
+  },
+  "always": {
+    "translation": "immer",
+    "sentences": [
+      {
+        "sentence_de": "Ich komme immer pünktlich.",
+        "sentence_en": "I always arrive on time."
+      },
+      {
+        "sentence_de": "Das passiert immer.",
+        "sentence_en": "That happens always."
+      }
+    ]
+  },
+  "today": {
+    "translation": "heute",
+    "sentences": [
+      {
+        "sentence_de": "Heute ist ein schöner Tag.",
+        "sentence_en": "Today is a beautiful day."
+      },
+      {
+        "sentence_de": "Wir haben heute gearbeitet.",
+        "sentence_en": "We worked today."
+      }
+    ]
+  },
+  "all": {
+    "translation": "alle",
+    "sentences": [
+      {
+        "sentence_de": "Alle sind eingeladen.",
+        "sentence_en": "Everyone is invited."
+      },
+      {
+        "sentence_de": "Wir haben alle Bücher gelesen.",
+        "sentence_en": "We read all the books."
+      }
+    ]
+  },
+  "far": {
+    "translation": "weit",
+    "sentences": [
+      {
+        "sentence_de": "Es ist weit von hier.",
+        "sentence_en": "It is far from here."
+      },
+      {
+        "sentence_de": "Wir sind weit gegangen.",
+        "sentence_en": "We went far."
+      }
+    ]
+  },
+
+  "away": {
+    "translation": "weg",
+    "sentences": [
+      {
+        "sentence_de": "Der Hund ist weg.",
+        "sentence_en": "The dog is away."
+      },
+      {
+        "sentence_de": "Wir sind weggefahren.",
+        "sentence_en": "We went away."
+      }
+    ]
+  },
+  "yet": {
+    "translation": "noch",
+    "sentences": [
+      {
+        "sentence_de": "Das ist noch nicht fertig.",
+        "sentence_en": "It is not finished yet."
+      },
+      {
+        "sentence_de": "Haben Sie es noch nicht gesehen?",
+        "sentence_en": "Have you not seen it yet?"
+      }
+    ]
+  },
+  "often": {
+    "translation": "oft",
+    "sentences": [
+      {
+        "sentence_de": "Wir essen oft im Restaurant.",
+        "sentence_en": "We eat out often."
+      },
+      {
+        "sentence_de": "Er kommt oft zu spät.",
+        "sentence_en": "He often comes late."
+      }
+    ]
+  },
+  "ever": {
+    "translation": "jemals",
+    "sentences": [
+      {
+        "sentence_de": "Haben Sie das jemals gesehen?",
+        "sentence_en": "Have you ever seen that?"
+      },
+      {
+        "sentence_de": "Das war das beste Konzert, das ich jemals gesehen habe.",
+        "sentence_en": "That was the best concert I have ever seen."
+      }
+    ]
+  },
+  "however": {
+    "translation": "jedoch",
+    "sentences": [
+      {
+        "sentence_de": "Es war teuer, jedoch notwendig.",
+        "sentence_en": "It was expensive, however necessary."
+      },
+      {
+        "sentence_de": "Er hat jedoch nicht zugestimmt.",
+        "sentence_en": "He did not agree, however."
+      }
+    ]
+  },
+  "almost": {
+    "translation": "fast",
+    "sentences": [
+      {
+        "sentence_de": "Wir sind fast angekommen.",
+        "sentence_en": "We almost arrived."
+      },
+      {
+        "sentence_de": "Es war fast perfekt.",
+        "sentence_en": "It was almost perfect."
+      }
+    ]
+  },
+  "later": {
+    "translation": "später",
+    "sentences": [
+      {
+        "sentence_de": "Wir treffen uns später.",
+        "sentence_en": "We will meet later."
+      },
+      {
+        "sentence_de": "Er wird später kommen.",
+        "sentence_en": "He will come later."
+      }
+    ]
+  },
+  "much": {
+    "translation": "viel",
+    "sentences": [
+      {
+        "sentence_de": "Wir haben viel gearbeitet.",
+        "sentence_en": "We worked much."
+      },
+      {
+        "sentence_de": "Das kostet viel.",
+        "sentence_en": "It costs much."
+      }
+    ]
+  },
+  "once": {
+    "translation": "einmal",
+    "sentences": [
+      {
+        "sentence_de": "Ich habe es nur einmal gemacht.",
+        "sentence_en": "I did it only once."
+      },
+      {
+        "sentence_de": "Das war einmal mein Traum.",
+        "sentence_en": "That was once my dream."
+      }
+    ]
+  },
+  "least": {
+    "translation": "am wenigsten",
+    "sentences": [
+      {
+        "sentence_de": "Das ist das am wenigsten Problematische.",
+        "sentence_en": "That is the least problematic."
+      },
+      {
+        "sentence_de": "Er hat am wenigsten Erfahrung.",
+        "sentence_en": "He has the least experience."
+      }
+    ]
+  },
+  "ago": {
+    "translation": "vor",
+    "sentences": [
+      {
+        "sentence_de": "Das war vor fünf Jahren.",
+        "sentence_en": "That was five years ago."
+      },
+      {
+        "sentence_de": "Vor kurzem war er hier.",
+        "sentence_en": "He was here recently."
+      }
+    ]
+  },
+  "together": {
+    "translation": "zusammen",
+    "sentences": [
+      {
+        "sentence_de": "Wir arbeiten zusammen.",
+        "sentence_en": "We work together."
+      },
+      {
+        "sentence_de": "Wir sind zusammen gegangen.",
+        "sentence_en": "We went together."
+      }
+    ]
+  },
+  "already": {
+    "translation": "schon",
+    "sentences": [
+      {
+        "sentence_de": "Ich habe es schon gemacht.",
+        "sentence_en": "I have already done it."
+      },
+      {
+        "sentence_de": "Es ist schon spät.",
+        "sentence_en": "It is already late."
+      }
+    ]
+  },
+  "enough": {
+    "translation": "genug",
+    "sentences": [
+      {
+        "sentence_de": "Das ist genug für uns.",
+        "sentence_en": "That is enough for us."
+      },
+      {
+        "sentence_de": "Wir haben genug Zeit.",
+        "sentence_en": "We have enough time."
+      }
+    ]
+  },
+  "both": {
+    "translation": "beide",
+    "sentences": [
+      {
+        "sentence_de": "Wir haben beide Bücher gelesen.",
+        "sentence_en": "We read both books."
+      },
+      {
+        "sentence_de": "Beide sind gekommen.",
+        "sentence_en": "Both have come."
+      }
+    ]
+  },
+  "maybe": {
+    "translation": "vielleicht",
+    "sentences": [
+      {
+        "sentence_de": "Vielleicht komme ich später.",
+        "sentence_en": "Maybe I will come later."
+      },
+      {
+        "sentence_de": "Es ist vielleicht besser so.",
+        "sentence_en": "It might be better this way."
+      }
+    ]
+  },
+  "actually": {
+    "translation": "tatsächlich",
+    "sentences": [
+      {
+        "sentence_de": "Tatsächlich war er da.",
+        "sentence_en": "Actually, he was there."
+      },
+      {
+        "sentence_de": "Das ist tatsächlich richtig.",
+        "sentence_en": "That is actually right."
+      }
+    ]
+  },
+  "probably": {
+    "translation": "wahrscheinlich",
+    "sentences": [
+      {
+        "sentence_de": "Er wird wahrscheinlich kommen.",
+        "sentence_en": "He will probably come."
+      },
+      {
+        "sentence_de": "Das ist wahrscheinlich richtig.",
+        "sentence_en": "That is probably right."
+      }
+    ]
+  },
+
+  "of course": {
+    "translation": "natürlich",
+    "sentences": [
+      {
+        "sentence_de": "Natürlich werde ich kommen.",
+        "sentence_en": "Of course, I will come."
+      },
+      {
+        "sentence_de": "Das ist natürlich klar.",
+        "sentence_en": "That is of course clear."
+      }
+    ]
+  },
+  "perhaps": {
+    "translation": "vielleicht",
+    "sentences": [
+      {
+        "sentence_de": "Vielleicht werde ich das tun.",
+        "sentence_en": "Perhaps I will do that."
+      },
+      {
+        "sentence_de": "Das könnte vielleicht klappen.",
+        "sentence_en": "That might perhaps work."
+      }
+    ]
+  },
+  "sometimes": {
+    "translation": "manchmal",
+    "sentences": [
+      {
+        "sentence_de": "Manchmal regnet es.",
+        "sentence_en": "Sometimes it rains."
+      },
+      {
+        "sentence_de": "Wir sehen uns manchmal.",
+        "sentence_en": "We see each other sometimes."
+      }
+    ]
+  },
+  "finally": {
+    "translation": "endlich",
+    "sentences": [
+      {
+        "sentence_de": "Wir sind endlich angekommen.",
+        "sentence_en": "We finally arrived."
+      },
+      {
+        "sentence_de": "Endlich ist es geschafft.",
+        "sentence_en": "Finally, it is done."
+      }
+    ]
+  },
+  "less": {
+    "translation": "weniger",
+    "sentences": [
+      {
+        "sentence_de": "Das ist weniger wichtig.",
+        "sentence_en": "That is less important."
+      },
+      {
+        "sentence_de": "Wir haben weniger Zeit.",
+        "sentence_en": "We have less time."
+      }
+    ]
+  },
+
+
+  "especially": {
+    "translation": "besonders",
+    "sentences": [
+      {
+        "sentence_de": "Das ist besonders wichtig.",
+        "sentence_en": "That is especially important."
+      },
+      {
+        "sentence_de": "Ich mag besonders diesen Film.",
+        "sentence_en": "I especially like this movie."
+      }
+    ]
+  },
+  "either": {
+    "translation": "entweder",
+    "sentences": [
+      {
+        "sentence_de": "Du kannst entweder das oder das wählen.",
+        "sentence_en": "You can choose either this or that."
+      },
+      {
+        "sentence_de": "Entweder du kommst mit oder du bleibst hier.",
+        "sentence_en": "Either you come with us or you stay here."
+      }
+    ]
+  },
+  "quite": {
+    "translation": "ziemlich",
+    "sentences": [
+      {
+        "sentence_de": "Das ist ziemlich teuer.",
+        "sentence_en": "That is quite expensive."
+      },
+      {
+        "sentence_de": "Ich bin ziemlich müde.",
+        "sentence_en": "I am quite tired."
+      }
+    ]
+  },
+  "simply": {
+    "translation": "einfach",
+    "sentences": [
+      {
+        "sentence_de": "Das ist einfach zu lösen.",
+        "sentence_en": "That is simply solvable."
+      },
+      {
+        "sentence_de": "Ich mache es einfach.",
+        "sentence_en": "I am simply doing it."
+      }
+    ]
+  },
+  "nearly": {
+    "translation": "beinahe",
+    "sentences": [
+      {
+        "sentence_de": "Ich habe beinahe verloren.",
+        "sentence_en": "I nearly lost."
+      },
+      {
+        "sentence_de": "Wir sind beinahe angekommen.",
+        "sentence_en": "We nearly arrived."
+      }
+    ]
+  },
+  "soon": {
+    "translation": "bald",
+    "sentences": [
+      {
+        "sentence_de": "Wir werden bald fertig sein.",
+        "sentence_en": "We will be finished soon."
+      },
+      {
+        "sentence_de": "Er kommt bald zurück.",
+        "sentence_en": "He will be back soon."
+      }
+    ]
+  },
+  "certainly": {
+    "translation": "bestimmt",
+    "sentences": [
+      {
+        "sentence_de": "Das ist bestimmt richtig.",
+        "sentence_en": "That is certainly right."
+      },
+      {
+        "sentence_de": "Wir werden sicherlich kommen.",
+        "sentence_en": "We will certainly come."
+      }
+    ]
+  },
+  "quickly": {
+    "translation": "schnell",
+    "sentences": [
+      {
+        "sentence_de": "Er arbeitet schnell.",
+        "sentence_en": "He works quickly."
+      },
+      {
+        "sentence_de": "Wir müssen schnell handeln.",
+        "sentence_en": "We need to act quickly."
+      }
+    ]
+  },
+  "not": {
+    "translation": "nicht",
+    "sentences": [
+      {
+        "sentence_de": "Ich habe das nicht verstanden.",
+        "sentence_en": "I did not understand that."
+      },
+      {
+        "sentence_de": "Das ist nicht möglich.",
+        "sentence_en": "That is not possible."
+      }
+    ]
+  },
+  "recently": {
+    "translation": "kürzlich",
+    "sentences": [
+      {
+        "sentence_de": "Ich habe das kürzlich gelesen.",
+        "sentence_en": "I read that recently."
+      },
+      {
+        "sentence_de": "Er hat kürzlich einen neuen Job gefunden.",
+        "sentence_en": "He recently found a new job."
+      }
+    ]
+  },
+  "before": {
+    "translation": "bevor",
+    "sentences": [
+      {
+        "sentence_de": "Bevor wir gehen, müssen wir essen.",
+        "sentence_en": "Before we leave, we need to eat."
+      },
+      {
+        "sentence_de": "Er kam vor mir an.",
+        "sentence_en": "He arrived before me."
+      }
+    ]
+  },
+  "usually": {
+    "translation": "gewöhnlich",
+    "sentences": [
+      {
+        "sentence_de": "Ich esse gewöhnlich frühstück.",
+        "sentence_en": "I usually have breakfast."
+      },
+      {
+        "sentence_de": "Das passiert gewöhnlich nicht.",
+        "sentence_en": "That usually does not happen."
+      }
+    ]
+  },
+  "thus": {
+    "translation": "daher",
+    "sentences": [
+      {
+        "sentence_de": "Es war teuer, daher haben wir es nicht gekauft.",
+        "sentence_en": "It was expensive, thus we did not buy it."
+      },
+      {
+        "sentence_de": "Er hat den Test bestanden, daher ist er glücklich.",
+        "sentence_en": "He passed the test, thus he is happy."
+      }
+    ]
+  },
+  "exactly": {
+    "translation": "genau",
+    "sentences": [
+      {
+        "sentence_de": "Das ist genau das, was ich wollte.",
+        "sentence_en": "That is exactly what I wanted."
+      },
+      {
+        "sentence_de": "Wir müssen das genau überprüfen.",
+        "sentence_en": "We need to check that exactly."
+      }
+    ]
+  },
+
+  "similarly": {
+    "translation": "ähnlich",
+    "sentences": [
+      {
+        "sentence_de": "Wir denken ähnlich.",
+        "sentence_en": "We think similarly."
+      },
+      {
+        "sentence_de": "Das Produkt ist ähnlich wie das andere.",
+        "sentence_en": "The product is similar to the other one."
+      }
+    ]
+  },
+  "no": {
+    "translation": "nein",
+    "sentences": [
+      {
+        "sentence_de": "Nein, das ist nicht möglich.",
+        "sentence_en": "No, that is not possible."
+      },
+      {
+        "sentence_de": "Er sagte einfach nein.",
+        "sentence_en": "He just said no."
+      }
+    ]
+  },  "particularly": {
+    "translation": "besonders",
+    "sentences": [
+      {
+        "sentence_de": "Das ist besonders wichtig.",
+        "sentence_en": "That is particularly important."
+      },
+      {
+        "sentence_de": "Ich mag besonders diesen Film.",
+        "sentence_en": "I particularly like this movie."
+      }
+    ]
+  },
+  "pretty": {
+    "translation": "ziemlich",
+    "sentences": [
+      {
+        "sentence_de": "Das ist ziemlich teuer.",
+        "sentence_en": "That is pretty expensive."
+      },
+      {
+        "sentence_de": "Er ist ziemlich gut in Mathe.",
+        "sentence_en": "He is pretty good at math."
+      }
+    ]
+  },
+  "forward": {
+    "translation": "vorwärts",
+    "sentences": [
+      {
+        "sentence_de": "Gehen wir vorwärts.",
+        "sentence_en": "Let's move forward."
+      },
+      {
+        "sentence_de": "Sie schauen nach vorne.",
+        "sentence_en": "They are looking forward."
+      }
+    ]
+  },
+  "ok": {
+    "translation": "ok",
+    "sentences": [
+      {
+        "sentence_de": "Das ist okay.",
+        "sentence_en": "That is ok."
+      },
+      {
+        "sentence_de": "Ist alles in Ordnung?",
+        "sentence_en": "Is everything ok?"
+      }
+    ]
+  },
+  "clearly": {
+    "translation": "klar",
+    "sentences": [
+      {
+        "sentence_de": "Das ist klar zu verstehen.",
+        "sentence_en": "That is clearly understandable."
+      },
+      {
+        "sentence_de": "Sie hat das klar erklärt.",
+        "sentence_en": "She explained that clearly."
+      }
+    ]
+  },
+  "indeed": {
+    "translation": "tatsächlich",
+    "sentences": [
+      {
+        "sentence_de": "Das ist tatsächlich richtig.",
+        "sentence_en": "That is indeed correct."
+      },
+      {
+        "sentence_de": "Er war tatsächlich dort.",
+        "sentence_en": "He was indeed there."
+      }
+    ]
+  },
+  "rather": {
+    "translation": "eher",
+    "sentences": [
+      {
+        "sentence_de": "Ich würde eher bleiben.",
+        "sentence_en": "I would rather stay."
+      },
+      {
+        "sentence_de": "Das ist eher ungewöhnlich.",
+        "sentence_en": "That is rather unusual."
+      }
+    ]
+  },
+  "that": {
+    "translation": "dass",
+    "sentences": [
+      {
+        "sentence_de": "Ich weiß, dass das richtig ist.",
+        "sentence_en": "I know that this is right."
+      },
+      {
+        "sentence_de": "Das ist das Buch, das ich wollte.",
+        "sentence_en": "That is the book that I wanted."
+      }
+    ]
+  },
+  "tonight": {
+    "translation": "heute Abend",
+    "sentences": [
+      {
+        "sentence_de": "Wir treffen uns heute Abend.",
+        "sentence_en": "We will meet tonight."
+      },
+      {
+        "sentence_de": "Heute Abend gibt es eine Party.",
+        "sentence_en": "There is a party tonight."
+      }
+    ]
+  },
+
+  "suddenly": {
+    "translation": "plötzlich",
+    "sentences": [
+      {
+        "sentence_de": "Es hat plötzlich angefangen zu regnen.",
+        "sentence_en": "It suddenly started to rain."
+      },
+      {
+        "sentence_de": "Sie ist plötzlich verschwunden.",
+        "sentence_en": "She suddenly disappeared."
+      }
+    ]
+  },
+ 
+  "instead": {
+    "translation": "stattdessen",
+    "sentences": [
+      {
+        "sentence_de": "Wir haben Tee statt Kaffee getrunken.",
+        "sentence_en": "We drank tea instead of coffee."
+      },
+      {
+        "sentence_de": "Mach es lieber so statt anders.",
+        "sentence_en": "Do it this way instead of that."
+      }
+    ]
+  },
+  "ahead": {
+    "translation": "vorne",
+    "sentences": [
+      {
+        "sentence_de": "Wir sind noch nicht vorne.",
+        "sentence_en": "We are not ahead yet."
+      },
+      {
+        "sentence_de": "Das Ziel ist vorne.",
+        "sentence_en": "The goal is ahead."
+      }
+    ]
+  },
+  "fast": {
+    "translation": "schnell",
+    "sentences": [
+      {
+        "sentence_de": "Er fährt schnell.",
+        "sentence_en": "He drives fast."
+      },
+      {
+        "sentence_de": "Wir müssen schnell handeln.",
+        "sentence_en": "We need to act fast."
+      }
+    ]
+  },
+  "alone": {
+    "translation": "allein",
+    "sentences": [
+      {
+        "sentence_de": "Ich bin allein zu Hause.",
+        "sentence_en": "I am alone at home."
+      },
+      {
+        "sentence_de": "Er arbeitet lieber allein.",
+        "sentence_en": "He prefers to work alone."
+      }
+    ]
+  },
+  "eventually": {
+    "translation": "schließlich",
+    "sentences": [
+      {
+        "sentence_de": "Wir werden es schließlich schaffen.",
+        "sentence_en": "We will eventually succeed."
+      },
+      {
+        "sentence_de": "Er kam schließlich zurück.",
+        "sentence_en": "He eventually came back."
+      }
+    ]
+  },
+  "directly": {
+    "translation": "direkt",
+    "sentences": [
+      {
+        "sentence_de": "Wir gehen direkt zum Ziel.",
+        "sentence_en": "We go directly to the goal."
+      },
+      {
+        "sentence_de": "Er sprach mich direkt an.",
+        "sentence_en": "He spoke to me directly."
+      }
+    ]
+  },
+  "accept": {
+    "translation": "akzeptieren",
+    "sentences": [
+      {
+        "sentence_de": "Ich werde das Angebot akzeptieren.",
+        "sentence_en": "I will accept the offer."
+      },
+      {
+        "sentence_de": "Wir müssen deine Entscheidung akzeptieren.",
+        "sentence_en": "We need to accept your decision."
+      }
+    ]
+  },
+  "agree": {
+    "translation": "einverstanden",
+    "sentences": [
+      {
+        "sentence_de": "Wir sind uns einig.",
+        "sentence_en": "We agree."
+      },
+      {
+        "sentence_de": "Er hat zugestimmt.",
+        "sentence_en": "He agreed."
+      }
+    ]
+  },
+
+  "announce": {
+    "translation": "ankündigen",
+    "sentences": [
+      {
+        "sentence_de": "Sie wird die Ergebnisse ankündigen.",
+        "sentence_en": "She will announce the results."
+      },
+      {
+        "sentence_de": "Wir haben die neue Regel angekündigt.",
+        "sentence_en": "We announced the new rule."
+      }
+    ]
+  },
+  "arrive": {
+    "translation": "ankommen",
+    "sentences": [
+      {
+        "sentence_de": "Wir werden um 10 Uhr ankommen.",
+        "sentence_en": "We will arrive at 10 o'clock."
+      },
+      {
+        "sentence_de": "Er ist gerade angekommen.",
+        "sentence_en": "He has just arrived."
+      }
+    ]
+  },
+  "belong": {
+    "translation": "gehören",
+    "sentences": [
+      {
+        "sentence_de": "Dieses Buch gehört mir.",
+        "sentence_en": "This book belongs to me."
+      },
+      {
+        "sentence_de": "Sie gehören zusammen.",
+        "sentence_en": "They belong together."
+      }
+    ]
+  },
+  "break": {
+    "translation": "brechen",
+    "sentences": [
+      {
+        "sentence_de": "Er hat das Glas gebrochen.",
+        "sentence_en": "He broke the glass."
+      },
+      {
+        "sentence_de": "Wir brauchen eine Pause.",
+        "sentence_en": "We need a break."
+      }
+    ]
+  },
+  "choose": {
+    "translation": "wählen",
+    "sentences": [
+      {
+        "sentence_de": "Du musst eine Option wählen.",
+        "sentence_en": "You need to choose an option."
+      },
+      {
+        "sentence_de": "Wir haben das beste Produkt gewählt.",
+        "sentence_en": "We chose the best product."
+      }
+    ]
+  },
+  "decide": {
+    "translation": "entscheiden",
+    "sentences": [
+      {
+        "sentence_de": "Ich muss mich entscheiden.",
+        "sentence_en": "I need to decide."
+      },
+      {
+        "sentence_de": "Wir haben entschieden, zu bleiben.",
+        "sentence_en": "We decided to stay."
+      }
+    ]
+  },
+  "depend": {
+    "translation": "abhängen",
+    "sentences": [
+      {
+        "sentence_de": "Das hängt vom Wetter ab.",
+        "sentence_en": "It depends on the weather."
+      },
+      {
+        "sentence_de": "Es hängt von dir ab.",
+        "sentence_en": "It depends on you."
+      }
+    ]
+  },
+  "explain": {
+    "translation": "erklären",
+    "sentences": [
+      {
+        "sentence_de": "Kannst du das erklären?",
+        "sentence_en": "Can you explain that?"
+      },
+      {
+        "sentence_de": "Er hat es gut erklärt.",
+        "sentence_en": "He explained it well."
+      }
+    ]
+  },
+  "forget": {
+    "translation": "vergessen",
+    "sentences": [
+      {
+        "sentence_de": "Ich habe es vergessen.",
+        "sentence_en": "I forgot it."
+      },
+      {
+        "sentence_de": "Sie vergisst oft die Termine.",
+        "sentence_en": "She often forgets the appointments."
+      }
+    ]
+  },
+  "imagine": {
+    "translation": "vorstellen",
+    "sentences": [
+      {
+        "sentence_de": "Stell dir das vor!",
+        "sentence_en": "Imagine that!"
+      },
+      {
+        "sentence_de": "Er kann sich das nicht vorstellen.",
+        "sentence_en": "He cannot imagine that."
+      }
+    ]
+  },
+  "improve": {
+    "translation": "verbessern",
+    "sentences": [
+      {
+        "sentence_de": "Wir müssen uns verbessern.",
+        "sentence_en": "We need to improve."
+      },
+      {
+        "sentence_de": "Sie hat ihre Fähigkeiten verbessert.",
+        "sentence_en": "She improved her skills."
+      }
+    ]
+  },
+  "increase": {
+    "translation": "erhöhen",
+    "sentences": [
+      {
+        "sentence_de": "Wir sollten die Preise erhöhen.",
+        "sentence_en": "We should increase the prices."
+      },
+      {
+        "sentence_de": "Die Nachfrage ist gestiegen.",
+        "sentence_en": "The demand has increased."
+      }
+    ]
+  },
+  "invite": {
+    "translation": "einladen",
+    "sentences": [
+      {
+        "sentence_de": "Ich lade dich zur Party ein.",
+        "sentence_en": "I invite you to the party."
+      },
+      {
+        "sentence_de": "Er hat uns eingeladen.",
+        "sentence_en": "He invited us."
+      }
+    ]
+  },
+  "join": {
+    "translation": "beitreten",
+    "sentences": [
+      {
+        "sentence_de": "Möchtest du unserem Club beitreten?",
+        "sentence_en": "Do you want to join our club?"
+      },
+      {
+        "sentence_de": "Er ist dem Team beigetreten.",
+        "sentence_en": "He joined the team."
+      }
+    ]
+  },
+  "mention": {
+    "translation": "erwähnen",
+    "sentences": [
+      {
+        "sentence_de": "Ich möchte das kurz erwähnen.",
+        "sentence_en": "I would like to mention that briefly."
+      },
+      {
+        "sentence_de": "Sie hat das nicht erwähnt.",
+        "sentence_en": "She did not mention that."
+      }
+    ]
+  },
+  "notice": {
+    "translation": "bemerken",
+    "sentences": [
+      {
+        "sentence_de": "Ich habe nichts bemerkt.",
+        "sentence_en": "I did not notice anything."
+      },
+      {
+        "sentence_de": "Er bemerkte den Fehler.",
+        "sentence_en": "He noticed the mistake."
+      }
+    ]
+  },
+  "prepare": {
+    "translation": "vorbereiten",
+    "sentences": [
+      {
+        "sentence_de": "Wir müssen uns vorbereiten.",
+        "sentence_en": "We need to prepare."
+      },
+      {
+        "sentence_de": "Er hat das Essen vorbereitet.",
+        "sentence_en": "He prepared the food."
+      }
+    ]
+  },
+  "realize": {
+    "translation": "erkennen",
+    "sentences": [
+      {
+        "sentence_de": "Ich habe das erst später erkannt.",
+        "sentence_en": "I realized that only later."
+      },
+      {
+        "sentence_de": "Er erkannte den Fehler.",
+        "sentence_en": "He realized the mistake."
+      }
+    ]
+  },
+  "receive": {
+    "translation": "erhalten",
+    "sentences": [
+      {
+        "sentence_de": "Ich habe das Paket erhalten.",
+        "sentence_en": "I received the package."
+      },
+      {
+        "sentence_de": "Sie erhalten eine Bestätigung.",
+        "sentence_en": "You will receive a confirmation."
+      }
+    ]
+  },
+  "recognize": {
+    "translation": "erkennen",
+    "sentences": [
+      {
+        "sentence_de": "Ich erkenne dich.",
+        "sentence_en": "I recognize you."
+      },
+      {
+        "sentence_de": "Er hat das Problem erkannt.",
+        "sentence_en": "He recognized the problem."
+      }
+    ]
+  },
+  "reduce": {
+    "translation": "reduzieren",
+    "sentences": [
+      {
+        "sentence_de": "Wir sollten die Kosten reduzieren.",
+        "sentence_en": "We should reduce the costs."
+      },
+      {
+        "sentence_de": "Die Lärmpegel wurden reduziert.",
+        "sentence_en": "The noise levels were reduced."
+      }
+    ]
+  },
+  "remove": {
+    "translation": "entfernen",
+    "sentences": [
+      {
+        "sentence_de": "Wir müssen das entfernen.",
+        "sentence_en": "We need to remove that."
+      },
+      {
+        "sentence_de": "Er hat das Programm entfernt.",
+        "sentence_en": "He removed the program."
+      }
+    ]
+  },
+  "repeat": {
+    "translation": "wiederholen",
+    "sentences": [
+      {
+        "sentence_de": "Kannst du das bitte wiederholen?",
+        "sentence_en": "Can you please repeat that?"
+      },
+      {
+        "sentence_de": "Er hat die Übung wiederholt.",
+        "sentence_en": "He repeated the exercise."
+      }
+    ]
+  },
+  "replace": {
+    "translation": "ersetzen",
+    "sentences": [
+      {
+        "sentence_de": "Wir müssen das Gerät ersetzen.",
+        "sentence_en": "We need to replace the device."
+      },
+      {
+        "sentence_de": "Er hat das alte Teil ersetzt.",
+        "sentence_en": "He replaced the old part."
+      }
+    ]
+  },
+  "save": {
+    "translation": "speichern",
+    "sentences": [
+      {
+        "sentence_de": "Vergiss nicht zu speichern.",
+        "sentence_en": "Don't forget to save."
+      },
+      {
+        "sentence_de": "Er hat viel Geld gespart.",
+        "sentence_en": "He saved a lot of money."
+      }
+    ]
+  },
+  "separate": {
+    "translation": "trennen",
+    "sentences": [
+      {
+        "sentence_de": "Wir müssen die Dokumente trennen.",
+        "sentence_en": "We need to separate the documents."
+      },
+      {
+        "sentence_de": "Die Wege wurden getrennt.",
+        "sentence_en": "The paths were separated."
+      }
+    ]
+  },
+  "support": {
+    "translation": "unterstützen",
+    "sentences": [
+      {
+        "sentence_de": "Wir unterstützen deine Entscheidung.",
+        "sentence_en": "We support your decision."
+      },
+      {
+        "sentence_de": "Er hat sie emotional unterstützt.",
+        "sentence_en": "He supported her emotionally."
+      }
+    ]
+  },
+  "thank": {
+    "translation": "danken",
+    "sentences": [
+      {
+        "sentence_de": "Ich möchte dir danken.",
+        "sentence_en": "I want to thank you."
+      },
+      {
+        "sentence_de": "Er hat uns herzlich gedankt.",
+        "sentence_en": "He thanked us warmly."
+      }
+    ]
+  },
+  "undergo": {
+    "translation": "durchlaufen",
+    "sentences": [
+      {
+        "sentence_de": "Sie muss eine Operation durchlaufen.",
+        "sentence_en": "She has to undergo surgery."
+      },
+      {
+        "sentence_de": "Das Projekt hat viele Veränderungen durchlaufen.",
+        "sentence_en": "The project has undergone many changes."
+      }
+    ]
+  },
+  "warn": {
+    "translation": "warnen",
+    "sentences": [
+      {
+        "sentence_de": "Ich werde dich warnen.",
+        "sentence_en": "I will warn you."
+      },
+      {
+        "sentence_de": "Er warnte vor den Gefahren.",
+        "sentence_en": "He warned about the dangers."
+      }
+    ]
+  },
+  "afraid": {
+    "translation": "ängstlich",
+    "sentences": [
+      {
+        "sentence_de": "Ich bin ein bisschen ängstlich.",
+        "sentence_en": "I am a little afraid."
+      },
+      {
+        "sentence_de": "Er ist ängstlich vor Spinnen.",
+        "sentence_en": "He is afraid of spiders."
+      }
+    ]
+  },
+  "angry": {
+    "translation": "wütend",
+    "sentences": [
+      {
+        "sentence_de": "Ich bin sehr wütend.",
+        "sentence_en": "I am very angry."
+      },
+      {
+        "sentence_de": "Sie war wütend auf ihn.",
+        "sentence_en": "She was angry at him."
+      }
+    ]
+  },
+  "beautiful": {
+    "translation": "schön",
+    "sentences": [
+      {
+        "sentence_de": "Der Sonnenuntergang ist schön.",
+        "sentence_en": "The sunset is beautiful."
+      },
+      {
+        "sentence_de": "Sie hat ein schönes Kleid.",
+        "sentence_en": "She has a beautiful dress."
+      }
+    ]
+  },
+  "calm": {
+    "translation": "ruhig",
+    "sentences": [
+      {
+        "sentence_de": "Bleib ruhig.",
+        "sentence_en": "Stay calm."
+      },
+      {
+        "sentence_de": "Der See ist ruhig.",
+        "sentence_en": "The lake is calm."
+      }
+    ]
+  },
+  "careful": {
+    "translation": "vorsichtig",
+    "sentences": [
+      {
+        "sentence_de": "Sei vorsichtig!",
+        "sentence_en": "Be careful!"
+      },
+      {
+        "sentence_de": "Er ist sehr vorsichtig.",
+        "sentence_en": "He is very careful."
+      }
+    ]
+  },
+  "dangerous": {
+    "translation": "gefährlich",
+    "sentences": [
+      {
+        "sentence_de": "Das ist sehr gefährlich.",
+        "sentence_en": "That is very dangerous."
+      },
+      {
+        "sentence_de": "Sie geht in eine gefährliche Gegend.",
+        "sentence_en": "She is going to a dangerous area."
+      }
+    ]
+  },
+  "delicious": {
+    "translation": "lecker",
+    "sentences": [
+      {
+        "sentence_de": "Das Essen ist lecker.",
+        "sentence_en": "The food is delicious."
+      },
+      {
+        "sentence_de": "Die Suppe schmeckt lecker.",
+        "sentence_en": "The soup tastes delicious."
+      }
+    ]
+  },
+  "efficient": {
+    "translation": "effizient",
+    "sentences": [
+      {
+        "sentence_de": "Das ist eine effiziente Methode.",
+        "sentence_en": "That is an efficient method."
+      },
+      {
+        "sentence_de": "Er arbeitet sehr effizient.",
+        "sentence_en": "He works very efficiently."
+      }
+    ]
+  },
+  "expensive": {
+    "translation": "teuer",
+    "sentences": [
+      {
+        "sentence_de": "Das Auto ist teuer.",
+        "sentence_en": "The car is expensive."
+      },
+      {
+        "sentence_de": "Die Tickets waren sehr teuer.",
+        "sentence_en": "The tickets were very expensive."
+      }
+    ]
+  },
+  "famous": {
+    "translation": "berühmt",
+    "sentences": [
+      {
+        "sentence_de": "Er ist ein berühmter Schauspieler.",
+        "sentence_en": "He is a famous actor."
+      },
+      {
+        "sentence_de": "Die Stadt ist berühmt für ihre Architektur.",
+        "sentence_en": "The city is famous for its architecture."
+      }
+    ]
+  },
+  "friendly": {
+    "translation": "freundlich",
+    "sentences": [
+      {
+        "sentence_de": "Sie ist immer freundlich.",
+        "sentence_en": "She is always friendly."
+      },
+      {
+        "sentence_de": "Er hat einen freundlichen Hund.",
+        "sentence_en": "He has a friendly dog."
+      }
+    ]
+  },
+  "generous": {
+    "translation": "großzügig",
+    "sentences": [
+      {
+        "sentence_de": "Er ist sehr großzügig.",
+        "sentence_en": "He is very generous."
+      },
+      {
+        "sentence_de": "Die Spende war großzügig.",
+        "sentence_en": "The donation was generous."
+      }
+    ]
+  },
+  "grateful": {
+    "translation": "dankbar",
+    "sentences": [
+      {
+        "sentence_de": "Ich bin dir dankbar.",
+        "sentence_en": "I am grateful to you."
+      },
+      {
+        "sentence_de": "Sie ist dankbar für die Hilfe.",
+        "sentence_en": "She is grateful for the help."
+      }
+    ]
+  },
+
+  "healthy": {
+    "translation": "gesund",
+    "sentences": [
+      {
+        "sentence_de": "Er ist gesund.",
+        "sentence_en": "He is healthy."
+      },
+      {
+        "sentence_de": "Gesunde Ernährung ist wichtig.",
+        "sentence_en": "Healthy eating is important."
+      }
+    ]
+  },
+  "helpful": {
+    "translation": "hilfreich",
+    "sentences": [
+      {
+        "sentence_de": "Das ist sehr hilfreich.",
+        "sentence_en": "That is very helpful."
+      },
+      {
+        "sentence_de": "Er ist immer hilfreich.",
+        "sentence_en": "He is always helpful."
+      }
+    ]
+  },
+  "honest": {
+    "translation": "ehrlich",
+    "sentences": [
+      {
+        "sentence_de": "Sei ehrlich.",
+        "sentence_en": "Be honest."
+      },
+      {
+        "sentence_de": "Er ist ein ehrlicher Mensch.",
+        "sentence_en": "He is an honest person."
+      }
+    ]
+  },
+  "hungry": {
+    "translation": "hungrig",
+    "sentences": [
+      {
+        "sentence_de": "Ich bin hungrig.",
+        "sentence_en": "I am hungry."
+      },
+      {
+        "sentence_de": "Er hat immer hungrig.",
+        "sentence_en": "He is always hungry."
+      }
+    ]
+  },
+  "intelligent": {
+    "translation": "intelligent",
+    "sentences": [
+      {
+        "sentence_de": "Sie ist sehr intelligent.",
+        "sentence_en": "She is very intelligent."
+      },
+      {
+        "sentence_de": "Er hat intelligente Antworten gegeben.",
+        "sentence_en": "He gave intelligent answers."
+      }
+    ]
+  },
+  "interesting": {
+    "translation": "interessant",
+    "sentences": [
+      {
+        "sentence_de": "Das Buch ist interessant.",
+        "sentence_en": "The book is interesting."
+      },
+      {
+        "sentence_de": "Ich fand den Vortrag interessant.",
+        "sentence_en": "I found the lecture interesting."
+      }
+    ]
+  },
+  "lonely": {
+    "translation": "einsam",
+    "sentences": [
+      {
+        "sentence_de": "Ich fühle mich einsam.",
+        "sentence_en": "I feel lonely."
+      },
+      {
+        "sentence_de": "Sie lebt allein und fühlt sich einsam.",
+        "sentence_en": "She lives alone and feels lonely."
+      }
+    ]
+  },
+  "lucky": {
+    "translation": "glücklich",
+    "sentences": [
+      {
+        "sentence_de": "Ich fühle mich glücklich.",
+        "sentence_en": "I feel lucky."
+      },
+      {
+        "sentence_de": "Er hat das große Los gezogen.",
+        "sentence_en": "He hit the jackpot."
+      }
+    ]
+  },
+  "nervous": {
+    "translation": "nervös",
+    "sentences": [
+      {
+        "sentence_de": "Ich bin nervös wegen der Prüfung.",
+        "sentence_en": "I am nervous about the exam."
+      },
+      {
+        "sentence_de": "Er wirkt nervös.",
+        "sentence_en": "He seems nervous."
+      }
+    ]
+  },
+  "patient": {
+    "translation": "geduldig",
+    "sentences": [
+      {
+        "sentence_de": "Sei geduldig.",
+        "sentence_en": "Be patient."
+      },
+      {
+        "sentence_de": "Er ist ein geduldiger Lehrer.",
+        "sentence_en": "He is a patient teacher."
+      }
+    ]
+  },
+  "polite": {
+    "translation": "höflich",
+    "sentences": [
+      {
+        "sentence_de": "Sei höflich.",
+        "sentence_en": "Be polite."
+      },
+      {
+        "sentence_de": "Er ist sehr höflich.",
+        "sentence_en": "He is very polite."
+      }
+    ]
+  },
+  "proud": {
+    "translation": "stolz",
+    "sentences": [
+      {
+        "sentence_de": "Ich bin stolz auf dich.",
+        "sentence_en": "I am proud of you."
+      },
+      {
+        "sentence_de": "Er ist stolz auf seine Arbeit.",
+        "sentence_en": "He is proud of his work."
+      }
+    ]
+  },
+  "quiet": {
+    "translation": "ruhig",
+    "sentences": [
+      {
+        "sentence_de": "Es ist hier sehr ruhig.",
+        "sentence_en": "It is very quiet here."
+      },
+      {
+        "sentence_de": "Sie ist ein ruhiger Mensch.",
+        "sentence_en": "She is a quiet person."
+      }
+    ]
+  },
+  "rude": {
+    "translation": "unhöflich",
+    "sentences": [
+      {
+        "sentence_de": "Er war sehr unhöflich.",
+        "sentence_en": "He was very rude."
+      },
+      {
+        "sentence_de": "Sei nicht unhöflich.",
+        "sentence_en": "Don’t be rude."
+      }
+    ]
+  },
+  "sad": {
+    "translation": "traurig",
+    "sentences": [
+      {
+        "sentence_de": "Ich bin traurig über die Nachricht.",
+        "sentence_en": "I am sad about the news."
+      },
+      {
+        "sentence_de": "Er sieht traurig aus.",
+        "sentence_en": "He looks sad."
+      }
+    ]
+  },
+  "satisfied": {
+    "translation": "zufrieden",
+    "sentences": [
+      {
+        "sentence_de": "Ich bin mit dem Ergebnis zufrieden.",
+        "sentence_en": "I am satisfied with the result."
+      },
+      {
+        "sentence_de": "Sie war zufrieden mit dem Service.",
+        "sentence_en": "She was satisfied with the service."
+      }
+    ]
+  },
+  "tired": {
+    "translation": "müde",
+    "sentences": [
+      {
+        "sentence_de": "Ich bin müde.",
+        "sentence_en": "I am tired."
+      },
+      {
+        "sentence_de": "Er fühlt sich müde.",
+        "sentence_en": "He feels tired."
+      }
+    ]
+  },
+  "worried": {
+    "translation": "besorgt",
+    "sentences": [
+      {
+        "sentence_de": "Ich bin besorgt um dich.",
+        "sentence_en": "I am worried about you."
+      },
+      {
+        "sentence_de": "Er sieht besorgt aus.",
+        "sentence_en": "He looks worried."
+      }
+    ]
+  },
+  "absolutely": {
+    "translation": "absolut",
+    "sentences": [
+      {
+        "sentence_de": "Ich bin absolut sicher.",
+        "sentence_en": "I am absolutely sure."
+      },
+      {
+        "sentence_de": "Das ist absolut notwendig.",
+        "sentence_en": "That is absolutely necessary."
+      }
+    ]
+  },
+
+  "apparently": {
+    "translation": "offensichtlich",
+    "sentences": [
+      {
+        "sentence_de": "Offensichtlich war er krank.",
+        "sentence_en": "Apparently, he was sick."
+      },
+      {
+        "sentence_de": "Sie ist offensichtlich müde.",
+        "sentence_en": "She is apparently tired."
+      }
+    ]
+  },
+  "approximately": {
+    "translation": "ungefähr",
+    "sentences": [
+      {
+        "sentence_de": "Es dauert ungefähr eine Stunde.",
+        "sentence_en": "It takes approximately one hour."
+      },
+      {
+        "sentence_de": "Ungefähr zehn Personen waren dort.",
+        "sentence_en": "Approximately ten people were there."
+      }
+    ]
+  },
+  "basically": {
+    "translation": "grundsätzlich",
+    "sentences": [
+      {
+        "sentence_de": "Grundsätzlich ist es eine gute Idee.",
+        "sentence_en": "Basically, it is a good idea."
+      },
+      {
+        "sentence_de": "Er hat grundsätzlich recht.",
+        "sentence_en": "He is basically right."
+      }
+    ]
+  },
+  "briefly": {
+    "translation": "kurz",
+    "sentences": [
+      {
+        "sentence_de": "Er sprach kurz über das Thema.",
+        "sentence_en": "He spoke briefly about the topic."
+      },
+      {
+        "sentence_de": "Wir haben die Diskussion kurz gehalten.",
+        "sentence_en": "We kept the discussion brief."
+      }
+    ]
+  },
+  "carefully": {
+    "translation": "vorsichtig",
+    "sentences": [
+      {
+        "sentence_de": "Bitte handle vorsichtig.",
+        "sentence_en": "Please act carefully."
+      },
+      {
+        "sentence_de": "Er arbeitet sehr vorsichtig.",
+        "sentence_en": "He works very carefully."
+      }
+    ]
+  },
+  "completely": {
+    "translation": "vollständig",
+    "sentences": [
+      {
+        "sentence_de": "Das Projekt ist vollständig abgeschlossen.",
+        "sentence_en": "The project is completely finished."
+      },
+      {
+        "sentence_de": "Ich habe es vollständig verstanden.",
+        "sentence_en": "I have understood it completely."
+      }
+    ]
+  },
+  "constantly": {
+    "translation": "ständig",
+    "sentences": [
+      {
+        "sentence_de": "Er arbeitet ständig.",
+        "sentence_en": "He works constantly."
+      },
+      {
+        "sentence_de": "Sie ist ständig beschäftigt.",
+        "sentence_en": "She is constantly busy."
+      }
+    ]
+  },
+  "currently": {
+    "translation": "derzeit",
+    "sentences": [
+      {
+        "sentence_de": "Derzeit arbeite ich an einem neuen Projekt.",
+        "sentence_en": "I am currently working on a new project."
+      },
+      {
+        "sentence_de": "Wir haben derzeit keine freien Plätze.",
+        "sentence_en": "We currently have no vacancies."
+      }
+    ]
+  },
+  "definitely": {
+    "translation": "definitiv",
+    "sentences": [
+      {
+        "sentence_de": "Das ist definitiv die beste Wahl.",
+        "sentence_en": "That is definitely the best choice."
+      },
+      {
+        "sentence_de": "Ich werde definitiv kommen.",
+        "sentence_en": "I will definitely come."
+      }
+    ]
+  },
+  "easily": {
+    "translation": "leicht",
+    "sentences": [
+      {
+        "sentence_de": "Das lässt sich leicht lösen.",
+        "sentence_en": "That can be solved easily."
+      },
+      {
+        "sentence_de": "Er hat das Problem leicht gelöst.",
+        "sentence_en": "He solved the problem easily."
+      }
+    ]
+  },
+
+
+  "frequently": {
+    "translation": "häufig",
+    "sentences": [
+      {
+        "sentence_de": "Er besucht uns häufig.",
+        "sentence_en": "He visits us frequently."
+      },
+      {
+        "sentence_de": "Das passiert häufig.",
+        "sentence_en": "That happens frequently."
+      }
+    ]
+  },
+  "generally": {
+    "translation": "allgemein",
+    "sentences": [
+      {
+        "sentence_de": "Allgemein gesagt ist es eine gute Idee.",
+        "sentence_en": "Generally speaking, it is a good idea."
+      },
+      {
+        "sentence_de": "Die Meinung ist allgemein positiv.",
+        "sentence_en": "The opinion is generally positive."
+      }
+    ]
+  },
+  "hardly": {
+    "translation": "kaum",
+    "sentences": [
+      {
+        "sentence_de": "Ich kann ihn kaum hören.",
+        "sentence_en": "I can hardly hear him."
+      },
+      {
+        "sentence_de": "Es ist kaum möglich.",
+        "sentence_en": "It is hardly possible."
+      }
+    ]
+  },
+  "highly": {
+    "translation": "sehr",
+    "sentences": [
+      {
+        "sentence_de": "Das ist sehr empfehlenswert.",
+        "sentence_en": "That is highly recommended."
+      },
+      {
+        "sentence_de": "Er wurde sehr gelobt.",
+        "sentence_en": "He was highly praised."
+      }
+    ]
+  },
+  "immediately": {
+    "translation": "sofort",
+    "sentences": [
+      {
+        "sentence_de": "Bitte kommen Sie sofort.",
+        "sentence_en": "Please come immediately."
+      },
+      {
+        "sentence_de": "Wir müssen das sofort erledigen.",
+        "sentence_en": "We need to do that immediately."
+      }
+    ]
+  },
+  "literally": {
+    "translation": "wörtlich",
+    "sentences": [
+      {
+        "sentence_de": "Das ist wörtlich gemeint.",
+        "sentence_en": "That is meant literally."
+      },
+      {
+        "sentence_de": "Er hat es wörtlich genommen.",
+        "sentence_en": "He took it literally."
+      }
+    ]
+  },
+  "naturally": {
+    "translation": "natürlich",
+    "sentences": [
+      {
+        "sentence_de": "Natürlich ist er müde.",
+        "sentence_en": "Naturally, he is tired."
+      },
+      {
+        "sentence_de": "Sie verhält sich natürlich.",
+        "sentence_en": "She behaves naturally."
+      }
+    ]
+  },
+  "obviously": {
+    "translation": "offensichtlich",
+    "sentences": [
+      {
+        "sentence_de": "Offensichtlich war es ein Missverständnis.",
+        "sentence_en": "Obviously, it was a misunderstanding."
+      },
+      {
+        "sentence_de": "Das ist offensichtlich schwer.",
+        "sentence_en": "That is obviously difficult."
+      }
+    ]
+  },
+
+  "possibly": {
+    "translation": "möglicherweise",
+    "sentences": [
+      {
+        "sentence_de": "Das ist möglicherweise der Fall.",
+        "sentence_en": "That is possibly the case."
+      },
+      {
+        "sentence_de": "Wir können das möglicherweise ändern.",
+        "sentence_en": "We might possibly change that."
+      }
+    ]
+  },
+  "precisely": {
+    "translation": "genau",
+    "sentences": [
+      {
+        "sentence_de": "Das ist genau das, was ich brauche.",
+        "sentence_en": "That is precisely what I need."
+      },
+      {
+        "sentence_de": "Er hat es genau erklärt.",
+        "sentence_en": "He explained it precisely."
+      }
+    ]
+  },
+
+ 
+  "rarely": {
+    "translation": "selten",
+    "sentences": [
+      {
+        "sentence_de": "Das passiert selten.",
+        "sentence_en": "That happens rarely."
+      },
+      {
+        "sentence_de": "Sie kommt selten hierher.",
+        "sentence_en": "She comes here rarely."
+      }
+    ]
+  },
+ 
+  "relatively": {
+    "translation": "relativ",
+    "sentences": [
+      {
+        "sentence_de": "Das ist relativ einfach.",
+        "sentence_en": "That is relatively easy."
+      },
+      {
+        "sentence_de": "Wir sind relativ zufrieden.",
+        "sentence_en": "We are relatively satisfied."
+      }
+    ]
+  },
+  "safely": {
+    "translation": "sicher",
+    "sentences": [
+      {
+        "sentence_de": "Bitte fahre sicher.",
+        "sentence_en": "Please drive safely."
+      },
+      {
+        "sentence_de": "Wir haben uns sicher gefühlt.",
+        "sentence_en": "We felt safe."
+      }
+    ]
+  },
+  "seriously": {
+    "translation": "ernsthaft",
+    "sentences": [
+      {
+        "sentence_de": "Wir müssen das ernsthaft besprechen.",
+        "sentence_en": "We need to discuss this seriously."
+      },
+      {
+        "sentence_de": "Sie hat das ernsthaft gemeint.",
+        "sentence_en": "She meant that seriously."
+      }
+    ]
+  },
+  "significantly": {
+    "translation": "erheblich",
+    "sentences": [
+      {
+        "sentence_de": "Das hat sich erheblich verbessert.",
+        "sentence_en": "That has improved significantly."
+      },
+      {
+        "sentence_de": "Es gibt erhebliche Unterschiede.",
+        "sentence_en": "There are significant differences."
+      }
+    ]
+  },
+  "specifically": {
+    "translation": "spezifisch",
+    "sentences": [
+      {
+        "sentence_de": "Er hat spezifische Fragen gestellt.",
+        "sentence_en": "He asked specific questions."
+      },
+      {
+        "sentence_de": "Wir müssen das spezifisch betrachten.",
+        "sentence_en": "We need to look at that specifically."
+      }
+    ]
+  },
+ 
+  "totally": {
+    "translation": "vollständig",
+    "sentences": [
+      {
+        "sentence_de": "Das ist völlig richtig.",
+        "sentence_en": "That is totally right."
+      },
+      {
+        "sentence_de": "Ich bin vollständig überzeugt.",
+        "sentence_en": "I am totally convinced."
+      }
+    ]
+  },  "test": {
+    "translation": "Test",
+    "sentences": [
+      {
+        "sentence_de": "Ich muss den Test bestehen.",
+        "sentence_en": "I need to pass the test."
+      },
+      {
+        "sentence_de": "Der Test war schwierig.",
+        "sentence_en": "The test was difficult."
+      }
+    ]
+  },
+  "code": {
+    "translation": "Code",
+    "sentences": [
+      {
+        "sentence_de": "Er schreibt den Code.",
+        "sentence_en": "He is writing the code."
+      },
+      {
+        "sentence_de": "Der Code enthält einen Fehler.",
+        "sentence_en": "The code contains an error."
+      }
+    ]
+  },
+  "comment": {
+    "translation": "Kommentar",
+    "sentences": [
+      {
+        "sentence_de": "Er hinterließ einen Kommentar.",
+        "sentence_en": "He left a comment."
+      },
+      {
+        "sentence_de": "Der Kommentar war hilfreich.",
+        "sentence_en": "The comment was helpful."
+      }
+    ]
+  },
+  "delete": {
+    "translation": "löschen",
+    "sentences": [
+      {
+        "sentence_de": "Bitte lösche die Datei.",
+        "sentence_en": "Please delete the file."
+      },
+      {
+        "sentence_de": "Er hat den Kommentar gelöscht.",
+        "sentence_en": "He deleted the comment."
+      }
+    ]
+  },
+  "query": {
+    "translation": "Anfrage",
+    "sentences": [
+      {
+        "sentence_de": "Die Anfrage wurde beantwortet.",
+        "sentence_en": "The query was answered."
+      },
+      {
+        "sentence_de": "Ich habe eine Anfrage gestellt.",
+        "sentence_en": "I submitted a query."
+      }
+    ]
+  },
+  "eat": {
+    "translation": "essen",
+    "sentences": [
+      {
+        "sentence_de": "Wir müssen etwas essen.",
+        "sentence_en": "We need to eat something."
+      },
+      {
+        "sentence_de": "Er isst gerne Pizza.",
+        "sentence_en": "He likes to eat pizza."
+      }
+    ]
+  },
+  "this": {
+    "translation": "dies",
+    "sentences": [
+      {
+        "sentence_de": "Dies ist mein Buch.",
+        "sentence_en": "This is my book."
+      },
+      {
+        "sentence_de": "Ich mag dies nicht.",
+        "sentence_en": "I don't like this."
+      }
+    ]
+  },
+  "his": {
+    "translation": "sein",
+    "sentences": [
+      {
+        "sentence_de": "Das ist sein Auto.",
+        "sentence_en": "That is his car."
+      },
+      {
+        "sentence_de": "Er verlor sein Handy.",
+        "sentence_en": "He lost his phone."
+      }
+    ]
+  },
+  "he": {
+    "translation": "er",
+    "sentences": [
+      {
+        "sentence_de": "Er ist mein Freund.",
+        "sentence_en": "He is my friend."
+      },
+      {
+        "sentence_de": "Er spielt Fußball.",
+        "sentence_en": "He plays football."
+      }
+    ]
+  },
+  "she": {
+    "translation": "sie",
+    "sentences": [
+      {
+        "sentence_de": "Sie ist meine Schwester.",
+        "sentence_en": "She is my sister."
+      },
+      {
+        "sentence_de": "Sie arbeitet im Büro.",
+        "sentence_en": "She works in the office."
+      }
+    ]
+  },
+  "straight": {
+    "translation": "gerade",
+    "sentences": [
+      {
+        "sentence_de": "Gehen Sie geradeaus.",
+        "sentence_en": "Go straight ahead."
+      },
+      {
+        "sentence_de": "Der Weg ist gerade.",
+        "sentence_en": "The path is straight."
+      }
+    ]
+  },
+  "strength": {
+    "translation": "Stärke",
+    "sentences": [
+      {
+        "sentence_de": "Er hat große Stärke.",
+        "sentence_en": "He has great strength."
+      },
+      {
+        "sentence_de": "Ihre innere Stärke ist bewundernswert.",
+        "sentence_en": "Her inner strength is admirable."
+      }
+    ]
+  },
+  "street": {
+    "translation": "Straße",
+    "sentences": [
+      {
+        "sentence_de": "Die Straße ist lang.",
+        "sentence_en": "The street is long."
+      },
+      {
+        "sentence_de": "Er wohnt in dieser Straße.",
+        "sentence_en": "He lives on this street."
+      }
+    ]
+  },
+
+
+  "fun": {
+    "translation": "Spaß",
+    "sentences": [
+      {
+        "sentence_de": "Das Spiel macht Spaß.",
+        "sentence_en": "The game is fun."
+      },
+      {
+        "sentence_de": "Wir hatten viel Spaß.",
+        "sentence_en": "We had a lot of fun."
+      }
+    ]
+  },
+  "organize": {
+    "translation": "organisieren",
+    "sentences": [
+      {
+        "sentence_de": "Sie muss das Event organisieren.",
+        "sentence_en": "She has to organize the event."
+      },
+      {
+        "sentence_de": "Ich werde meine Bücher organisieren.",
+        "sentence_en": "I will organize my books."
+      }
+    ]
+  },
+  "me": {
+    "translation": "mich",
+    "sentences": [
+      {
+        "sentence_de": "Er kennt mich gut.",
+        "sentence_en": "He knows me well."
+      },
+      {
+        "sentence_de": "Hilf mir, bitte.",
+        "sentence_en": "Help me, please."
+      }
+    ]
+  },
+  "they": {
+    "translation": "sie",
+    "sentences": [
+      {
+        "sentence_de": "Sie kommen morgen.",
+        "sentence_en": "They are coming tomorrow."
+      },
+      {
+        "sentence_de": "Sie haben das Buch gelesen.",
+        "sentence_en": "They read the book."
+      }
+    ]
+  },
+  "it": {
+    "translation": "es",
+    "sentences": [
+      {
+        "sentence_de": "Es ist kalt draußen.",
+        "sentence_en": "It is cold outside."
+      },
+      {
+        "sentence_de": "Es regnet heute.",
+        "sentence_en": "It is raining today."
+      }
+    ]
+  },
+  "them": {
+    "translation": "sie",
+    "sentences": [
+      {
+        "sentence_de": "Ich habe sie getroffen.",
+        "sentence_en": "I met them."
+      },
+      {
+        "sentence_de": "Er kennt sie gut.",
+        "sentence_en": "He knows them well."
+      }
+    ]
+  },
+  "myself": {
+    "translation": "mich selbst",
+    "sentences": [
+      {
+        "sentence_de": "Ich habe mich selbst verletzt.",
+        "sentence_en": "I hurt myself."
+      },
+      {
+        "sentence_de": "Ich kümmere mich um mich selbst.",
+        "sentence_en": "I take care of myself."
+      }
+    ]
+  },
+  "yourself": {
+    "translation": "dich selbst",
+    "sentences": [
+      {
+        "sentence_de": "Pass auf dich selbst auf.",
+        "sentence_en": "Take care of yourself."
+      },
+      {
+        "sentence_de": "Du solltest dich selbst schätzen.",
+        "sentence_en": "You should value yourself."
+      }
+    ]
+  },
+  "themselves": {
+    "translation": "sich selbst",
+    "sentences": [
+      {
+        "sentence_de": "Sie kümmern sich um sich selbst.",
+        "sentence_en": "They take care of themselves."
+      },
+      {
+        "sentence_de": "Sie haben sich selbst verteidigt.",
+        "sentence_en": "They defended themselves."
+      }
+    ]
+  }
+
+}
+

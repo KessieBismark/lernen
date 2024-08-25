@@ -1,0 +1,32 @@
+name: lernen
+description: "Learn German With AI Assistance."
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+3
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+    
+
+  cupertino_icons: ^1.0.8
+  provider:
+  flutter_tts:
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+  flutter_lints: ^4.0.0
+
+
+flutter:
+
+  uses-material-design: true
+  assets:
+    - assets/dict.json
