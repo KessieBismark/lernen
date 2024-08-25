@@ -6,14 +6,14 @@ import 'package:lernen/models.dart';
 
 import 'provider.dart';
 
-class NewHome extends StatefulWidget {
-  const NewHome({super.key});
+class Home extends StatefulWidget {
+  const Home({super.key});
 
   @override
-  State<NewHome> createState() => _NewHomeState();
+  State<Home> createState() => _NewHomeState();
 }
 
-class _NewHomeState extends State<NewHome> {
+class _NewHomeState extends State<Home> {
   final TextEditingController _controller = TextEditingController();
   late Future<Map<String, WordData>> _dataFuture;
   final FlutterTts _flutterTts = FlutterTts();
