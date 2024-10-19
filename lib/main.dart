@@ -1,9 +1,35 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:lernen/entries_fold/possessive/provider.dart';
+import 'package:lernen/main_page.dart';
+import 'package:lernen/entries_fold/vocabs/u_provider.dart';
+import 'package:lernen/utils/provider/theme_provider.dart';
+import 'package:provider/provider.dart';
 
-import 'home.dart';
+import 'conversations/provider.dart';
+import 'entries_fold/grammatics/provider.dart';
+import 'entries_fold/sentence/provider.dart';
+import 'spelling/provider.dart';
+import 'verb/provider.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (_) => UploadProvider()),
+        ChangeNotifierProvider(create: (_) => ThemeProvider()),
+        ChangeNotifierProvider(create: (_) => ConProvider()),
+        ChangeNotifierProvider(create: (_) => GrammerProvider()),
+        ChangeNotifierProvider(create: (_) => PoProvider()),
+        ChangeNotifierProvider(create: (_) => VerbProvider()),
+        ChangeNotifierProvider(create: (_) => SpellProvider()),
+        ChangeNotifierProvider(create: (_) => ConversationProvider()),
+
+        // Add more providers here as needed ConversationProvider
+      ],
+      child: const MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -11,14 +37,18 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Lernen',
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: const Home(),
+    return Consumer<ThemeProvider>(
+      builder: (context, themeProvider, child) {
+        return GetMaterialApp(
+          debugShowCheckedModeBanner: false,
+          title: 'Lernen',
+          theme: ThemeData.light(),
+          darkTheme: ThemeData.dark(),
+          themeMode:
+              themeProvider.isDarkTheme ? ThemeMode.dark : ThemeMode.light,
+          home: const MainPage(),
+        );
+      },
     );
   }
 }
