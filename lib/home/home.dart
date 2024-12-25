@@ -77,7 +77,8 @@ class _NewHomeState extends State<Home> {
     await _flutterTts.setLanguage(locale);
     await _flutterTts.speak(text);
     await Future.delayed(const Duration(milliseconds: 500)); // Adjust as needed
-    speaking = false;
+    speaking = await _flutterTts.awaitSpeakCompletion(true);
+
     if (text == last) {
       await stepper();
     }
@@ -283,13 +284,9 @@ class _NewHomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      //   title: const Text('Learn German App'),
-      // ),
       body: GestureDetector(
         onTap: () {
           FocusScope.of(context).requestFocus(FocusNode());
-          //FocusManager.instance.primaryFocus?.unfocus();
         },
         child: SafeArea(
           child: ListView(
@@ -361,23 +358,26 @@ class _NewHomeState extends State<Home> {
               _filteredKeys.isNotEmpty
                   ? Padding(
                       padding: const EdgeInsets.all(10.0),
-                      child: ListView.builder(
-                        shrinkWrap: true,
-                        itemCount: _filteredKeys.length,
-                        itemBuilder: (context, index) {
-                          return ListTile(
-                            title: Text(_filteredKeys[index]),
-                            onTap: () {
-                              setState(() {
-                                _selectedWord = _filteredKeys[index];
-                                _filteredKeys =
-                                    []; // Clear suggestions after selection
-                                _controller
-                                    .clear(); // Optionally clear the search field
-                              });
-                            },
-                          );
-                        },
+                      child: SizedBox(
+                        height: MediaQuery.of(context).size.height * 0.4,
+                        child: ListView.builder(
+                          shrinkWrap: true,
+                          itemCount: _filteredKeys.length,
+                          itemBuilder: (context, index) {
+                            return ListTile(
+                              title: Text(_filteredKeys[index]),
+                              onTap: () {
+                                setState(() {
+                                  _selectedWord = _filteredKeys[index];
+                                  _filteredKeys =
+                                      []; // Clear suggestions after selection
+                                  _controller
+                                      .clear(); // Optionally clear the search field
+                                });
+                              },
+                            );
+                          },
+                        ),
                       ),
                     )
                   : Container(),

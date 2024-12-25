@@ -9,6 +9,8 @@ class PoProvider extends ChangeNotifier {
   final TextEditingController stController = TextEditingController();
   final TextEditingController caseController = TextEditingController();
   final TextEditingController nomController = TextEditingController();
+  final TextEditingController tenseController = TextEditingController();
+
   List<PossModel> cl = <PossModel>[];
   List<DropDownModel> cases = [];
   List<String> nomList = [];
@@ -21,7 +23,7 @@ class PoProvider extends ChangeNotifier {
 
   clearfields() {
     germanController.clear();
-    wordController = DropDownModel(id: '', name: '');
+    // wordController = DropDownModel(id: '', name: '');
     nomController.clear();
   }
 
@@ -105,35 +107,56 @@ class PoProvider extends ChangeNotifier {
   }
 
   void saveVerb() async {
-    isSave = true;
-    notifyListeners();
-    try {
-      final body = <String, dynamic>{
-        "word": "${nomController.text.trim()} ${germanController.text.trim()}",
-        "voc_fk": wordController!.id,
-      };
-      final record = await url.collection('verb').create(body: body);
-      debugPrint(record.toString());
-      if (record.collectionId.isNotEmpty) {
-        clearfields();
+    if (nomController.text.isEmpty ||
+        germanController.text.isEmpty ||
+        wordController!.id.isEmpty) {
+      Get.defaultDialog(
+        title: "Error",
+        content: Text(
+          "All fields are required!",
+        ),
+      );
+    } else {
+      isSave = true;
+      notifyListeners();
+      try {
+        final search = await url.collection('verb').getFullList(
+              filter:
+                  'word = "${nomController.text.trim()} ${germanController.text.trim()}"',
+            );
+        if (search.isNotEmpty) {
+          Get.defaultDialog(
+              title: "Duplicate", content: Text("Item already in database"));
+        } else {
+          final body = <String, dynamic>{
+            "word":
+                "${nomController.text.trim()} ${germanController.text.trim()}",
+            "voc_fk": wordController!.id,
+            "tense": tenseController.text.trim(),
+          };
+          final record = await url.collection('verb').create(body: body);
+          debugPrint(record.toString());
+          if (record.collectionId.isNotEmpty) {
+            clearfields();
+            const AlertDialog(
+              icon: Icon(Icons.info),
+              title: Text("Saved"),
+              content: Text("Data saved"),
+            );
+          }
+        }
+      } catch (e) {
+        isSave = false;
+        notifyListeners();
         const AlertDialog(
-          icon: Icon(Icons.info),
-          title: Text("Saved"),
-          content: Text("Data saved"),
+          icon: Icon(Icons.error),
+          title: Text("Error"),
+          content: Text("Not Saved"),
         );
       }
-    } catch (e) {
-      print(e);
       isSave = false;
       notifyListeners();
-      const AlertDialog(
-        icon: Icon(Icons.error),
-        title: Text("Error"),
-        content: Text("Not Saved"),
-      );
     }
-    isSave = false;
-    notifyListeners();
   }
 
   void updateVerb(String id) async {
@@ -143,6 +166,7 @@ class PoProvider extends ChangeNotifier {
       final body = <String, dynamic>{
         "word": "${nomController.text.trim()} ${germanController.text.trim()}",
         "voc_fk": wordController!.id,
+        "tense": tenseController.text.trim(),
       };
       final record = await url.collection('verb').update(id, body: body);
       debugPrint(record.toString());
@@ -160,7 +184,7 @@ class PoProvider extends ChangeNotifier {
       const AlertDialog(
         icon: Icon(Icons.error),
         title: Text("Error"),
-        content: Text("Not Savec"),
+        content: Text("Not Saved"),
       );
     }
     isSave = false;
@@ -185,7 +209,7 @@ class PoProvider extends ChangeNotifier {
       const AlertDialog(
         icon: Icon(Icons.error),
         title: Text("Error"),
-        content: Text("Not Savec"),
+        content: Text("Not Saved"),
       );
     }
   }
@@ -198,7 +222,6 @@ class PoProvider extends ChangeNotifier {
     try {
       final records =
           await url.collection('verb').getFullList(expand: "voc_fk");
-      print(records);
       for (var item in records) {
         record.add(PossModel.frmJson(item.toJson()));
       }
@@ -256,7 +279,6 @@ class PoProvider extends ChangeNotifier {
     } catch (e) {
       wordLoad = false;
       notifyListeners();
-      print('Error fetching data: $e');
       return record;
     }
   }

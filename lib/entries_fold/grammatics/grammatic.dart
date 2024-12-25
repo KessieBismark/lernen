@@ -66,7 +66,12 @@ class Grammatic extends StatelessWidget {
                     label: "select Case",
                     controller: value.caseController,
                     onChange: (val) => value.caseController.text = val!,
-                    list: const ['Preposition', 'Accusative', 'Dative'],
+                    list: const [
+                      'Preposition',
+                      'Possesive',
+                      'Accusative',
+                      'Dative'
+                    ],
                   ),
                 ),
                 value.isSave

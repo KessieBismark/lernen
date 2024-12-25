@@ -15,6 +15,7 @@ class SpellProvider extends ChangeNotifier {
   List<VocabularyModel> wl = <VocabularyModel>[];
   final random = Random();
   String word = "";
+  String eng='';
   bool viewWord = false;
   int wordCounter = 0;
   int marks = 0;
@@ -30,12 +31,13 @@ class SpellProvider extends ChangeNotifier {
     // Ensure the random index is within the full data map
     int randomIndex = random.nextInt(wList.length);
     word = wList[randomIndex].du!;
+    eng = wList[randomIndex].eng!;
     Speak().speak(text: word, locale: "de-DE");
     return word;
   }
 
   checker() {
-    if (word.toLowerCase() == wordController.text.toLowerCase()) {
+    if (word.toLowerCase() == wordController.text.trim().toLowerCase()) {
       marks += 1;
       correct = 1;
     } else {

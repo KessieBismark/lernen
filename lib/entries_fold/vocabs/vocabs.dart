@@ -41,6 +41,14 @@ class Vocabs extends StatelessWidget {
                       labelText: 'Deutsch Feminie',
                     )),
               ),
+               Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: TextField(
+                    controller: value.pastController,
+                    decoration: const InputDecoration(
+                      labelText: 'Past Tense',
+                    )),
+              ),
               Padding(
                 padding: const EdgeInsets.all(20.0),
                 child: TextField(
@@ -55,7 +63,8 @@ class Vocabs extends StatelessWidget {
                       padding: const EdgeInsets.all(20.0),
                       child: ElevatedButton(
                           onPressed: () {
-                            value.saveWord();
+                          value.isedit? value.updateWord(value.controller.text):  value.saveWord();
+                          value.isedit=false;
                           },
                           child: const Text("Save")),
                     )

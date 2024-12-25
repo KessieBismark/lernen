@@ -47,6 +47,15 @@ class Possessive extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.all(20.0),
                   child: DropDownText(
+                      hint: "select Tense",
+                      label: "select Tense",
+                      controller: value.tenseController,
+                      onChange: (val) => value.tenseController.text = val!,
+                      list: ['Present', 'Past']),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(20.0),
+                  child: DropDownText(
                       hint: "select Case",
                       label: "select Case",
                       controller: value.nomController,

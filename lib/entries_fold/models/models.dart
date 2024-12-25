@@ -3,16 +3,24 @@ class VocabularyModel {
   final String? du;
   final String? fe;
   final String? eng;
+  final String? past;
+
   final bool? study;
 
   VocabularyModel(
-      {required this.id, this.du, this.fe, this.eng, this.study = false});
+      {required this.id,
+      this.du,
+      this.fe,
+      this.past,
+      this.eng,
+      this.study = false});
   factory VocabularyModel.fromJson(Map<String, dynamic> map) {
     return VocabularyModel(
         id: map['id'],
         du: map['du'] ?? '',
         fe: map['feminie'] ?? '',
         eng: map['en'] ?? '',
+        past: map['past'] ?? '',
         study: map['studied']);
   }
 }
@@ -102,14 +110,17 @@ class ConModel {
 
 class PossModel {
   final String id;
+  final String? tense;
+
   final String? word;
   final VocabularyModel? vocabs;
 
-  PossModel({required this.id, this.word, this.vocabs});
+  PossModel({required this.id, this.tense, this.word, this.vocabs});
 
   factory PossModel.frmJson(Map<String, dynamic> map) {
     return PossModel(
       id: map['id'],
+      tense: map['tense'] ?? '',
       word: map['word'] ?? '',
       vocabs: map['expand'] != null && map['expand']['voc_fk'] != null
           ? VocabularyModel.fromJson(
@@ -122,16 +133,20 @@ class PossModel {
 class VerbModel {
   final String id;
   final String? word;
+  final String? tense;
+
   // final VocabularyModel? vocabs;
 
   VerbModel({
     required this.id,
     this.word,
+    this.tense,
   });
 
   factory VerbModel.frmJson(Map<String, dynamic> map) {
     return VerbModel(
-      id: map['id'],
+      id: map['id'], tense: map['tense'] ?? '',
+
       word: map['word'] ?? '',
       // vocabs: map['expand'] != null && map['expand']['voc_fk'] != null
       //     ? VocabularyModel.fromJson(

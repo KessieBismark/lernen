@@ -33,13 +33,15 @@ class PossessiveList extends StatelessWidget {
               itemBuilder: (context, index) {
                 return Card(
                   child: ListTile(
-                    title: Center(
-                      child: SelectableText(
-                          "Verb: ${provider.filteredList[index].vocabs!.du!.capitalize} (${provider.filteredList[index].vocabs!.eng!.capitalize})"),
-                    ),
+                    title: SelectableText(
+                        "Verb: ${provider.filteredList[index].vocabs?.du!.capitalize} (${provider.filteredList[index].vocabs?.eng!.capitalize})"),
                     subtitle: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
+                        Text(
+                          "${provider.filteredList[index].tense!} Tense",
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
                         SelectableText(
                             "Deutsch: ${provider.filteredList[index].word!}"),
                       ],

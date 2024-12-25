@@ -5,6 +5,8 @@ import '../../server.dart';
 
 class ConProvider extends ChangeNotifier {
   final TextEditingController germanController = TextEditingController();
+    final TextEditingController idController = TextEditingController();
+
   final TextEditingController stController = TextEditingController();
   final TextEditingController caseController = TextEditingController();
   final TextEditingController engController = TextEditingController();
@@ -16,12 +18,14 @@ class ConProvider extends ChangeNotifier {
   bool dictLoad = false;
   bool wordLoad = false;
   bool isSave = false;
-
+bool isedit =false;
   clearfields() {
     germanController.clear();
-    wordController = DropDownModel(id: '', name: '');
+    //  wordController = DropDownModel(id: '', name: '');
     engController.clear();
+    isedit =false;
   }
+
 
   List<SentenceModel> _filteredList = [];
 

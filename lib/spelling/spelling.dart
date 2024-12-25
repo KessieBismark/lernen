@@ -42,14 +42,17 @@ class _SpellingState extends State<Spelling> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    IconButton(
-                        onPressed: () async {
-                          Speak().speak(text: value.word, locale: "de-DE");
-                        },
-                        icon: Icon(
-                          Icons.record_voice_over,
-                          size: 50,
-                        )),
+                    Tooltip(
+                      message: value.eng,
+                      child: IconButton(
+                          onPressed: () async {
+                            Speak().speak(text: value.word, locale: "de-DE");
+                          },
+                          icon: Icon(
+                            Icons.record_voice_over,
+                            size: 50,
+                          )),
+                    ),
                     SizedBox(
                       width: 50,
                     ),
@@ -115,6 +118,7 @@ class _SpellingState extends State<Spelling> {
                                   } else {
                                     if (value.word.toLowerCase() ==
                                         value.wordController.text
+                                            .trim()
                                             .toLowerCase()) {
                                       value.marks += 1;
                                       value.correct = 1;
@@ -141,6 +145,7 @@ class _SpellingState extends State<Spelling> {
 
   void _showBottomDialog(BuildContext context) {
     showModalBottomSheet(
+      isDismissible: false,
       context: context,
       builder: (BuildContext context) {
         return Container(
@@ -166,7 +171,7 @@ class _SpellingState extends State<Spelling> {
                               width: 5,
                             ),
                             Text(
-                              "${context.read<SpellProvider>().word.capitalize}",
+                              "${context.read<SpellProvider>().word.capitalize} (${context.read<SpellProvider>().eng})",
                               style: TextStyle(
                                   color: Colors.green,
                                   fontWeight: FontWeight.w500),
@@ -192,7 +197,7 @@ class _SpellingState extends State<Spelling> {
                                   width: 5,
                                 ),
                                 Text(
-                                  "${context.read<SpellProvider>().word.capitalize}",
+                                  "${context.read<SpellProvider>().word.capitalize} (${context.read<SpellProvider>().eng})",
                                   style: TextStyle(
                                       color: Colors.red,
                                       fontWeight: FontWeight.w500),
@@ -205,7 +210,7 @@ class _SpellingState extends State<Spelling> {
                           padding: const EdgeInsets.all(20.0),
                           child: Center(
                             child: Text(
-                              "${context.read<SpellProvider>().word.capitalize}",
+                              "${context.read<SpellProvider>().word.capitalize} (${context.read<SpellProvider>().eng})",
                               style: TextStyle(fontWeight: FontWeight.w500),
                             ),
                           ),

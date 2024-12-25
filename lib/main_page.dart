@@ -30,31 +30,34 @@ class _MyWidgetState extends State<MainPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: _pages.elementAt(_selectedIndex),
-      bottomNavigationBar: BottomNavigationBar(
-        type: BottomNavigationBarType.fixed,
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            icon: Icon(Icons.abc),
-            label: 'Words',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.spatial_tracking_outlined),
-            label: 'Spelling',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.play_for_work_outlined),
-            label: 'Verbs',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.record_voice_over),
-            label: 'Convo',
-          ),
-        ],
-        currentIndex: _selectedIndex,
-        selectedItemColor: Colors.blue,
-        onTap: _onItemTapped,
+    return GestureDetector(
+      onTap: FocusScope.of(context).unfocus,
+      child: Scaffold(
+        body: _pages.elementAt(_selectedIndex),
+        bottomNavigationBar: BottomNavigationBar(
+          type: BottomNavigationBarType.fixed,
+          items: const <BottomNavigationBarItem>[
+            BottomNavigationBarItem(
+              icon: Icon(Icons.abc),
+              label: 'Words',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.spatial_tracking_outlined),
+              label: 'Spelling',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.play_for_work_outlined),
+              label: 'Verbs',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.record_voice_over),
+              label: 'Convo',
+            ),
+          ],
+          currentIndex: _selectedIndex,
+          selectedItemColor: Colors.blue,
+          onTap: _onItemTapped,
+        ),
       ),
     );
   }

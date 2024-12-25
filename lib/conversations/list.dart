@@ -21,41 +21,51 @@ class Convo extends StatelessWidget {
         },
         child: Scaffold(
           body: SafeArea(
-              child: Column(
+              child: Stack(
             children: [
-              TopBar(),
-              SizedBox(
-                height: 50,
+              Column(
+                children: [
+                  TopBar(),
+                  SizedBox(
+                    height: 50,
+                  ),
+                  Center(
+                    child: Text(
+                      " ${value.word?.name.capitalize ?? ""}",
+                      style: TextStyle(fontWeight: FontWeight.w500),
+                    ),
+                  ),
+                  const Divider(
+                    indent: 20,
+                    endIndent: 20,
+                    color: Colors.blue,
+                  ),
+                  const Text(
+                    'Examples',
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
+                  Expanded(
+                    child:
+                        value.load ? MWaiting() : listData(context, value.cl),
+                  ),
+                  const Divider(
+                    indent: 20,
+                    endIndent: 20,
+                    color: Colors.blue,
+                  ),
+                ],
               ),
-              Center(
-                child: Text(
-                  " ${value.word?.name.capitalize ?? ""}",
-                  style: TextStyle(fontWeight: FontWeight.w500),
-                ),
-              ),
-              const Divider(
-                indent: 20,
-                endIndent: 20,
-                color: Colors.blue,
-              ),
-              const Text(
-                'Examples',
-                style: TextStyle(fontWeight: FontWeight.bold),
-              ),
-              value.load ? MWaiting() : listData(context, value.cl),
-              const Divider(
-                indent: 20,
-                endIndent: 20,
-                color: Colors.blue,
-              ),
-              Padding(
-                padding: const EdgeInsets.all(20.0),
-                child: ElevatedButton(
-                    onPressed: () {
-                      value.wordShower();
-                    },
-                    child: const Text("Continue")),
-              )
+              Positioned(
+                  bottom: 0,
+                  right: 0,
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: IconButton(
+                        onPressed: () {
+                          value.wordShower();
+                        },
+                        icon: Icon(Icons.arrow_circle_right,size: 35,)),
+                  ))
             ],
           )),
         ),

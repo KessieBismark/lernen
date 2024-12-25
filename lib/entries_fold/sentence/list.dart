@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:lernen/utils/waiting.dart';
 import 'package:provider/provider.dart';
 import '../../utils/speak.dart';
+import 'conversation.dart';
 import 'provider.dart';
 import 'package:get/get.dart';
 
@@ -37,6 +38,47 @@ class SentenceList extends StatelessWidget {
                     itemBuilder: (context, index) {
                       return Card(
                         child: ListTile(
+                          trailing: SizedBox(
+                            width: 100,
+                            child: Row(
+                              children: [
+                                IconButton(
+                                    onPressed: () {
+                                      provider.germanController.text =
+                                          provider.filteredList[index].du!;
+                                      provider.engController.text =
+                                          provider.filteredList[index].eng!;
+
+                                      provider.stController.text =
+                                          provider.filteredList[index].stype!;
+
+                                      provider.engController.text =
+                                          provider.filteredList[index].eng!;
+                                      provider.idController.text =
+                                          provider.filteredList[index].id;
+                                      provider.caseController.text =
+                                          provider.filteredList[index].gcase!;
+                                      provider.caseController.text =
+                                          provider.filteredList[index].id;
+                                      provider.isedit = true;
+                                      Get.to(() => Conversation());
+                                    },
+                                    icon: Icon(
+                                      Icons.edit,
+                                      color: Colors.green,
+                                    )),
+                                IconButton(
+                                    onPressed: () {
+                                      provider.deleteWord(
+                                          provider.filteredList[index].id);
+                                    },
+                                    icon: Icon(
+                                      Icons.delete,
+                                      color: Colors.red,
+                                    ))
+                              ],
+                            ),
+                          ),
                           title: Row(
                             children: [
                               SelectableText(

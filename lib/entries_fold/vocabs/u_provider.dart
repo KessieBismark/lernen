@@ -9,7 +9,8 @@ class UploadProvider extends ChangeNotifier {
 
   final TextEditingController feminiController = TextEditingController();
   final TextEditingController engController = TextEditingController();
-
+  final TextEditingController pastController = TextEditingController();
+bool isedit = false;
   bool dictLoad = false;
   bool wordLoad = false;
   bool isSave = false;
@@ -22,6 +23,7 @@ class UploadProvider extends ChangeNotifier {
     germanController.clear();
     feminiController.clear();
     engController.clear();
+    isedit= false;
   }
 
   List<VocabularyModel> _filteredList = [];
@@ -69,6 +71,7 @@ class UploadProvider extends ChangeNotifier {
         "du": germanController.text.trim(),
         "en": engController.text.trim(),
         "feminie": feminiController.text.trim(),
+        "past": pastController.text.trim()
       };
       final search = await url.collection('vocabulary').getFullList(
             filter: 'du = "${germanController.text.trim()}"',
@@ -109,6 +112,7 @@ class UploadProvider extends ChangeNotifier {
         "du": germanController.text.trim(),
         "en": engController.text.trim(),
         "feminie": feminiController.text.trim(),
+        "past": pastController.text.trim()
       };
       final record = await url.collection('vocabulary').update(id, body: body);
       debugPrint(record.toString());

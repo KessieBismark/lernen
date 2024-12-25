@@ -14,6 +14,7 @@ class VerbProvider extends ChangeNotifier {
   List<VocabularyModel> wList = <VocabularyModel>[];
   final random = Random();
   bool load = false;
+
   VerbProvider() {
     getWord();
   }
@@ -47,7 +48,7 @@ class VerbProvider extends ChangeNotifier {
       for (int i = 0; i < wList.length; i++) {
         cases.add(DropDownModel(
             id: wList[i].id.toString(),
-            name: "${wList[i].du} (${wList[i].eng})"));
+            name: "${wList[i].du} - ${wList[i].past} (${wList[i].eng})"));
       }
       wordShower();
       wordLoad = false;

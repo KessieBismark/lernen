@@ -60,14 +60,14 @@ class Conversation extends StatelessWidget {
                       label: "select Type",
                       controller: value.stController,
                       onChange: (val) => value.stController.text = val!,
-                      list: const ['Fragen', 'Accusative']),
+                      list: const ['Fragen', 'Satz']),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(20.0),
                   child: TextField(
                     controller: value.germanController,
                     decoration: const InputDecoration(
-                      labelText: 'Enter Deutsch sentence',
+                      labelText: 'Eingeben Deutsch Satz',
                     ),
                   ),
                 ),
@@ -86,7 +86,10 @@ class Conversation extends StatelessWidget {
                         padding: const EdgeInsets.all(20.0),
                         child: ElevatedButton(
                           onPressed: () {
-                            value.saveSentnce();
+                            value.isedit
+                                ? value.updateGrammer(value.idController.text)
+                                : value.saveSentnce();
+                            value.isedit = false;
                           },
                           child: const Text("Save"),
                         ),
