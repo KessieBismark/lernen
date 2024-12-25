@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:lernen/utils/theme_switch.dart';
 
-import '../entries_fold/entry.dart';
-
 class TopBar extends StatelessWidget {
+  final Widget? widget;
   const TopBar({
     super.key,
+    this.widget,
   });
 
   @override
@@ -14,9 +13,7 @@ class TopBar extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        IconButton(
-            onPressed: () => Get.to(() => Entries()),
-            icon: Icon(Icons.edit)),
+        widget ?? Container(),
         const ThemeSwitch(),
       ],
     );

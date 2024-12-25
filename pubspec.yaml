@@ -3,7 +3,7 @@ description: "Learn German With AI Assistance. Developed Bismark Kessie"
 
 publish_to: "none" # Remove this line if you wish to publish to pub.dev
 
-version: 2.0.5+0
+version: 3.0.7+0
 
 environment:
   sdk: ^3.5.0
@@ -16,12 +16,19 @@ dependencies:
     sdk: flutter
   flutter_beep: ^1.0.0
   flutter_svg: ^2.0.10+1
-  flutter_tts: null
+  flutter_tts: 
   get: ^4.6.6
   pocketbase: ^0.18.1
   provider: ^6.1.2
   shared_preferences: ^2.3.2
-
+  flutter_dotenv:
+  http: ^1.2.2
+  sqflite:
+  google_fonts:
+  flutter_markdown:
+  html2md:
+  sqflite_common_ffi_web:
+  intl:
 dev_dependencies:
   flutter_lints: ^5.0.0
   flutter_test:

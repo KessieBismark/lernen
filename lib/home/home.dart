@@ -1,8 +1,11 @@
+import 'dart:convert';
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 import 'package:lernen/home/models.dart';
-import 'package:shared_preferences/shared_preferences.dart';
+import '../server.dart';
+import '../utils/helpers.dart';
+import '../utils/shared_pref.dart';
 import '../utils/topbar.dart';
 import 'provider.dart';
 
@@ -21,11 +24,12 @@ class _NewHomeState extends State<Home> {
   List<String> _filteredKeys = [];
   String _selectedWord = '';
   bool speaking = false;
-  bool isLast = false;
+  bool _stopRequested = false;
 
   @override
   void initState() {
     super.initState();
+
     _dataFuture = DataProvider.loadData();
     _dataFuture.then((data) {
       setState(() {
@@ -33,19 +37,38 @@ class _NewHomeState extends State<Home> {
         _filteredKeys = _dataMap.keys.toList();
       });
     });
+    fetchModel().then((List<ModelInfo> models) async {
+      Utils.aiListModels = models;
+      Utils.selectedAIModel =
+          await SharedPreferencesUtil.getString('ai_model') ?? "llama3-8b-8192";
+      Utils().setDevideID();
+    }).catchError((error) {
+      print('Error in DataProvider: $error');
+    });
+    print(Utils.aiListModels.toString());
   }
 
-  // void saveState(index) async {
-  //   final SharedPreferences prefs = await SharedPreferences.getInstance();
-  //   await prefs.setInt('index', index);
-  // }
+  Future<List<ModelInfo>> fetchModel() async {
+    var record = <ModelInfo>[];
+    try {
+      final records = await Query.getData(endPoint: "model");
+      // Fetching the data
+      final jsonResponse = jsonDecode(records);
 
-  // readState() async {
-  //   final SharedPreferences prefs = await SharedPreferences.getInstance();
-  //   int index = prefs.getInt('index') ?? 0;
+      // Deserialize into ModelListResponse
+      final List<dynamic> data = jsonResponse['data'];
 
-  //   return index;
-  // }
+      for (var item in data) {
+        record
+            .add(ModelInfo.fromJson(item)); // Assuming AIModel.fromJson exists
+      }
+
+      return record;
+    } catch (e) {
+      print.call('Error fetching data: $e');
+      return record;
+    }
+  }
 
   void _filterSearchResults(String query) {
     if (query.isEmpty) {
@@ -66,23 +89,11 @@ class _NewHomeState extends State<Home> {
     }
   }
 
-  // _speak(String text, String lang) async {
-  //   await _flutterTts.setLanguage(lang);
-  //   await _flutterTts.speak(text);
-  // }
-  Future<void> _speak(
-      {required String text, required String locale, String? last}) async {
-    print("Speaking ($locale): $text");
+  Future<void> _speak({required String text, required String locale}) async {
     // Simulate the speaking process
     await _flutterTts.setLanguage(locale);
     await _flutterTts.speak(text);
     await Future.delayed(const Duration(milliseconds: 500)); // Adjust as needed
-    speaking = await _flutterTts.awaitSpeakCompletion(true);
-
-    if (text == last) {
-      await stepper();
-    }
-    // Your actual speak implementation here
   }
 
   void _shuffleAndPickRandomVerb() {
@@ -100,11 +111,7 @@ class _NewHomeState extends State<Home> {
       int randomIndex = random.nextInt(_dataMap.length);
       _selectedWord = _dataMap.keys.elementAt(randomIndex);
       _filterSearchResults(_selectedWord);
-      //_controller.text = _selectedWord; // Update the TextField with the selected word
     });
-
-    // Optionally, update _filteredKeys to reflect the entire list
-    // _filteredKeys = _dataMap.keys.toList();
   }
 
   void debugDataMap() {
@@ -114,171 +121,9 @@ class _NewHomeState extends State<Home> {
     });
   }
 
-  bool _stopRequested = false; // Flag to stop the process
-
   void stopReading() {
     _stopRequested = true; // Set the flag to true to stop the loop
     speaking = false; // Indicate that the process is stopped
-  }
-
-  // void readAll() async {
-  //   _stopRequested = false; // Reset the flag before starting the loop
-  //   int maxRead = 3;
-  //   int index = await readState();
-  //   speaking = true;
-  //   print("Current index: $index");
-  //   print("Data map size: ${_dataMap.length}");
-
-  //   if (index < 0 || index >= _dataMap.length) {
-  //     index = 0;
-  //     print("Index out of bounds, resetting to 0");
-  //   }
-
-  //   for (int i = index; i < _dataMap.length; i++) {
-  //     if (_stopRequested) {
-  //       print("Stop requested. Breaking out of the loop.");
-  //       break; // Exit the loop if stop is requested
-  //     }
-  //     _selectedWord = _dataMap.keys.elementAt(i);
-  //     WordData? word = _dataMap[_selectedWord];
-
-  //     if (word == null) {
-  //       continue; // Skip if word is null
-  //     }
-
-  //     setState(() {
-  //       _filterSearchResults(_selectedWord);
-  //     });
-
-  //     await _speak(_selectedWord, "en-US");
-  //     for (int j = 0; j < maxRead; j++) {
-  //       if (_stopRequested) {
-  //         print("Stop requested. Breaking out of the loop.");
-  //         break; // Exit the loop if stop is requested
-  //       }
-  //       await _speak(word.translation, "de-DE");
-  //     }
-  //     for (Sentence sentence in word.sentences) {
-  //       if (_stopRequested) {
-  //         print("Stop requested. Breaking out of the loop.");
-  //         break; // Exit the loop if stop is requested
-  //       }
-  //       await _speak(sentence.sentenceEn, "en-US");
-  //       for (int j = 0; j < maxRead; j++) {
-  //         await _speak(sentence.sentenceDe, "de-DE");
-  //       }
-  //       await _speak(sentence.sentenceEn, "en-US");
-  //     }
-
-  //     await saveState(i + 1); // Move to the next index
-  //     print("State saved, next index: ${i + 1}");
-
-  //     await Future.delayed(const Duration(milliseconds: 500)); // Optional delay
-  //   }
-  //   speaking = false;
-
-  //   print("Processing complete. Final index: $index");
-  // }
-
-  stepper() {
-    if (isLast = true && speaking) {
-      stopReading();
-    } else {
-      readAll();
-    }
-  }
-
-  void readAll() async {
-    _stopRequested = false; // Reset the flag before starting the loop
-    int maxRead = 3;
-    int index = await readState();
-    speaking = true;
-    isLast = false;
-
-    print("Current index: $index");
-    print("Data map size: ${_dataMap.length}");
-
-    if (index < 0 || index >= _dataMap.length) {
-      index = 0;
-      print("Index out of bounds, resetting to 0");
-    }
-
-    for (int i = index; i < _dataMap.length; i++) {
-      if (_stopRequested) {
-        print("Stop requested. Breaking out of the loop.");
-        break; // Exit the loop if stop is requested
-      }
-
-      // Select the word from the map
-      _selectedWord = _dataMap.keys.elementAt(i);
-      WordData? word = _dataMap[_selectedWord];
-
-      if (word == null) {
-        continue; // Skip if the word is null
-      }
-
-      setState(() {
-        _filterSearchResults(_selectedWord);
-      });
-
-      // Speak the selected word in English
-      await _speak(text: _selectedWord, locale: "en-US");
-
-      // Speak the word's translation in German up to maxRead times
-      for (int j = 0; j < maxRead; j++) {
-        if (_stopRequested) {
-          print("Stop requested. Breaking out of the loop.");
-          break; // Exit the loop if stop is requested
-        }
-        await _speak(text: word.translation, locale: "de-DE");
-      }
-
-      // Speak each sentence associated with the word
-      for (Sentence sentence in word.sentences) {
-        if (_stopRequested) {
-          print("Stop requested. Breaking out of the loop.");
-          break; // Exit the loop if stop is requested
-        }
-
-        // Speak sentence in English, then in German (multiple times)
-        await _speak(text: sentence.sentenceEn, locale: "en-US");
-
-        for (int j = 0; j < maxRead; j++) {
-          if (_stopRequested) {
-            print("Stop requested. Breaking out of the loop.");
-            break; // Exit the loop if stop is requested
-          }
-          await _speak(text: sentence.sentenceDe, locale: "de-DE");
-        }
-
-        // Speak the sentence again in English after the German sentence
-        await _speak(
-            text: sentence.sentenceEn,
-            locale: "en-US",
-            last: sentence.sentenceEn);
-      }
-
-      // Save the state to mark the next index as the current one
-      await saveState(i + 1);
-      print("State saved, next index: ${i + 1}");
-      isLast = true;
-      stepper();
-      // Optional delay before moving to the next word
-      await Future.delayed(const Duration(milliseconds: 500));
-    }
-
-    speaking = false;
-    print("Processing complete. Final index: $index");
-  }
-
-  Future<void> saveState(int index) async {
-    final SharedPreferences prefs = await SharedPreferences.getInstance();
-    await prefs.setInt('index', index);
-  }
-
-  Future<int> readState() async {
-    final SharedPreferences prefs = await SharedPreferences.getInstance();
-    return prefs.getInt('index') ?? 0;
   }
 
   @override
@@ -295,30 +140,6 @@ class _NewHomeState extends State<Home> {
               SizedBox(
                 height: 20,
               ),
-              // speaking
-              //     ? Padding(
-              //         padding: const EdgeInsets.all(8.0),
-              //         child: Align(
-              //             alignment: Alignment.bottomRight,
-              //             child: ElevatedButton(
-              //               onPressed: speaking
-              //                   ? stopReading
-              //                   : null, // Only enable button if speaking is true
-              //               child: const Text('Stop'),
-              //             )),
-              //       )
-              //     : Padding(
-              //         padding: const EdgeInsets.all(8.0),
-              //         child: Align(
-              //             alignment: Alignment.bottomRight,
-              //             child: ElevatedButton(
-              //               onPressed: () {
-              //                 readAll();
-              //                 //debugDataMap();
-              //               },
-              //               child: const Text("Play All"),
-              //             )),
-              //       ),
               Padding(
                 padding: const EdgeInsets.all(20.0),
                 child: Row(
@@ -355,143 +176,141 @@ class _NewHomeState extends State<Home> {
                 ),
               ),
               const SizedBox(height: 10),
-              _filteredKeys.isNotEmpty
-                  ? Padding(
-                      padding: const EdgeInsets.all(10.0),
-                      child: SizedBox(
-                        height: MediaQuery.of(context).size.height * 0.4,
-                        child: ListView.builder(
-                          shrinkWrap: true,
-                          itemCount: _filteredKeys.length,
-                          itemBuilder: (context, index) {
-                            return ListTile(
-                              title: Text(_filteredKeys[index]),
-                              onTap: () {
-                                setState(() {
-                                  _selectedWord = _filteredKeys[index];
-                                  _filteredKeys =
-                                      []; // Clear suggestions after selection
-                                  _controller
-                                      .clear(); // Optionally clear the search field
-                                });
-                              },
-                            );
-                          },
-                        ),
-                      ),
-                    )
-                  : Container(),
+              _filteredKeys.isNotEmpty ? searchPanel(context) : Container(),
               const SizedBox(height: 10),
               if (_selectedWord.isNotEmpty &&
                   _dataMap.containsKey(_selectedWord))
-                Padding(
-                  padding: const EdgeInsets.all(20.0),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        'Details for "$_selectedWord"',
-                        style: Theme.of(context).textTheme.headlineSmall,
-                      ),
-                      const SizedBox(height: 10),
-                      Row(
-                        children: [
-                          Text(
-                            'Translation: ${_dataMap[_selectedWord]!.translation}',
+                searchResult(context),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Padding searchPanel(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.all(10.0),
+      child: SizedBox(
+        height: MediaQuery.of(context).size.height * 0.4,
+        child: ListView.builder(
+          shrinkWrap: true,
+          itemCount: _filteredKeys.length,
+          itemBuilder: (context, index) {
+            return ListTile(
+              title: Text(_filteredKeys[index]),
+              onTap: () {
+                setState(() {
+                  _selectedWord = _filteredKeys[index];
+                  _filteredKeys = []; // Clear suggestions after selection
+                  _controller.clear(); // Optionally clear the search field
+                });
+              },
+            );
+          },
+        ),
+      ),
+    );
+  }
+
+  Padding searchResult(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.all(20.0),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            'Details for "$_selectedWord"',
+            style: Theme.of(context).textTheme.headlineSmall,
+          ),
+          const SizedBox(height: 10),
+          Row(
+            children: [
+              Text(
+                'Translation: ${_dataMap[_selectedWord]!.translation}',
+                style: const TextStyle(
+                    fontSize: 15,
+                    fontWeight: FontWeight.bold,
+                    overflow: TextOverflow.visible),
+              ),
+              IconButton(
+                  onPressed: () {
+                    _speak(
+                        text: _dataMap[_selectedWord]!.translation,
+                        locale: "de-DE");
+                  },
+                  icon: const Icon(Icons.record_voice_over))
+            ],
+          ),
+          const SizedBox(height: 10),
+          const Text('Example sentence:'),
+          const Divider(
+            indent: 20,
+            endIndent: 20,
+            color: Colors.blue,
+          ),
+          ..._dataMap[_selectedWord]!.sentences.map(
+                (sentence) => Column(
+                  //    shrinkWrap: true,
+                  //crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      children: [
+                        SizedBox(
+                          width: MediaQuery.of(context).size.width / 1.4,
+                          child: SelectableText(
+                            'German: ${sentence.sentenceDe}',
                             style: const TextStyle(
                                 fontSize: 15,
                                 fontWeight: FontWeight.bold,
                                 overflow: TextOverflow.visible),
                           ),
-                          IconButton(
-                              onPressed: () {
-                                _speak(
-                                    text: _dataMap[_selectedWord]!.translation,
-                                    locale: "de-DE");
-                              },
-                              icon: const Icon(Icons.record_voice_over))
-                        ],
-                      ),
-                      const SizedBox(height: 10),
-                      const Text('Example sentence:'),
-                      const Divider(
-                        indent: 20,
-                        endIndent: 20,
-                        color: Colors.blue,
-                      ),
-                      ..._dataMap[_selectedWord]!.sentences.map(
-                            (sentence) => Column(
-                              //    shrinkWrap: true,
-                              //crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Row(
-                                  children: [
-                                    SizedBox(
-                                      width: MediaQuery.of(context).size.width /
-                                          1.4,
-                                      child: SelectableText(
-                                        'German: ${sentence.sentenceDe}',
-                                        style: const TextStyle(
-                                            fontSize: 15,
-                                            fontWeight: FontWeight.bold,
-                                            overflow: TextOverflow.visible),
-                                      ),
-                                    ),
-                                    IconButton(
-                                        onPressed: () {
-                                          _speak(
-                                              text: sentence.sentenceDe,
-                                              locale: "de-DE");
-                                        },
-                                        icon:
-                                            const Icon(Icons.record_voice_over))
-                                  ],
-                                ),
-                                Row(
-                                  children: [
-                                    SizedBox(
-                                      width: MediaQuery.of(context).size.width /
-                                          1.4,
-                                      child: SelectableText(
-                                          'English: ${sentence.sentenceEn}',
-                                          style: const TextStyle(
-                                            fontSize: 15,
-                                          )),
-                                    ),
-                                    IconButton(
-                                        onPressed: () {
-                                          _speak(
-                                              text: sentence.sentenceEn,
-                                              locale: "en-US");
-                                        },
-                                        icon:
-                                            const Icon(Icons.record_voice_over))
-                                  ],
-                                ),
-                                const SizedBox(height: 5),
-                                const Divider(
-                                  indent: 20,
-                                  endIndent: 20,
-                                  color: Colors.blue,
-                                )
-                              ],
-                            ),
-                          ),
-                      const SizedBox(height: 20),
-                      const Center(
-                          child: Text(
-                        textAlign: TextAlign.center,
-                        "Tap on the speaker icon for pronunciation. Not all words are included in the library",
-                        style: TextStyle(
-                          color: Colors.green,
                         ),
-                      ))
-                    ],
-                  ),
+                        IconButton(
+                            onPressed: () {
+                              _speak(
+                                  text: sentence.sentenceDe, locale: "de-DE");
+                            },
+                            icon: const Icon(Icons.record_voice_over))
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        SizedBox(
+                          width: MediaQuery.of(context).size.width / 1.4,
+                          child:
+                              SelectableText('English: ${sentence.sentenceEn}',
+                                  style: const TextStyle(
+                                    fontSize: 15,
+                                  )),
+                        ),
+                        IconButton(
+                            onPressed: () {
+                              _speak(
+                                  text: sentence.sentenceEn, locale: "en-US");
+                            },
+                            icon: const Icon(Icons.record_voice_over))
+                      ],
+                    ),
+                    const SizedBox(height: 5),
+                    const Divider(
+                      indent: 20,
+                      endIndent: 20,
+                      color: Colors.blue,
+                    )
+                  ],
                 ),
-            ],
-          ),
-        ),
+              ),
+          const SizedBox(height: 20),
+          const Center(
+              child: Text(
+            textAlign: TextAlign.center,
+            "Tap on the speaker icon for pronunciation. Not all words are included in the library",
+            style: TextStyle(
+              color: Colors.green,
+            ),
+          ))
+        ],
       ),
     );
   }

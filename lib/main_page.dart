@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:lernen/ai_interview_prep/interview.dart';
+import 'package:lernen/ai_verbs/ai_verb.dart';
 import 'package:lernen/home/home.dart';
-
-import 'conversations/list.dart';
+import 'ai_conversation/chat.dart';
 import 'spelling/spelling.dart';
-import 'verb/verb.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({super.key});
@@ -18,8 +18,9 @@ class _MyWidgetState extends State<MainPage> {
   static final List<Widget> _pages = <Widget>[
     Home(),
     Spelling(),
-    Verb(),
-    Convo(),
+    AIVerbAssit(),
+    AIInterviewAssit(),
+    ChatConversation()
   ];
 
   void _onItemTapped(int index) {
@@ -52,6 +53,10 @@ class _MyWidgetState extends State<MainPage> {
             BottomNavigationBarItem(
               icon: Icon(Icons.record_voice_over),
               label: 'Convo',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.record_voice_over),
+              label: 'Chat',
             ),
           ],
           currentIndex: _selectedIndex,

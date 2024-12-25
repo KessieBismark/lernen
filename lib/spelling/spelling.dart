@@ -21,8 +21,6 @@ class _SpellingState extends State<Spelling> {
       onTap: () {
         FocusScope.of(context).unfocus();
         context.read<SpellProvider>().viewWord = false;
-
-        //FocusManager.instance.primaryFocus?.unfocus();
       },
       child: Consumer<SpellProvider>(
           builder: (BuildContext context, SpellProvider value, Widget? child) {
