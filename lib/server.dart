@@ -7,9 +7,9 @@ import 'package:http/http.dart' as http;
 
 // final aiUrl = env.get("ai_backend");
 
-final url = PocketBase("");
-final aiUrl = "<your api url>";
 
+final url = PocketBase("<your pocketbase link here>");
+final aiUrl = "<your AI api endpoint here>";
 class Query {
   static var header = {
     'Content-Type': 'application/json; charset=utf-8',

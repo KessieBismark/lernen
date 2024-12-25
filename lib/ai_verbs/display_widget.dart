@@ -68,7 +68,20 @@ Widget displayGermanData(BuildContext context, dynamic jsonString) {
                         );
                       }).toList()
                     else
-                      SelectableText("${entry.value}"),
+                      Row(
+                        children: [
+                          SelectableText(utf8.decode(entry.value.codeUnits)),
+                          IconButton(
+                            onPressed: () {
+                              Speak().speak(
+                                  text: utf8.decode(entry.value).trim(),
+                                  locale: "de-DE");
+                            },
+                            icon: Icon(Icons.volume_up),
+                            tooltip: 'Listen',
+                          ),
+                        ],
+                      ),
                     SizedBox(height: 10),
                   ],
                 );
