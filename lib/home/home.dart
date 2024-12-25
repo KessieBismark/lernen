@@ -51,10 +51,10 @@ class _NewHomeState extends State<Home> {
   Future<List<ModelInfo>> fetchModel() async {
     var record = <ModelInfo>[];
     try {
-      final records = await Query.getData(endPoint: "model");
+      final records = await Query.getData(endPoint: "model/model-list/");
       // Fetching the data
       final jsonResponse = jsonDecode(records);
-
+      print(jsonResponse);
       // Deserialize into ModelListResponse
       final List<dynamic> data = jsonResponse['data'];
 

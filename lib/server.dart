@@ -1,3 +1,4 @@
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:pocketbase/pocketbase.dart';
 import 'package:http/http.dart' as http;
 
@@ -7,9 +8,9 @@ import 'package:http/http.dart' as http;
 
 // final aiUrl = env.get("ai_backend");
 
+final url = PocketBase(dotenv.get('POCKETBASE_API'));
+final aiUrl = dotenv.get('AIAPI');
 
-final url = PocketBase("<your pocketbase link here>");
-final aiUrl = "<your AI api endpoint here>";
 class Query {
   static var header = {
     'Content-Type': 'application/json; charset=utf-8',

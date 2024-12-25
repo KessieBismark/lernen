@@ -13,8 +13,10 @@ import 'entries_fold/grammatics/provider.dart';
 import 'entries_fold/sentence/provider.dart';
 import 'spelling/provider.dart';
 import 'verb/provider.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
-void main() {
+void main()async {
+  await dotenv.load();
 
   runApp(
     MultiProvider(
