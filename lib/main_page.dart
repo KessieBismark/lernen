@@ -55,7 +55,7 @@ class _MyWidgetState extends State<MainPage> {
               label: 'Convo',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.record_voice_over),
+              icon: Icon(Icons.chat),
               label: 'Chat',
             ),
           ],
