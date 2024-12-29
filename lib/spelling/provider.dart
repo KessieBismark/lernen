@@ -1,8 +1,8 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:lernen/spelling/model.dart';
 
-import '../entries_fold/models/models.dart';
 import '../server.dart';
 import '../utils/speak.dart';
 

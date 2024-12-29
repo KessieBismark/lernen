@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:lernen/server.dart';
 import 'package:lernen/utils/dropdown.dart';
 import 'package:lernen/utils/helpers.dart';
-import '../entries_fold/models/models.dart';
+import '../spelling/model.dart';
 import '../utils/database/sqflite.dart';
 import 'model.dart';
 

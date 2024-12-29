@@ -89,3 +89,28 @@ class ExampleSentences {
     };
   }
 }
+class VerbModel {
+  final String id;
+  final String? word;
+  final String? tense;
+
+  // final VocabularyModel? vocabs;
+
+  VerbModel({
+    required this.id,
+    this.word,
+    this.tense,
+  });
+
+  factory VerbModel.frmJson(Map<String, dynamic> map) {
+    return VerbModel(
+      id: map['id'], tense: map['tense'] ?? '',
+
+      word: map['word'] ?? '',
+      // vocabs: map['expand'] != null && map['expand']['voc_fk'] != null
+      //     ? VocabularyModel.fromJson(
+      //         map['expand']['voc_fk']) // Parsing VocabularyModel
+      //     : null,
+    );
+  }
+}

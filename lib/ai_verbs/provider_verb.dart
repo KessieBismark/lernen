@@ -5,7 +5,7 @@ import 'package:lernen/ai_verbs/model.dart';
 import 'package:lernen/server.dart';
 import 'package:lernen/utils/dropdown.dart';
 import 'package:lernen/utils/helpers.dart';
-import '../entries_fold/models/models.dart';
+import '../spelling/model.dart';
 
 class AIVerbProvider extends ChangeNotifier {
   List<VerbModel> cl = <VerbModel>[];
