@@ -57,12 +57,7 @@ Ask questions or learn about German culture, language rules, and more with conte
    flutter run
    ```
 
-## Screenshots
 
-| Feature           | Screenshot |
-|-------------------|------------|
-| Verb Conjugation  | ![Verb Screenshot](path/to/screenshot) |
-| Interview Practice| ![Interview Screenshot](path/to/screenshot) |
 
 ## Contributing
 Contributions are welcome! Fork this repository and submit a pull request.
