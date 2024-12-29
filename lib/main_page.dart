@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:lernen/ai_interview_prep/interview.dart';
 import 'package:lernen/ai_verbs/ai_verb.dart';
-import 'package:lernen/home/home.dart';
 import 'ai_conversation/chat.dart';
+import 'quiz/quiz.dart';
 import 'spelling/spelling.dart';
 
 class MainPage extends StatefulWidget {
@@ -16,7 +16,7 @@ class _MyWidgetState extends State<MainPage> {
   int _selectedIndex = 0;
 
   static final List<Widget> _pages = <Widget>[
-    Home(),
+    Quiz(),
     Spelling(),
     AIVerbAssit(),
     AIInterviewAssit(),
@@ -39,8 +39,8 @@ class _MyWidgetState extends State<MainPage> {
           type: BottomNavigationBarType.fixed,
           items: const <BottomNavigationBarItem>[
             BottomNavigationBarItem(
-              icon: Icon(Icons.abc),
-              label: 'Words',
+              icon: Icon(Icons.school),
+              label: 'Quiz',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.spatial_tracking_outlined),

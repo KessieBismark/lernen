@@ -45,7 +45,6 @@ class _NewHomeState extends State<Home> {
     }).catchError((error) {
       print('Error in DataProvider: $error');
     });
-    print(Utils.aiListModels.toString());
   }
 
   Future<List<ModelInfo>> fetchModel() async {

@@ -43,9 +43,15 @@ class SharedPreferencesUtil {
     return await prefs.setBool(key, value);
   }
 
-  static Future<bool?> getBoolean(String key) async {
-    final prefs = await SharedPreferences.getInstance();
-    return prefs.getBool(key);
+  static Future<bool> getBoolean(String key,
+      {bool defaultValue = false}) async {
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      return prefs.getBool(key) ?? defaultValue;
+    } catch (e) {
+      print('Error accessing SharedPreferences: $e');
+      return defaultValue;
+    }
   }
 
   // List of Strings Operations
@@ -72,25 +78,27 @@ class SharedPreferencesUtil {
   }
 }
 
-// Example Usage
-class ExampleUsage {
-  void exampleMethods() async {
-    // Saving data
-    await SharedPreferencesUtil.saveString('username', 'johndoe');
-    await SharedPreferencesUtil.saveInteger('age', 30);
-    await SharedPreferencesUtil.saveBoolean('isLoggedIn', true);
-    await SharedPreferencesUtil.saveStringList('hobbies', ['reading', 'coding']);
+// // Example Usage
+// class ExampleUsage {
+//   void exampleMethods() async {
+//     // Saving data
+//     await SharedPreferencesUtil.saveString('username', 'johndoe');
+//     await SharedPreferencesUtil.saveInteger('age', 30);
+//     await SharedPreferencesUtil.saveBoolean('isLoggedIn', true);
+//     await SharedPreferencesUtil.saveStringList(
+//         'hobbies', ['reading', 'coding']);
 
-    // Retrieving data
-    String? username = await SharedPreferencesUtil.getString('username');
-    int? age = await SharedPreferencesUtil.getInteger('age');
-    bool? isLoggedIn = await SharedPreferencesUtil.getBoolean('isLoggedIn');
-    List<String>? hobbies = await SharedPreferencesUtil.getStringList('hobbies');
+//     // Retrieving data
+//     String? username = await SharedPreferencesUtil.getString('username');
+//     int? age = await SharedPreferencesUtil.getInteger('age');
+//     bool? isLoggedIn = await SharedPreferencesUtil.getBoolean('isLoggedIn');
+//     List<String>? hobbies =
+//         await SharedPreferencesUtil.getStringList('hobbies');
 
-    // Removing a specific key
-    await SharedPreferencesUtil.remove('username');
+//     // Removing a specific key
+//     await SharedPreferencesUtil.remove('username');
 
-    // Clearing all preferences
-    await SharedPreferencesUtil.clear();
-  }
-}
+//     // Clearing all preferences
+//     await SharedPreferencesUtil.clear();
+//   }
+// }

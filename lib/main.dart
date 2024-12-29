@@ -11,11 +11,12 @@ import 'ai_interview_prep/provider.dart';
 import 'conversations/provider.dart';
 import 'entries_fold/grammatics/provider.dart';
 import 'entries_fold/sentence/provider.dart';
+import 'quiz/component/provider.dart';
 import 'spelling/provider.dart';
 import 'verb/provider.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 
-void main()async {
+void main() async {
   await dotenv.load();
 
   runApp(
@@ -32,7 +33,7 @@ void main()async {
         ChangeNotifierProvider(create: (_) => AIVerbProvider()),
         ChangeNotifierProvider(create: (_) => AIInterviewProvider()),
         ChangeNotifierProvider(create: (_) => ChatProvider()),
-
+        ChangeNotifierProvider(create: (_) => QuizProvider()),
       ],
       child: const MyApp(),
     ),

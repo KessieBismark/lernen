@@ -38,7 +38,6 @@ class WordDetailsPage extends StatelessWidget {
             itemBuilder: (context, index) {
               final message = conversations[index];
               final isAgent = message['speaker'] != 'Interviewer';
-              final totalLength = conversations.length;
               return Container(
                 margin: EdgeInsets.symmetric(vertical: 8),
                 child: Align(
