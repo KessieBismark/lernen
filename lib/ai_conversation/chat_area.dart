@@ -5,10 +5,10 @@ import 'package:html2md/html2md.dart' as html2md;
 import 'provider.dart';
 
 class ChatArea extends StatelessWidget {
-  dynamic conversation;
+  final dynamic conversation;
   final ChatProvider controller;
 
-  ChatArea({
+  const ChatArea({
     super.key,
     required this.conversation,
     required this.controller,
@@ -87,69 +87,6 @@ class ChatArea extends StatelessWidget {
       ),
     );
 
-    // ListView.builder(
-    //   physics: BouncingScrollPhysics(),
-    //   shrinkWrap: true,
-    //   controller: scrollController,
-    //   padding: EdgeInsets.symmetric(vertical: 16, horizontal: 8),
-    //   itemCount: conversation.length,
-    //   itemBuilder: (context, index) {
-    //     final message = conversation[index];
-    //     final isAgent = message['type'] != "human";
 
-    //     var mData = html2md.convert(message['content']);
-    //     return Container(
-    //       margin: EdgeInsets.symmetric(vertical: 8),
-    //       child: Align(
-    //         alignment: isAgent ? Alignment.centerLeft : Alignment.centerRight,
-    //         child: isAgent
-    //             ? Markdown(
-    //                 shrinkWrap: true,
-    //                 selectable: true,
-    //                 data: utf8.decode(mData.codeUnits),
-    //               )
-    //             : Container(
-    //                 constraints: BoxConstraints(
-    //                     maxWidth: MediaQuery.of(context).size.width * 0.8),
-    //                 padding: EdgeInsets.all(12),
-    //                 decoration: BoxDecoration(
-    //                   color: isAgent ? Colors.white60 : Colors.black45,
-    //                   borderRadius: BorderRadius.circular(16),
-    //                   boxShadow: [
-    //                     BoxShadow(
-    //                       color: Colors.grey.withOpacity(0.2),
-    //                       spreadRadius: 1,
-    //                       blurRadius: 3,
-    //                       offset: Offset(0, 2),
-    //                     ),
-    //                   ],
-    //                 ),
-    //                 child: Column(
-    //                   crossAxisAlignment: CrossAxisAlignment.start,
-    //                   children: [
-    //                     Text(
-    //                       "You",
-    //                       style: TextStyle(
-    //                         fontWeight: FontWeight.bold,
-    //                         color: isAgent ? Colors.blue[700] : Colors.white,
-    //                         fontSize: 12,
-    //                       ),
-    //                     ),
-    //                     SizedBox(height: 4),
-    //                     SelectableText(
-    //                       utf8.decode(message['content'].codeUnits),
-    //                       style: TextStyle(
-    //                         //overflow: TextOverflow.visible,
-    //                         color: isAgent ? Colors.black87 : Colors.white,
-    //                         fontSize: 14,
-    //                       ),
-    //                     ),
-    //                   ],
-    //                 ),
-    //               ),
-    //       ),
-    //     );
-    //   },
-    // );
   }
 }

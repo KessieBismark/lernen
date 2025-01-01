@@ -78,7 +78,7 @@ class SpellProvider extends ChangeNotifier {
     } catch (e) {
       wordLoad = false;
       notifyListeners();
-      print('Error fetching vocabulary: $e');
+      debugPrint('Error fetching vocabulary: $e');
       return record;
     }
   }

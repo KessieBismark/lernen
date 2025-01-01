@@ -97,7 +97,7 @@ class ChatProvider extends ChangeNotifier {
         });
       }
     } catch (e) {
-      print('Error fetching data: $e');
+     debugPrint('Error fetching data: $e');
     } finally {
       load = false;
       notifyListeners();

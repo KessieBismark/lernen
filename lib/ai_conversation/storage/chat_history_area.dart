@@ -1,13 +1,10 @@
-import 'dart:convert';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
 import '../../utils/ai_dropdown.dart';
 import '../../utils/shared_pref.dart';
 import '../../utils/waiting.dart';
-import 'package:html2md/html2md.dart' as html2md;
 import '../chat_area.dart';
 import '../provider.dart';
 

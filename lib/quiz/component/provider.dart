@@ -40,7 +40,7 @@ class QuizProvider extends ChangeNotifier {
           await SharedPreferencesUtil.getString('ai_model') ?? "llama3-8b-8192";
       Utils().setDevideID();
     }).catchError((error) {
-      print('Error in DataProvider: $error');
+      debugPrint('Error in DataProvider: $error');
     });
     getQuizes();
   }

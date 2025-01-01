@@ -6,7 +6,7 @@ class WordListPage extends StatefulWidget {
   const WordListPage({super.key});
 
   @override
-  _WordListPageState createState() => _WordListPageState();
+  State<WordListPage> createState() => _WordListPageState();
 }
 
 class _WordListPageState extends State<WordListPage> {

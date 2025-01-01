@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class SharedPreferencesUtil {
@@ -49,7 +50,7 @@ class SharedPreferencesUtil {
       final prefs = await SharedPreferences.getInstance();
       return prefs.getBool(key) ?? defaultValue;
     } catch (e) {
-      print('Error accessing SharedPreferences: $e');
+      debugPrint('Error accessing SharedPreferences: $e');
       return defaultValue;
     }
   }
