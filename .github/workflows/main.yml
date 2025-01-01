@@ -4,9 +4,11 @@ on:
   push:
     branches:
       - master
+      - main
   pull_request:
     branches:
       - master
+      - main
 
 jobs:
   flutter_test:
@@ -20,6 +22,10 @@ jobs:
       - uses: subosito/flutter-action@v1
         with:
           channel: "stable"
+      - name: Create .env file
+        run: |
+          echo "POCKETBASE_API=${{ secrets.POCKETBASE_API }}" > .env
+          echo "AIAPI=${{ secrets.AIAPI }}" >> .env
       - run: flutter pub get
       - run: flutter analyze
       - run: flutter test
