@@ -1,5 +1,9 @@
 name: CI
+
 on:
+  push:
+    branches:
+      - master
   pull_request:
     branches:
       - master
@@ -20,3 +24,60 @@ jobs:
       - run: flutter analyze
       - run: flutter test
 
+  build_ios:
+    name: Build Flutter (iOS)
+    needs: [flutter_test]
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+      - uses: actions/setup-java@v1
+        with: 
+          java-version: "21"
+      - uses: subosito/flutter-action@v1
+        with:
+          channel: "stable"
+      - run: flutter pub get
+      - run: flutter clean
+      - run: |
+          flutter build ios --no-codesign
+          cd build/ios/iphoneos
+          mkdir Payload
+          cd Payload
+          cp -r ../Runner.app .
+          cd ..
+          zip -r Runner.ipa Payload
+      - name: Upload to App Store
+        uses: appleboy/app-store-action@v0.3.0
+        with:
+          app_id: ${{ secrets.APP_STORE_APP_ID }}
+          api_key_id: ${{ secrets.APP_STORE_API_KEY_ID }}
+          api_key_issuer_id: ${{ secrets.APP_STORE_API_KEY_ISSUER_ID }}
+          api_key: ${{ secrets.APP_STORE_API_KEY }}
+          ipa_path: build/ios/iphoneos/Runner.ipa
+
+  build_appbundle:
+    name: Build Flutter (Android)
+    needs: [flutter_test]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+      - uses: actions/setup-java@v1
+        with: 
+          java-version: "21"
+      - uses: subosito/flutter-action@v1
+        with:
+          channel: "stable"
+      - run: flutter pub get
+      - run: flutter clean
+      - run: flutter build appbundle --release
+      - name: Upload to Google Play
+        uses: r0adkll/upload-google-play@v1
+        with:
+          serviceAccountJson: ${{ secrets.GOOGLE_PLAY_SERVICE_ACCOUNT_JSON }}
+          packageName: ${{ secrets.GOOGLE_PLAY_PACKAGE_NAME }}
+          releaseFile: build/app/outputs/bundle/release/app-release.aab
+          track: production
