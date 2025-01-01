@@ -4,22 +4,27 @@ Welcome to the **German Language Learning App**! This Flutter-based mobile appli
 
 ## Features
 
-### 1. Verb Conjugation Tool
+### 1. Quiz Module:
+- Helps users learn how to form sentences in German.
+- Provides detailed explanations of sentence structures.
+- Offers multiple-choice quizzes tailored to proficiency levels (e.g., A1, A2).
+  
+### 2. Verb Conjugation Tool
 Learn how to conjugate German verbs in various tenses with examples:
 - **Input**: Type any German verb (e.g., "laufen").
 - **Output**: A detailed conjugation breakdown (present, past, future, and past participle) with example sentences.
 
-### 2. Interview Practice
+### 3. Interview Practice
 Simulate realistic job interviews in German:
 - **Input**: A question or interview topic.
 - **Output**: Interactive dialogues between you and an AI-powered interviewer.
 
-### 3. Model Exploration
+### 4. Model Exploration
 Explore and query AI models powered by Groq:
 - **Input**: A request to list models.
 - **Output**: A list of available models with descriptions and IDs.
 
-### 4. General Knowledge Search
+### 5. General Knowledge Search
 Ask questions or learn about German culture, language rules, and more with contextualized responses:
 - **Input**: Any query in German or English.
 - **Output**: Context-aware answers.
@@ -52,12 +57,7 @@ Ask questions or learn about German culture, language rules, and more with conte
    flutter run
    ```
 
-## Screenshots
 
-| Feature           | Screenshot |
-|-------------------|------------|
-| Verb Conjugation  | ![Verb Screenshot](path/to/screenshot) |
-| Interview Practice| ![Interview Screenshot](path/to/screenshot) |
 
 ## Contributing
 Contributions are welcome! Fork this repository and submit a pull request.
