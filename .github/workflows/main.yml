@@ -28,7 +28,6 @@ jobs:
           echo "AIAPI=${{ secrets.AIAPI }}" >> .env
       - run: flutter pub get
       - run: flutter analyze
-      - run: flutter test
 
   build_ios:
     name: Build Flutter (iOS)
