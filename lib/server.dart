@@ -2,11 +2,6 @@ import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:pocketbase/pocketbase.dart';
 import 'package:http/http.dart' as http;
 
-// var env = DotEnv()..load();
-
-// final url = PocketBase(env.get('pocketbase_api'));
-
-// final aiUrl = env.get("ai_backend");
 
 final url = PocketBase(dotenv.get('POCKETBASE_API'));
 final aiUrl = dotenv.get('AIAPI');
