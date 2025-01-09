@@ -7,7 +7,7 @@ import '../utils/speak.dart';
 Widget displayGermanData(BuildContext context, dynamic jsonString) {
   final Map<dynamic, dynamic> jsonData = jsonString;
 
-  final String? germanData = jsonData['german_data'];
+  final Map<String, dynamic>? germanData = jsonData['german_data'];
   final Map<String, dynamic>? dataForms = jsonData['data_forms'];
   final Map<String, dynamic>? exampleSentences = jsonData['example_sentences'];
 
@@ -17,20 +17,26 @@ Widget displayGermanData(BuildContext context, dynamic jsonString) {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         if (germanData != null)
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                "German Word:",
-                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-              ),
-              SelectableText(
-                utf8.decode(germanData.codeUnits),
-                style: TextStyle(fontSize: 16),
-              ),
-              SizedBox(height: 20),
-            ],
-          ),
+          ...germanData.entries.map((entry) {
+            return Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                // Text(
+                //   "German Word:",
+                //   style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                // ),
+                Text(
+                  "${entry.key.capitalize()}:",
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+                SelectableText(
+                  " ${utf8.decode(entry.value.codeUnits)}",
+                  style: TextStyle(fontSize: 16),
+                ),
+              ],
+            );
+          }),
+        SizedBox(height: 20),
         if (dataForms != null)
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -39,8 +45,10 @@ Widget displayGermanData(BuildContext context, dynamic jsonString) {
                 "Conjugations:",
                 style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
               ),
+           
+           
               ...dataForms.entries.map((entry) {
-                return Column(
+                return  Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     SelectableText(
