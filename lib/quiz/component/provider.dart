@@ -37,7 +37,7 @@ class QuizProvider extends ChangeNotifier {
     fetchModel().then((List<ModelInfo> models) async {
       Utils.aiListModels = models;
       Utils.selectedAIModel =
-          await SharedPreferencesUtil.getString('ai_model') ?? "llama3-8b-8192";
+          await SharedPreferencesUtil.getString('ai_model') ?? "llama3-70b-8192";
       Utils().setDevideID();
     }).catchError((error) {
       debugPrint('Error in DataProvider: $error');
