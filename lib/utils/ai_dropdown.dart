@@ -17,7 +17,9 @@ class AIDropDown extends StatelessWidget {
         menuMaxHeight: 500,
         isExpanded: true,
         hint: Text('Select a Model'),
-        value: Utils.selectedAIModel,
+        value: Utils.selectedAIModel.isEmpty
+            ? null
+            : Utils.selectedAIModel,
         onChanged: callBack,
         items:
             Utils.aiListModels.map<DropdownMenuItem<String>>((ModelInfo model) {

@@ -38,6 +38,53 @@ class AIInterviewAssit extends StatelessWidget {
                   },
                 ),
                 searchPanel(context, value),
+                // Row(
+                //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                //   children: [
+                //     ElevatedButton(
+                //         onPressed: () async {
+                //           final List<ConversationEntry> conversation =
+                //               value.aiJsonResult;
+
+                //           if (conversation.isNotEmpty) {
+                //             int person = 1;
+
+                //             for (int j = 0; j < value.overAllPay; j++) {
+                //               for (int i = 0; i < conversation.length; i++) {
+                //                 await Speak().speak(
+                //                     text: conversation[i].english,
+                //                     locale: "en-US");
+                //                 for (int q = 0; q < value.sentencePlay; q++) {
+                //                   if (person == 1) {
+                //                     await Speak().speakerOne(
+                //                         text: conversation[i].german,
+                //                         locale: "de-DE");
+                //                     person = 2;
+                //                   } else {
+                //                     await Speak().speakerTwo(
+                //                         text: conversation[i].german,
+                //                         locale: "de-DE");
+                //                     person = 1;
+                //                   }
+                //                   //   german =
+                //                   //       "$german. ${utf8.decode((conversation[i].german).codeUnits)}";
+                //                   // }
+                //                   // english =
+                //                   //     "$english. ${utf8.decode((conversation[i].english).codeUnits)}";
+                //                 }
+                //               }
+                //               // Speak().speak(text: german, locale: "de-DE");
+                //             }
+                //           }
+                //         },
+                //         child: Text("Play All")),
+                //     ElevatedButton(
+                //         onPressed: () {
+                //           Speak().stop();
+                //         },
+                //         child: Text("Stop")),
+                //   ],
+                // ).padding9,
                 const Divider(
                   indent: 20,
                   endIndent: 20,
@@ -60,15 +107,6 @@ class AIInterviewAssit extends StatelessWidget {
                                 ? ConversationScreen(
                                     conversation: value.aiJsonResult)
                                 : Container()),
-                // value.aiJsonResult.isNotEmpty
-                //     ? Align(
-                //         alignment: Alignment.centerRight,
-                //         child: TextButton(
-                //           onPressed: () {},
-                //           child: Text("Continue"),
-                //         ),
-                //       )
-                //     : Container(),
                 const Divider(
                   indent: 20,
                   endIndent: 20,

@@ -5,8 +5,8 @@ import 'package:sqflite_common_ffi_web/sqflite_ffi_web.dart';
 import '../../ai_interview_prep/model.dart';
 
 class DatabaseHelper {
-  static const _databaseName = "conversation_db.db";
-  static const _databaseVersion = 2;
+  static const _databaseName = "data.db";
+  static const _databaseVersion = 3;
   static const table = 'conversation_table';
   static const columnId = 'id';
   static const columnWord = 'word';
@@ -66,6 +66,18 @@ class DatabaseHelper {
         session_id TEXT PRIMARY KEY,
         title TEXT NOT NULL,
         memory TEXT NOT NULL,
+        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+        updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+      )
+    ''');
+
+    await db.execute('''
+      CREATE TABLE vocabs(
+        id INTEGER PRIMARY KEY,
+        word TEXT NOT NULL,
+        german_data TEXT NOT NULL,
+        data_forms TEXT NOT NULL,
+        example_sentences TEXT NOT NULL,
         created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
         updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
       )
@@ -168,6 +180,104 @@ class DatabaseHelper {
       'chat_sessions',
       where: 'session_id = ?',
       whereArgs: [sessionId],
+    );
+  }
+
+
+
+
+    // Insert a conversation entry into the database
+  Future<void> insertVocabs(
+      String word, dynamic result) async {
+    final db = await database;
+    Batch batch = db.batch();
+
+      batch.insert("vocabs", {
+        "word":word,
+        "result":result,
+        "created_at": DateTime.now().toIso8601String(),});
+      await batch.commit(noResult: true);
+
+    }
+
+  
+
+  // Insert or update chat session
+  Future<void> updateVocabs({
+    required String word,
+    required dynamic germanData,
+        required dynamic dataForms,
+    required dynamic exampleSentences,
+
+  }) async {
+    final db = await database;
+
+    final existing = await db.query(
+      'vocabs',
+      where: 'word = ?',
+      whereArgs: [word],
+      limit: 1,
+    );
+
+    if (existing.isEmpty) {
+      // Insert new session
+      await db.insert(
+        'vocabs',
+        {
+          'word': word,
+          'german_data': germanData.toString(),
+          'data_forms': dataForms.toString(),
+          'example_sentences': exampleSentences.toString(),
+          'created_at': DateTime.now().toIso8601String(),
+          'updated_at': DateTime.now().toIso8601String(),
+        },
+        conflictAlgorithm: ConflictAlgorithm.replace,
+      );
+    } else {
+      // Update existing session
+      await db.update(
+        'vocabs',
+        {
+          'german_data': germanData.toString(),
+          'data_forms': dataForms.toString(),
+          'example_sentences': exampleSentences.toString(),          
+          'updated_at': DateTime.now().toIso8601String(),
+        },
+        where: 'word = ?',
+        whereArgs: [word],
+      );
+    }
+  }
+
+  // Get all chat sessions
+  Future<List<Map<String, dynamic>>> getAllVocabs() async {
+    final db = await database;
+    return await db.query('vocabs', orderBy: 'updated_at DESC');
+  }
+
+  // Get specific chat session
+  Future<Map<String, dynamic>?> getVocabs(String word) async {
+    final db = await database;
+    final results = await db.query(
+      'vocabs',
+      where: 'word = ?',
+      whereArgs: [word],
+      limit: 1,
+    );
+
+    if (results.isNotEmpty) {
+      return results.first;
+    }
+    return null;
+  }
+
+  // Delete chat session
+  Future<void> deleteVocabs(String word) async {
+    final db = await database;
+    await db.delete(
+      'vocabs',
+      where: 'word = ?',
+      whereArgs: [word],
     );
   }
 }

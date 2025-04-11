@@ -5,13 +5,16 @@ import 'package:flutter/material.dart';
 import '../utils/speak.dart';
 
 Widget displayGermanData(BuildContext context, dynamic jsonString) {
-  final Map<dynamic, dynamic> jsonData = jsonString;
+  final Map<dynamic, dynamic> jsonData =jsonString;
 
-  final Map<String, dynamic>? germanData = jsonData['german_data'];
-  final Map<String, dynamic>? dataForms = jsonData['data_forms'];
+  final Map<String, dynamic>? germanData =jsonData['german_data'];
+  final Map<String, dynamic>? dataForms =jsonData['data_forms'];
   final Map<String, dynamic>? exampleSentences = jsonData['example_sentences'];
 
+
+
   return SingleChildScrollView(
+    
     padding: EdgeInsets.all(16.0),
     child: Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -27,11 +30,17 @@ Widget displayGermanData(BuildContext context, dynamic jsonString) {
                 // ),
                 Text(
                   "${entry.key.capitalize()}:",
-                  style: TextStyle(fontWeight: FontWeight.bold),
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    overflow: TextOverflow.visible,
+                  ),
                 ),
                 SelectableText(
                   " ${utf8.decode(entry.value.codeUnits)}",
-                  style: TextStyle(fontSize: 16),
+                  style: TextStyle(
+                    fontSize: 16,
+                    overflow: TextOverflow.visible,
+                  ),
                 ),
               ],
             );
@@ -45,10 +54,8 @@ Widget displayGermanData(BuildContext context, dynamic jsonString) {
                 "Conjugations:",
                 style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
               ),
-           
-           
               ...dataForms.entries.map((entry) {
-                return  Column(
+                return Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     SelectableText(

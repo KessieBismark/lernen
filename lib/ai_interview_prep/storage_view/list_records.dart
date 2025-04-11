@@ -33,7 +33,7 @@ class _WordListPageState extends State<WordListPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Words List'),
+        title: Text('Conversations List'),
       ),
       body: ListView.builder(
         itemCount: words.length,

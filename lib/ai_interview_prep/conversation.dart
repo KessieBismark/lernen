@@ -17,7 +17,8 @@ class ConversationScreen extends StatelessWidget {
       itemCount: conversation.length,
       itemBuilder: (context, index) {
         final message = conversation[index];
-        final isAgent = message.speaker != 'Interviewer';
+        final isAgent = index % 2 != 0;
+        // Assuming even index is for the agent and odd index is for the user
 
         return Container(
           margin: EdgeInsets.symmetric(vertical: 8),
@@ -76,7 +77,7 @@ class ConversationScreen extends StatelessWidget {
                   ),
                   SizedBox(height: 4),
                   Text(
-                    message.english,
+                    utf8.decode(message.english.codeUnits),
                     style: TextStyle(
                       color: isAgent ? Colors.black54 : Colors.white70,
                       fontSize: 12,

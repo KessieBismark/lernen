@@ -3,7 +3,7 @@ import 'package:intl/intl.dart';
 import 'shared_pref.dart';
 
 class Utils {
-  static String selectedAIModel = "llama3-8b-8192";
+  static String selectedAIModel = "";
 
   static List<ModelInfo> aiListModels = [];
   static String? deviceID;
@@ -87,4 +87,85 @@ List<int> generateRandom6Numbers() {
   }
 
   return numbers;
+}
+
+String fixEncoding(String text) {
+  // Replace common encoding issues
+  return text
+      .replaceAll('Ã\u009f', 'ß')
+      .replaceAll('Ã¤', 'ä')
+      .replaceAll('Ã¶', 'ö')
+      .replaceAll('Ã¼', 'ü')
+      .replaceAll('Ã\u0084', 'Ä')
+      .replaceAll('Ã\u0096', 'Ö')
+      .replaceAll('Ã\u009c', 'Ü');
+}
+
+dynamic cleanJson(dynamic data) {
+  print(data);
+  if (data is String) {
+    return fixEncoding(data);
+  } else if (data is Map) {
+    return data.map((key, value) => MapEntry(key, cleanJson(value)));
+  } else if (data is List) {
+    return data.map((e) => cleanJson(e)).toList();
+  }
+  return data;
+}
+
+Map<String, dynamic> parseCustomFormat(dynamic input) {
+  // This is a simplified parser - you may need to enhance it for your specific needs
+  final result = <String, dynamic>{};
+
+  // Remove any Flutter error messages or warnings
+  final cleanInput = input.split('flutter:').first;
+
+  // First, try to extract the main data structure
+  final match = RegExp(r'\{(.*)\}').firstMatch(cleanInput);
+  if (match == null) return result;
+
+  String content = match.group(1) ?? '';
+
+  // Break down the key-value pairs
+  // This is a very simplistic approach - a proper parser would be more complex
+  int depth = 0;
+  String currentKey = '';
+  String buffer = '';
+
+  for (int i = 0; i < content.length; i++) {
+    final char = content[i];
+
+    if (char == '{') {
+      depth++;
+      buffer += char;
+    } else if (char == '}') {
+      depth--;
+      buffer += char;
+
+      if (depth == 0 && currentKey.isNotEmpty) {
+        // Process nested object
+        result[currentKey.trim()] = parseCustomFormat(buffer);
+        currentKey = '';
+        buffer = '';
+      }
+    } else if (char == ':' && depth == 0) {
+      currentKey = buffer.trim();
+      buffer = '';
+    } else if (char == ',' && depth == 0) {
+      if (currentKey.isNotEmpty) {
+        result[currentKey.trim()] = buffer.trim();
+      }
+      currentKey = '';
+      buffer = '';
+    } else {
+      buffer += char;
+    }
+  }
+
+  // Process any remaining pair
+  if (currentKey.isNotEmpty) {
+    result[currentKey.trim()] = buffer.trim();
+  }
+
+  return result;
 }

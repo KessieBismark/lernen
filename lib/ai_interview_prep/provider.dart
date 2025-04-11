@@ -19,9 +19,10 @@ class AIInterviewProvider extends ChangeNotifier {
   bool retry = false;
   String? selectedModelId;
   final TextEditingController controller = TextEditingController();
-
- 
-
+  int overAllPay = 3;
+  int sentencePlay = 5;
+  List<String> german = [];
+  List<String> english = [];
   setSelected(String? value) {
     Utils.selectedAIModel = value!;
     notifyListeners();
@@ -63,7 +64,6 @@ class AIInterviewProvider extends ChangeNotifier {
   Future<List<ConversationEntry>> fetchResult(String word) async {
     var record = <ConversationEntry>[];
     try {
-      
       var params = jsonEncode({"data": word, "model": Utils.selectedAIModel});
 
       final records = await Query.queryData(

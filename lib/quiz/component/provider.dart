@@ -37,7 +37,7 @@ class QuizProvider extends ChangeNotifier {
     fetchModel().then((List<ModelInfo> models) async {
       Utils.aiListModels = models;
       Utils.selectedAIModel =
-          await SharedPreferencesUtil.getString('ai_model') ?? "llama3-70b-8192";
+          await SharedPreferencesUtil.getString('ai_model') ?? "";
       Utils().setDevideID();
     }).catchError((error) {
       debugPrint('Error in DataProvider: $error');
@@ -89,6 +89,12 @@ class QuizProvider extends ChangeNotifier {
     notifyListeners();
     fetchQuiz().then((value) {
       quizes.addAll(value);
+      if (quizes.isEmpty) {
+        load = false;
+        notifyListeners();
+        return;
+      }
+      currentQuestionIndex = 0;
       currentQuestion = quizes[currentQuestionIndex];
       load = false;
       notifyListeners();
@@ -128,6 +134,9 @@ class QuizProvider extends ChangeNotifier {
       final records =
           await Query.queryData(query: params, endPoint: "quiz/quiz/");
       var data = jsonDecode(records);
+      if (data == null) {
+        return [];
+      }
       for (var item in data) {
         record.add(QuizModel.fromJson(item));
       }

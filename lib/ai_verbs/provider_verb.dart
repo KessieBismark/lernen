@@ -6,9 +6,9 @@ import 'package:lernen/server.dart';
 import 'package:lernen/utils/dropdown.dart';
 import 'package:lernen/utils/helpers.dart';
 import '../spelling/model.dart';
+import '../utils/database/sqflite.dart';
 
 class AIVerbProvider extends ChangeNotifier {
-  List<VerbModel> cl = <VerbModel>[];
   GermanDataModel? verbResult;
   dynamic aiJsonResult = {};
   DropDownModel? word;
@@ -40,6 +40,13 @@ class AIVerbProvider extends ChangeNotifier {
       retry = false;
       if (data != 'false') {
         aiJsonResult = data ?? {};
+        final Map<dynamic, dynamic> jsonData = data;
+
+        await DatabaseHelper.instance.updateVocabs(
+            word: word,
+            germanData: jsonEncode(jsonData['german_data']),
+            dataForms: jsonEncode(jsonData['data_forms']),
+            exampleSentences: jsonEncode(jsonData['example_sentences']));
       } else {
         retry = true;
       }

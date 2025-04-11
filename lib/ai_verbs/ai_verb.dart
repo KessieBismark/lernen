@@ -8,6 +8,7 @@ import 'package:provider/provider.dart';
 import '../utils/ai_dropdown.dart';
 import '../utils/shared_pref.dart';
 import 'display_widget.dart';
+import 'storage/list_verbs.dart';
 
 class AIVerbAssit extends StatelessWidget {
   const AIVerbAssit({super.key});
@@ -28,7 +29,13 @@ class AIVerbAssit extends StatelessWidget {
                 ),
                 child: Column(
                   children: [
-                    TopBar(),
+                    TopBar(
+                      widget: IconButton(
+                          onPressed: () {
+                            Get.to(() => VocabsListPage());
+                          },
+                          icon: Icon(Icons.storage)),
+                    ),
                     AIDropDown(
                       callBack: (String? newValue) async {
                         value.setSelected(newValue);
