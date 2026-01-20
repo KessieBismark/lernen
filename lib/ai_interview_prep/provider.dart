@@ -23,12 +23,12 @@ class AIInterviewProvider extends ChangeNotifier {
   int sentencePlay = 5;
   List<String> german = [];
   List<String> english = [];
-  setSelected(String? value) {
+  void setSelected(String? value) {
     Utils.selectedAIModel = value!;
     notifyListeners();
   }
 
-  getData(String word) async {
+  Future<void> getData(String word) async {
     load = true;
     notifyListeners();
     aiJsonResult = [];

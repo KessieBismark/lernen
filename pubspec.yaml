@@ -3,58 +3,58 @@ description: "Learn German With AI Assistance. Developed Bismark Kessie"
 
 publish_to: "none" # Remove this line if you wish to publish to pub.dev
 
-version: 3.1.5+3
+version: 5.0.0+5
 
 environment:
   sdk: ^3.5.0
 
 dependencies:
+  audioplayers: ^6.5.1
   auto_size_text: ^3.0.0
   cupertino_icons: ^1.0.8
   dropdown_search: ^6.0.1
+  encrypt: ^5.0.3
   flutter:
     sdk: flutter
-  flutter_beep: ^1.0.0
+  flutter_dotenv: null
+  flutter_launcher_icons: null
+  flutter_markdown: null
+  flutter_secure_storage: ^10.0.0
   flutter_svg: ^2.0.10+1
-  flutter_tts: 
+  flutter_tts: null
   get: ^4.6.6
-  pocketbase: ^0.21.0
+  google_fonts: null
+  html2md: null
+  http: ^1.2.2
+  intl: null
+  pocketbase: ^0.23.2
   provider: ^6.1.2
   shared_preferences: ^2.3.2
-  flutter_dotenv:
-  http: ^1.2.2
-  sqflite:
-  google_fonts:
-  flutter_markdown:
-  html2md:
-  sqflite_common_ffi_web:
-  intl:
-  flutter_launcher_icons:
+  sqflite: null
+  sqflite_common_ffi_web: null
 
 dev_dependencies:
-  flutter_lints: ^5.0.0
+  flutter_lints: ^6.0.0
   flutter_test:
     sdk: flutter
 
 flutter_launcher_icons:
-    android: "launcher_icon"
-    ios: true
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/logo/logo.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+  web:
+    generate: true
     image_path: "assets/logo/logo.png"
-    min_sdk_android: 21 # android min sdk min:16, default 21
-    web:
-      generate: true
-      image_path: "assets/logo/logo.png"
-      background_color: "#hexcode"
-      theme_color: "#hexcode"
-    windows:
-      generate: true
-      image_path: "assets/logo/logo.png"
-      icon_size: 48 # min:48, max:256, default: 48
-    macos:
-      generate: true
-      image_path: "assets/logo/logo.png"
-
-  
+    background_color: "#hexcode"
+    theme_color: "#hexcode"
+  windows:
+    generate: true
+    image_path: "assets/logo/logo.png"
+    icon_size: 48 # min:48, max:256, default: 48
+  macos:
+    generate: true
+    image_path: "assets/logo/logo.png"
 
 flutter:
   uses-material-design: true

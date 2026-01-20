@@ -38,20 +38,22 @@ class _WordListPageState extends State<WordListPage> {
       body: ListView.builder(
         itemCount: words.length,
         itemBuilder: (context, index) {
-          return ListTile(
-            title: Text(words[index].toUpperCase()),
-            onTap: () {
-              var conversationData = getConversationData(words[index]);
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => WordDetailsPage(
-                    word: words[index],
-                    conversationData: conversationData,
+          return Card(
+            child: ListTile(
+              title: Text(words[index].toUpperCase()),
+              onTap: () {
+                var conversationData = getConversationData(words[index]);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => WordDetailsPage(
+                      word: words[index],
+                      conversationData: conversationData,
+                    ),
                   ),
-                ),
-              );
-            },
+                );
+              },
+            ),
           );
         },
       ),

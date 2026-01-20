@@ -1,4 +1,3 @@
-import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:html2md/html2md.dart' as html2md;
@@ -43,7 +42,7 @@ class ChatArea extends StatelessWidget {
                   child: Markdown(
                     // shrinkWrap: true,
                     selectable: true,
-                    data: utf8.decode(mData.codeUnits),
+                    data:mData,
                   ),
                 ))
             : Container(
@@ -75,7 +74,7 @@ class ChatArea extends StatelessWidget {
                     ),
                     SizedBox(height: 4),
                     SelectableText(
-                      utf8.decode(message['content'].codeUnits),
+                      message['content'],
                       style: TextStyle(
                         color: isAgent ? Colors.black87 : Colors.white,
                         fontSize: 14,

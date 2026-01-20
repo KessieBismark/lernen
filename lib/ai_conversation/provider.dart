@@ -19,7 +19,7 @@ class ChatProvider extends ChangeNotifier {
   dynamic chatHistory = {};
   bool load = false;
 
-  setNewChatArea() {
+  void setNewChatArea() {
     activeSession = "";
     chatHistory = {};
     messageController.clear();
@@ -104,7 +104,7 @@ class ChatProvider extends ChangeNotifier {
     }
   }
 
-  fetchPreviousChat() async {
+  Future<void> fetchPreviousChat() async {
     load = true;
     notifyListeners();
     try {

@@ -25,13 +25,17 @@ class AIVerbProvider extends ChangeNotifier {
     getWord();
   }
 
-  wordShower() {
-    int randomIndex = random.nextInt(cases.length);
-    word = cases[randomIndex];
-    getData(word!.name);
+  void wordShower() {
+    try {
+      int randomIndex = random.nextInt(cases.length);
+      word = cases[randomIndex];
+      getData(word!.name);
+    } catch (e) {
+      debugPrint(e.toString());
+    }
   }
 
-  getData(String word) async {
+  Future<void> getData(String word) async {
     load = true;
     notifyListeners();
 
@@ -58,12 +62,12 @@ class AIVerbProvider extends ChangeNotifier {
     }
   }
 
-  setSelected(String? value) {
+  void setSelected(String? value) {
     Utils.selectedAIModel = value!;
     notifyListeners();
   }
 
-  getWord() async {
+  Future<void> getWord() async {
     wordLoad = true;
     notifyListeners();
     wList = [];
@@ -89,6 +93,7 @@ class AIVerbProvider extends ChangeNotifier {
     try {
       final records =
           await Query.queryData(query: params, endPoint: "verb/verb_query/");
+      print(records);
       wordLoad = false;
       if (records != 'false') {
         return jsonDecode(records);

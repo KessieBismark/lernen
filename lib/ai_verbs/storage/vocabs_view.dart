@@ -1,6 +1,7 @@
-import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'package:lernen/utils/speak.dart';
+import 'package:provider/provider.dart';
+import '../../utils/provider/theme_provider.dart';
+import '../../utils/sentence.dart';
 
 class VocabsView extends StatelessWidget {
   final String title;
@@ -8,32 +9,39 @@ class VocabsView extends StatelessWidget {
   final Map<String, dynamic> dataForms;
   final Map<String, dynamic> exampleSentences;
 
-  const VocabsView(
-      {super.key,
-      required this.title,
-      required this.germanData,
-      required this.dataForms,
-      required this.exampleSentences});
+  const VocabsView({
+    super.key,
+    required this.title,
+    required this.germanData,
+    required this.dataForms,
+    required this.exampleSentences,
+  });
 
   @override
   Widget build(BuildContext context) {
+    final themeProvider = Provider.of<ThemeProvider>(context);
+    final isDarkMode = themeProvider.isDarkTheme;
+
     return Scaffold(
+      backgroundColor: isDarkMode ? Colors.grey.shade900 : Colors.grey.shade50,
       appBar: AppBar(
         title: Text(title),
+        backgroundColor: isDarkMode ? Colors.grey.shade800 : Colors.white,
+        foregroundColor:
+            isDarkMode ? Colors.grey.shade200 : Colors.grey.shade800,
+        elevation: 0,
       ),
       body: SafeArea(
         child: GestureDetector(
-          onTap: () => FocusScope.of(context).requestFocus(
-            FocusNode(),
-          ),
-          child: ListView(
-            children: [
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: displayGermanData(
-                    context, germanData, dataForms, exampleSentences),
-              ),
-            ],
+          onTap: () => FocusScope.of(context).requestFocus(FocusNode()),
+          child: SingleChildScrollView(
+            padding: EdgeInsets.all(16.0),
+            child: displayGermanData(
+              context,
+              germanData,
+              dataForms,
+              exampleSentences,
+            ),
           ),
         ),
       ),
@@ -47,167 +55,483 @@ Widget displayGermanData(
   Map<String, dynamic>? dataForms,
   Map<String, dynamic>? exampleSentences,
 ) {
-  return Column(
-    crossAxisAlignment: CrossAxisAlignment.start,
-    children: [
-      if (germanData != null)
-        ...germanData.entries.map((entry) {
-          return Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                "${entry.key.capitalize()}:",
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  overflow: TextOverflow.visible,
-                ),
+  return Consumer<ThemeProvider>(
+    builder: (context, themeProvider, child) {
+      final isDarkMode = themeProvider.isDarkTheme;
+
+      // Theme-aware colors
+      final backgroundColor =
+          isDarkMode ? Colors.grey.shade900 : Colors.grey.shade50;
+      final cardColor = isDarkMode ? Colors.grey.shade800 : Colors.white;
+      final textColor =
+          isDarkMode ? Colors.grey.shade200 : Colors.grey.shade800;
+      final hintColor =
+          isDarkMode ? Colors.grey.shade500 : Colors.grey.shade600;
+      final borderColor =
+          isDarkMode ? Colors.grey.shade700 : Colors.grey.shade300;
+      final primaryColor = isDarkMode ? Colors.blue.shade300 : Colors.blue;
+      final purpleColor = isDarkMode ? Colors.purple.shade300 : Colors.purple;
+      final greenColor = isDarkMode ? Colors.green.shade300 : Colors.green;
+
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          // German Data Section
+          if (germanData != null)
+            Card(
+              elevation: isDarkMode ? 0 : 2,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(12),
               ),
-              SelectableText(
-                " ${utf8.decode(entry.value.codeUnits)}",
-                style: TextStyle(
-                  fontSize: 16,
-                  overflow: TextOverflow.visible,
-                ),
-              ),
-            ],
-          );
-        }),
-      SizedBox(height: 20),
-      if (dataForms != null)
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              "Conjugations:",
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-            ),
-            ...dataForms.entries.map((entry) {
-              return Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  SelectableText(
-                    "${entry.key.capitalize()}:",
-                    style: TextStyle(fontWeight: FontWeight.bold),
+              color: cardColor,
+              child: Container(
+                width: double.infinity,
+                padding: EdgeInsets.all(16),
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                    colors: [
+                      isDarkMode
+                          ? Colors.blue.shade900.withOpacity(0.3)
+                          : Colors.blue.shade50,
+                      cardColor,
+                    ],
                   ),
-                  if (entry.value is Map<String, dynamic>)
-                    ...entry.value.entries.map((subEntry) {
-                      return Row(
-                        children: [
-                          SelectableText(
-                              "${subEntry.key}: ${utf8.decode(subEntry.value.codeUnits)}"),
-                          IconButton(
-                            onPressed: () {
-                              Speak().speak(
-                                  text:
-                                      "${subEntry.key}: ${utf8.decode(subEntry.value.codeUnits)}"
-                                          .trim(),
-                                  locale: "de-DE");
-                            },
-                            icon: Icon(Icons.volume_up),
-                            tooltip: 'Listen',
-                          ),
-                        ],
-                      );
-                    }).toList()
-                  else
+                  borderRadius: BorderRadius.circular(12),
+                  border: isDarkMode
+                      ? Border.all(color: Colors.grey.shade700)
+                      : null,
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
                     Row(
                       children: [
-                        SelectableText(utf8.decode(entry.value.codeUnits)),
-                        IconButton(
-                          onPressed: () {
-                            Speak().speak(
-                                text: utf8.decode(entry.value.codeUnits).trim(),
-                                locale: "de-DE");
-                          },
-                          icon: Icon(Icons.volume_up),
-                          tooltip: 'Listen',
+                        Icon(Icons.language, color: primaryColor, size: 20),
+                        SizedBox(width: 8),
+                        Text(
+                          "German Word Details",
+                          style: TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                            color: primaryColor,
+                          ),
                         ),
                       ],
                     ),
-                  SizedBox(height: 10),
-                ],
-              );
-            }),
-          ],
-        ),
-      if (exampleSentences != null)
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              "Example Sentences:",
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                    SizedBox(height: 12),
+                    ...germanData.entries.map((entry) {
+                      return Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 6),
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: isDarkMode
+                                ? Colors.grey.shade900
+                                : Colors.white,
+                            borderRadius: BorderRadius.circular(8),
+                            border: Border.all(
+                              color: isDarkMode
+                                  ? Colors.grey.shade700
+                                  : Colors.grey.shade200,
+                            ),
+                          ),
+                          padding:
+                              EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Container(
+                                padding: EdgeInsets.symmetric(
+                                    horizontal: 8, vertical: 4),
+                                decoration: BoxDecoration(
+                                  color: isDarkMode
+                                      ? Colors.blue.shade800
+                                      : Colors.blue.shade100,
+                                  borderRadius: BorderRadius.circular(6),
+                                ),
+                                child: Text(
+                                  entry.key.capitalize(),
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.w600,
+                                    color: isDarkMode
+                                        ? Colors.blue.shade200
+                                        : Colors.blue.shade800,
+                                    fontSize: 14,
+                                  ),
+                                ),
+                              ),
+                              SizedBox(width: 12),
+                              Expanded(
+                                child: SelectableText(
+                                  entry.value.toString(),
+                                  style: TextStyle(
+                                    fontSize: 16,
+                                    color: textColor,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      );
+                    }),
+                  ],
+                ),
+              ),
             ),
-            ...exampleSentences.entries.map((entry) {
-              return Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    "${entry.key.capitalize()}:",
-                    style: TextStyle(fontWeight: FontWeight.bold),
+
+          SizedBox(height: germanData != null ? 24 : 0),
+
+          // Conjugations Section
+          if (dataForms != null)
+            Card(
+              elevation: isDarkMode ? 0 : 2,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(12),
+              ),
+              color: cardColor,
+              child: Container(
+                width: double.infinity,
+                padding: EdgeInsets.all(16),
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                    colors: [
+                      isDarkMode
+                          ? Colors.purple.shade900.withOpacity(0.3)
+                          : Colors.purple.shade50,
+                      cardColor,
+                    ],
                   ),
-                  sentenceExample(entry),
-                  SizedBox(height: 10),
-                ],
-              );
-            }),
-          ],
-        ),
-    ],
+                  borderRadius: BorderRadius.circular(12),
+                  border: isDarkMode
+                      ? Border.all(color: Colors.grey.shade700)
+                      : null,
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      children: [
+                        Icon(Icons.account_balance,
+                            color: purpleColor, size: 20),
+                        SizedBox(width: 8),
+                        Text(
+                          "Conjugations",
+                          style: TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                            color: purpleColor,
+                          ),
+                        ),
+                      ],
+                    ),
+                    SizedBox(height: 12),
+                    ...dataForms.entries.map((entry) {
+                      return Padding(
+                        padding: const EdgeInsets.only(bottom: 16),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Container(
+                              padding: EdgeInsets.symmetric(
+                                  horizontal: 12, vertical: 6),
+                              decoration: BoxDecoration(
+                                color: isDarkMode
+                                    ? Colors.purple.shade800
+                                    : Colors.purple.shade100,
+                                borderRadius: BorderRadius.circular(8),
+                              ),
+                              child: Text(
+                                entry.key.capitalize(),
+                                style: TextStyle(
+                                  fontWeight: FontWeight.w600,
+                                  color: isDarkMode
+                                      ? Colors.purple.shade200
+                                      : Colors.purple.shade800,
+                                  fontSize: 15,
+                                ),
+                              ),
+                            ),
+                            SizedBox(height: 8),
+                            if (entry.value is Map<String, dynamic>)
+                              ...(entry.value as Map<String, dynamic>)
+                                  .entries
+                                  .map((subEntry) {
+                                return Container(
+                                  margin: EdgeInsets.only(bottom: 8),
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      color: isDarkMode
+                                          ? Colors.grey.shade800
+                                          : Colors.white,
+                                      borderRadius: BorderRadius.circular(8),
+                                      boxShadow: isDarkMode
+                                          ? []
+                                          : [
+                                              BoxShadow(
+                                                color: Colors.grey.shade200,
+                                                blurRadius: 2,
+                                                offset: Offset(0, 1),
+                                              ),
+                                            ],
+                                      border: isDarkMode
+                                          ? Border.all(
+                                              color: Colors.grey.shade700)
+                                          : null,
+                                    ),
+                                    child: Padding(
+                                      padding: const EdgeInsets.only(left: 5),
+                                      child: SentenceRow(
+                                        text:
+                                            "${subEntry.key}: ${subEntry.value}",
+                                      ),
+                                    ),
+                                  ),
+                                );
+                              })
+                            else
+                              Container(
+                                decoration: BoxDecoration(
+                                  color: isDarkMode
+                                      ? Colors.grey.shade800
+                                      : Colors.white,
+                                  borderRadius: BorderRadius.circular(8),
+                                  boxShadow: isDarkMode
+                                      ? []
+                                      : [
+                                          BoxShadow(
+                                            color: Colors.grey.shade200,
+                                            blurRadius: 2,
+                                            offset: Offset(0, 1),
+                                          ),
+                                        ],
+                                  border: isDarkMode
+                                      ? Border.all(color: Colors.grey.shade700)
+                                      : null,
+                                ),
+                                child:
+                                    SentenceRow(text: entry.value.toString()),
+                              ),
+                          ],
+                        ),
+                      );
+                    }),
+                  ],
+                ),
+              ),
+            ),
+
+          SizedBox(height: (germanData != null || dataForms != null) ? 24 : 0),
+
+          // Example Sentences Section
+          if (exampleSentences != null)
+            Card(
+              elevation: isDarkMode ? 0 : 2,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(12),
+              ),
+              color: cardColor,
+              child: Container(
+                width: double.infinity,
+                padding: EdgeInsets.all(16),
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                    colors: [
+                      isDarkMode
+                          ? Colors.green.shade900.withOpacity(0.3)
+                          : Colors.green.shade50,
+                      cardColor,
+                    ],
+                  ),
+                  borderRadius: BorderRadius.circular(12),
+                  border: isDarkMode
+                      ? Border.all(color: Colors.grey.shade700)
+                      : null,
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      children: [
+                        Icon(Icons.chat_bubble_outline,
+                            color: greenColor, size: 20),
+                        SizedBox(width: 8),
+                        Text(
+                          "Example Sentences",
+                          style: TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                            color: greenColor,
+                          ),
+                        ),
+                      ],
+                    ),
+                    SizedBox(height: 12),
+                    ...exampleSentences.entries.map((entry) {
+                      return Padding(
+                        padding: const EdgeInsets.only(bottom: 16),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Container(
+                              padding: EdgeInsets.symmetric(
+                                  horizontal: 12, vertical: 6),
+                              decoration: BoxDecoration(
+                                color: isDarkMode
+                                    ? Colors.green.shade800
+                                    : Colors.green.shade100,
+                                borderRadius: BorderRadius.circular(8),
+                              ),
+                              child: Text(
+                                entry.key.capitalize(),
+                                style: TextStyle(
+                                  fontWeight: FontWeight.w600,
+                                  color: isDarkMode
+                                      ? Colors.green.shade200
+                                      : Colors.green.shade800,
+                                  fontSize: 15,
+                                ),
+                              ),
+                            ),
+                            SizedBox(height: 8),
+                            sentenceExample(entry, isDarkMode),
+                          ],
+                        ),
+                      );
+                    }),
+                  ],
+                ),
+              ),
+            ),
+        ],
+      );
+    },
   );
 }
 
-Row sentenceExample(MapEntry<String, dynamic> entry) {
+Widget sentenceExample(MapEntry<String, dynamic> entry, bool isDarkMode) {
   String text = entry.value.toString();
   List<String> parts;
 
+  // Theme-aware colors
+  final exampleBgColor = isDarkMode ? Colors.grey.shade800 : Colors.white;
+  final sentenceBgColor =
+      isDarkMode ? Colors.grey.shade900 : Colors.grey.shade50;
+  final infoBgColor = isDarkMode
+      ? Colors.amber.shade900.withOpacity(0.3)
+      : Colors.amber.shade50;
+  final infoBorderColor =
+      isDarkMode ? Colors.amber.shade800 : Colors.amber.shade100;
+  final infoIconColor =
+      isDarkMode ? Colors.amber.shade300 : Colors.amber.shade700;
+  final infoTextColor =
+      isDarkMode ? Colors.grey.shade300 : Colors.grey.shade700;
+
   if (text.contains("(")) {
     parts = text.split("(");
-    return Row(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Expanded(
-          child: SelectableText.rich(
-            TextSpan(
-              children: [
-                TextSpan(
-                  locale: Locale("de"),
-                  text: utf8.decode(parts[0].trim().codeUnits),
-                  //style: TextStyle(fontWeight: FontWeight.bold),
+    return Container(
+      decoration: BoxDecoration(
+        color: exampleBgColor,
+        borderRadius: BorderRadius.circular(10),
+        boxShadow: isDarkMode
+            ? []
+            : [
+                BoxShadow(
+                  color: Colors.grey.shade100,
+                  blurRadius: 3,
+                  offset: Offset(0, 2),
                 ),
-                if (parts.length > 1)
-                  TextSpan(
-                    text: " (${parts[1].trim()}",
-                    style: TextStyle(fontStyle: FontStyle.italic),
+              ],
+        border: isDarkMode ? Border.all(color: Colors.grey.shade700) : null,
+      ),
+      padding: EdgeInsets.all(12),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Expanded(
+                child: Container(
+                  padding: EdgeInsets.all(8),
+                  decoration: BoxDecoration(
+                    color: sentenceBgColor,
+                    borderRadius: BorderRadius.circular(8),
+                    border: isDarkMode
+                        ? Border.all(color: Colors.grey.shade700)
+                        : null,
                   ),
+                  child: SentenceRow(text: parts[0].trim()),
+                ),
+              ),
+            ],
+          ),
+          SizedBox(height: 8),
+          Container(
+            padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+            decoration: BoxDecoration(
+              color: infoBgColor,
+              borderRadius: BorderRadius.circular(6),
+              border: Border.all(color: infoBorderColor),
+            ),
+            child: Row(
+              children: [
+                Icon(Icons.info_outline, color: infoIconColor, size: 16),
+                SizedBox(width: 8),
+                Flexible(
+                  child: Text(
+                    "(${parts[1].trim()}",
+                    style: TextStyle(
+                      fontStyle: FontStyle.italic,
+                      color: infoTextColor,
+                      fontSize: 14,
+                    ),
+                  ),
+                ),
               ],
             ),
           ),
-        ),
-        IconButton(
-          onPressed: () {
-            Speak().speak(text: parts[0].trim(), locale: "de-DE");
-          },
-          icon: Icon(Icons.volume_up),
-          tooltip: 'Listen',
-        ),
-      ],
+        ],
+      ),
     );
   } else {
-    return Row(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Expanded(
-          child: SelectableText(utf8.decode(text.codeUnits)),
-        ),
-        IconButton(
-          onPressed: () {
-            Speak().speak(text: text.trim(), locale: "de-DE");
-          },
-          icon: Icon(Icons.volume_up),
-          tooltip: 'Listen',
-        ),
-      ],
+    return Container(
+      decoration: BoxDecoration(
+        color: exampleBgColor,
+        borderRadius: BorderRadius.circular(10),
+        boxShadow: isDarkMode
+            ? []
+            : [
+                BoxShadow(
+                  color: Colors.grey.shade100,
+                  blurRadius: 3,
+                  offset: Offset(0, 2),
+                ),
+              ],
+        border: isDarkMode ? Border.all(color: Colors.grey.shade700) : null,
+      ),
+      padding: EdgeInsets.all(12),
+      child: Row(
+        children: [
+          Expanded(
+            child: Container(
+              padding: EdgeInsets.all(8),
+              decoration: BoxDecoration(
+                color: sentenceBgColor,
+                borderRadius: BorderRadius.circular(8),
+                border:
+                    isDarkMode ? Border.all(color: Colors.grey.shade700) : null,
+              ),
+              child: SentenceRow(text: text),
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

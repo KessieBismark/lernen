@@ -1,9 +1,15 @@
 import 'dart:math';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:intl/intl.dart';
+import 'package:lernen/utils/app_config.dart';
 import 'shared_pref.dart';
 
 class Utils {
-  static String selectedAIModel = "";
+  static String selectedAIModel = AppConfig.aiChatModel;
+  static String keysUrl = dotenv.get('KEYS_URL');
+  static String ttsKey = dotenv.get('TTS');
+  static String passKey = dotenv.get('PASSKEY');
+  static String groqAPI = dotenv.get('GROQ_API_KEY');
 
   static List<ModelInfo> aiListModels = [];
   static String? deviceID;
@@ -13,7 +19,7 @@ class Utils {
     return DateFormat('MMM d, yyyy • hh:mm a').format(date);
   }
 
-  setDevideID() async {
+  Future<void> setDevideID() async {
     final String id = await SharedPreferencesUtil.getString('device_id') ?? "";
     if (id.isEmpty) {
       Utils.deviceID = generateRandom6Numbers().join();

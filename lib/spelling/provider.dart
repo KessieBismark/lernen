@@ -25,7 +25,7 @@ class SpellProvider extends ChangeNotifier {
     getData();
   }
 
-  wordShower() {
+  String wordShower() {
     correct = 2;
     viewWord = false;
     // Ensure the random index is within the full data map
@@ -36,7 +36,7 @@ class SpellProvider extends ChangeNotifier {
     return word;
   }
 
-  checker() {
+  void checker() {
     if (word.toLowerCase() == wordController.text.trim().toLowerCase()) {
       marks += 1;
       correct = 1;
@@ -47,7 +47,7 @@ class SpellProvider extends ChangeNotifier {
     wordCounter += 1;
   }
 
-  getData() {
+  void getData() {
     wordLoad = true;
     notifyListeners();
     fetchVocabulary().then((onValue) {

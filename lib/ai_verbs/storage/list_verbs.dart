@@ -2,7 +2,6 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:lernen/ai_verbs/storage/vocabs_view.dart';
-import 'package:lernen/utils/helpers.dart';
 import '../../utils/database/sqflite.dart';
 
 class VocabsListPage extends StatefulWidget {
@@ -40,22 +39,24 @@ class _WordListPageState extends State<VocabsListPage> {
       body: ListView.builder(
         itemCount: words.length,
         itemBuilder: (context, index) {
-          return ListTile(
-              title: Text(words[index]['word'].toString().toUpperCase()),
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => VocabsView(
-                      title: words[index]['word'],
-                      germanData: json.decode(words[index]['german_data']),
-                      dataForms: json.decode(words[index]['data_forms']),
-                      exampleSentences:
-                          json.decode(words[index]['example_sentences']),
+          return Card(
+            child: ListTile(
+                title: Text(words[index]['word'].toString().toUpperCase()),
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => VocabsView(
+                        title: words[index]['word'],
+                        germanData: json.decode(words[index]['german_data']),
+                        dataForms: json.decode(words[index]['data_forms']),
+                        exampleSentences:
+                            json.decode(words[index]['example_sentences']),
+                      ),
                     ),
-                  ),
-                );
-              });
+                  );
+                }),
+          );
         },
       ),
     );
